@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+# Write, or refresh, the workshop's .env from what this sandbox knows right now.
+#
+# Called twice on purpose: by the sandbox setup, and again by every challenge's
+# setup. The two run in different contexts, and Instruqt's `environment:` block,
+# the participant id and the sandbox id may reach one and not the other. So each
+# value is taken from wherever it shows up, and an empty one never overwrites a
+# value already in .env. Idempotent.
+set -euo pipefail
+
+WORKDIR="${WORKDIR:-/root/workshop}"
+ENV_FILE="$WORKDIR/.env"
+CFG="$WORKDIR/instruqt/sandbox/config.yml"
+
+# The value instruqt/sandbox/config.yml gives NAME. One `NAME: value` per line,
+# so awk is enough. Placeholders like "<org-key>" count as unset.
+cfg_env() {
+  awk -v k="$1:" '$1==k {gsub(/"/,"",$2); print $2; exit}' "$CFG" | grep -v '^<' || true
+}
+
+set_kv() { # set_kv KEY VALUE: replace or append, skipping empty values
+  [ -n "$2" ] || return 0
+  local tmp; tmp="$(mktemp)"
+  awk -v k="$1" -v v="$2" '
+    index($0, k "=") == 1 { print k "=" v; done = 1; next }
+    { print }
+    END { if (!done) print k "=" v }' "$ENV_FILE" > "$tmp"
+  mv "$tmp" "$ENV_FILE"
+}
+
+if [ ! -f "$ENV_FILE" ]; then
+  cat > "$ENV_FILE" <<ENV
+TEMPORAL_ADDRESS=localhost:7233
+TEMPORAL_UI_URL=http://localhost:8233
+LLM_MODE=openai
+LLM_BASE_URL=http://localhost:11434/v1
+LLM_API_KEY=ollama
+SANDBOX_PROVIDER=daytona
+DAYTONA_SNAPSHOT=max-analyst-py
+LEARNER_ID=learner
+IDLE_TIMEOUT_S=60
+APPROVAL_TIMEOUT_S=180
+ENV
+fi
+before="$(cksum < "$ENV_FILE")"
+
+set_kv LLM_MODEL "${LLM_MODEL:-$(cfg_env LLM_MODEL)}"
+set_kv DAYTONA_API_KEY "${DAYTONA_API_KEY:-$(cfg_env DAYTONA_API_KEY)}"
+# A short, label-safe ID: it prefixes workflow IDs and labels every sandbox.
+if [ -n "${INSTRUQT_PARTICIPANT_ID:-}" ]; then
+  set_kv LEARNER_ID "$(echo "$INSTRUQT_PARTICIPANT_ID" | tr 'A-Z' 'a-z' | tr -cd 'a-z0-9' | cut -c1-12)"
+fi
+if [ -n "${_SANDBOX_ID:-}" ]; then
+  set_kv TEMPORAL_UI_URL "https://workstation-8233-${_SANDBOX_ID}.env.play.instruqt.com"
+fi
+
+grep -q '^DAYTONA_API_KEY=.' "$ENV_FILE" \
+  || echo "warn: no DAYTONA_API_KEY reached this sandbox; Max can't create a sandbox until .env has one" >&2
+
+# The app reads .env once, at start. The worker isn't a service: learners restart it.
+if [ "$before" != "$(cksum < "$ENV_FILE")" ] && systemctl is-active -q max-app 2>/dev/null; then
+  systemctl restart max-app
+fi

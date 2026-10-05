@@ -1,0 +1,44 @@
+name: Temporal Agent Sandbox Workshop
+slug: temporal-agent-sandbox-workshop
+description: >-
+  One VM per learner for "Give Your Agent a Computer": uv + Python, the Temporal
+  CLI running a dev server, Ollama serving qwen3.5 on CPU, and the Max web app
+  already up. The learner starts the worker themselves; that's challenge 1.
+
+virtualmachines:
+  - name: workstation
+    # Instruqt's own Ubuntu image, the one temporal-platform-workshop pushes
+    # with. A bare "ubuntu-2404-lts" fails push with "image not found". Docker is
+    # unused here. Replace with a custom image that has Ollama and the model
+    # pre-pulled, to skip a 3+ GB download on every start.
+    image: instruqt/docker-28-3
+    shell: /bin/bash
+    # Instruqt has no GPUs, so the model runs on CPU. 4 vCPU / 16 GB holds
+    # qwen3.5:4b with room to spare, but CPU inference scales with cores: bench
+    # it here (scripts/bench_llm.py) before a cohort, and see DESIGN.md.
+    machine_type: n2-standard-4
+    # Stated so `sandbox diff` is clean: Instruqt fills these in from machine_type.
+    memory: 16384
+    cpus: 4
+    # high-ports: the Max app (8000) links to the Temporal UI (8233) by its
+    # public URL, workstation-8233-<sandbox>.env.play.instruqt.com.
+    allow_external_ingress:
+      - http
+      - https
+      - high-ports
+
+    # NOT in scope for scripts/setup-workstation. It reads these back out of the
+    # cloned copy of this file; see instruqt/README.md.
+    environment:
+      WORKSHOP_REPO: https://github.com/temporal-community/temporal-agent-sandbox-workshop.git  # TODO: final URL
+      WORKSHOP_REF: main
+      WORKDIR: /root/workshop
+
+      # Switch to qwen3.5:9b here if 4b is too unreliable on this machine type
+      # (run scripts/bench_llm.py on it first).
+      LLM_MODEL: qwen3.5:4b
+
+      # One org key shared by all learners (Tier 2+; see DESIGN.md). A plain
+      # variable, not an Instruqt secret: if the real key is committed here it
+      # is published with this repo.
+      DAYTONA_API_KEY: "<org-key>"

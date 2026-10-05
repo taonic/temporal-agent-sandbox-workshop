@@ -1,0 +1,31 @@
+{% if running %}<div hx-get="/runs/{{ wf_id }}/panel?v={{ version }}" hx-trigger="every 2s" hx-target="#panel" hx-swap="innerHTML"></div>{% endif %}
+{% if flash %}<div class="flash">{{ flash }}</div>{% endif %}
+
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <div><div class="muted small">{{ wf_id }}</div><h1>Team of {{ members | length }} analysts</h1></div>
+    <div class="row">
+      <span class="pill {{ wf_status }}">workflow {{ wf_status }}</span>
+      <a class="btn small" target="_blank" href="{{ ui }}/namespaces/{{ ns }}/workflows/{{ wf_id }}">History ↗</a>
+      {% if running %}<button class="danger" hx-post="/runs/{{ wf_id }}/cancel" hx-target="#panel" hx-confirm="Cancel the whole team? Every sandbox will be deleted.">Cancel team</button>{% endif %}
+    </div>
+  </div>
+</div>
+
+{% for m in members %}
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <div><a href="/runs/{{ m.id }}">{{ m.id }}</a> · <strong>{{ m.st.question if m.st else "starting…" }}</strong></div>
+    <div class="row">
+      {% if m.st %}<span class="pill {{ m.st.phase.value }}">{{ m.st.phase.value.replace("_", " ") }}</span>{% endif %}
+      {% if m.sandbox %}<span class="pill {{ m.sandbox.lifecycle.value }}">sandbox {{ m.sandbox.lifecycle.value }}</span>{% endif %}
+    </div>
+  </div>
+  {% if m.st and m.st.steps %}<p class="muted small">Latest: {{ m.st.steps[-1].summary }}</p>{% endif %}
+  {% if m.st and m.st.result %}<p><strong>{{ m.st.result.summary }}</strong></p>{% endif %}
+</div>
+{% endfor %}
+
+{% if report %}
+<div class="card"><div class="report">{{ report | md | safe }}</div></div>
+{% endif %}

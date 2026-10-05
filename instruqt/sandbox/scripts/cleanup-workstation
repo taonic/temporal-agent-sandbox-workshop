@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Cleanup for the "workstation" VM: delete everything this learner created on
+# Daytona, even if they never finished. Never fails the run.
+set -uxo pipefail
+# shellcheck disable=SC1091
+source /etc/workshop/env
+cd "$WORKDIR" && uv run python scripts/cleanup.py || true

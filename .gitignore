@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.env
+artifacts/
+data/
+.pytest_cache/
+.ruff_cache/
+
+# Archify run receipts (contain absolute local paths)
+docs/architecture/*.finalize*.json
+docs/architecture/*.browser-check.json
+docs/architecture/*.delivery.json
+.archify/
+# Local skill installs
+.agents/
+.learner-backup/

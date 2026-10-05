@@ -1,0 +1,53 @@
+slug: temporal-agent-sandbox-workshop
+id: xxm02zymwqto
+title: 'Give Your Agent a Computer: Durable Sandboxes with Temporal'
+teaser: Build Max, a personal data-analyst agent with its own cloud computer. It keeps
+  working after you close the app, asks before acting, sleeps when idle, and works
+  in teams.
+description: |-
+  In September 2026, Meta shipped **Muse** and OpenAI shipped **Dots**: personal agents
+  that get their own cloud computer. The model is the easy part. The hard part is
+  everything around it: crashes halfway through, sandboxes nobody deletes, and waiting
+  hours for a human without burning money.
+
+  In this workshop you build **Max**, a data analyst with its own
+  [Daytona](https://daytona.io) sandbox, on the plain Temporal Python SDK. There's no
+  agent framework.
+
+  ### What you'll do
+
+  1. **Meet Max** — Every model call and sandbox call becomes a step in a durable
+     history. A bug pauses the run; fixing it resumes the same run.
+  2. **Close the laptop** — Kill the worker mid-thought and Max carries on, with no
+     duplicate sandbox. Then make an idle sandbox sleep until new data arrives.
+  3. **Ask before acting** — Human-in-the-loop approval that waits for free, rejects
+     stale clicks and times out politely.
+  4. **Many Maxes** — Fan out a team of agents, each with its own computer, and cancel
+     the lot with one click.
+  5. **Bonus** — Schedules, upgrading running agents, a second sandbox provider.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags:
+- sandboxes
+- ai-agents
+- python
+- temporal
+owner: temporal
+developers:
+- tao.guo@temporal.io
+idle_timeout: 3600
+timelimit: 10800
+sandbox_preset: temporal-agent-sandbox-workshop
+lab_config:
+  sidebar_enabled: true
+  feedback_recap_enabled: true
+  feedback_tab_enabled: false
+  loadingMessages:
+  - Pulling a language model onto a CPU. It will be slower than you're used to, and
+    that's the point of challenge 2.
+  - Starting a Temporal dev server, so every step Max takes has somewhere durable
+    to land.
+  - Starting the Max app. Its worker is yours to start.
+  - Not creating a sandbox yet. Max asks for its own computer when it needs one.
+  hideStopButton: false
+checksum: "15449447615123060988"
+enhanced_loading: false

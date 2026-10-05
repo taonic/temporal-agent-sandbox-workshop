@@ -1,0 +1,901 @@
+date,store,item,unit,received,wasted,stockout
+2026-08-01,Mission,oat milk,L,8.0,0.25,False
+2026-08-01,Mission,cold brew concentrate,L,6.0,0.37,False
+2026-08-01,Mission,espresso beans,kg,3.0,0.04,False
+2026-08-01,SoMa,oat milk,L,8.0,0.47,False
+2026-08-01,SoMa,cold brew concentrate,L,6.0,0.38,False
+2026-08-01,SoMa,espresso beans,kg,3.0,0.07,False
+2026-08-01,Castro,oat milk,L,8.0,0.57,False
+2026-08-01,Castro,cold brew concentrate,L,6.0,0.68,False
+2026-08-01,Castro,espresso beans,kg,3.0,0.19,False
+2026-08-01,Sunset,oat milk,L,8.0,0.46,False
+2026-08-01,Sunset,cold brew concentrate,L,6.0,0.37,False
+2026-08-01,Sunset,espresso beans,kg,3.0,0.18,False
+2026-08-01,Marina,oat milk,L,8.0,0.36,False
+2026-08-01,Marina,cold brew concentrate,L,6.0,0.43,False
+2026-08-01,Marina,espresso beans,kg,3.0,0.13,False
+2026-08-02,Mission,oat milk,L,8.0,0.59,False
+2026-08-02,Mission,cold brew concentrate,L,6.0,0.31,False
+2026-08-02,Mission,espresso beans,kg,3.0,0.18,False
+2026-08-02,SoMa,oat milk,L,8.0,0.29,False
+2026-08-02,SoMa,cold brew concentrate,L,6.0,0.56,False
+2026-08-02,SoMa,espresso beans,kg,3.0,0.02,False
+2026-08-02,Castro,oat milk,L,8.0,0.69,False
+2026-08-02,Castro,cold brew concentrate,L,6.0,0.34,False
+2026-08-02,Castro,espresso beans,kg,3.0,0.12,False
+2026-08-02,Sunset,oat milk,L,8.0,0.41,False
+2026-08-02,Sunset,cold brew concentrate,L,6.0,0.72,False
+2026-08-02,Sunset,espresso beans,kg,3.0,0.18,False
+2026-08-02,Marina,oat milk,L,8.0,0.69,False
+2026-08-02,Marina,cold brew concentrate,L,6.0,1.57,False
+2026-08-02,Marina,espresso beans,kg,3.0,0.07,False
+2026-08-03,Mission,oat milk,L,8.0,0.78,False
+2026-08-03,Mission,cold brew concentrate,L,6.0,0.53,False
+2026-08-03,Mission,espresso beans,kg,3.0,0.12,False
+2026-08-03,SoMa,oat milk,L,8.0,0.72,False
+2026-08-03,SoMa,cold brew concentrate,L,6.0,0.63,False
+2026-08-03,SoMa,espresso beans,kg,3.0,0.09,False
+2026-08-03,Castro,oat milk,L,8.0,0.48,False
+2026-08-03,Castro,cold brew concentrate,L,6.0,0.51,False
+2026-08-03,Castro,espresso beans,kg,3.0,0.1,False
+2026-08-03,Sunset,oat milk,L,8.0,0.75,False
+2026-08-03,Sunset,cold brew concentrate,L,6.0,3.49,False
+2026-08-03,Sunset,espresso beans,kg,3.0,0.11,False
+2026-08-03,Marina,oat milk,L,8.0,0.8,False
+2026-08-03,Marina,cold brew concentrate,L,6.0,0.41,False
+2026-08-03,Marina,espresso beans,kg,3.0,0.14,False
+2026-08-04,Mission,oat milk,L,8.0,0.22,False
+2026-08-04,Mission,cold brew concentrate,L,6.0,0.42,False
+2026-08-04,Mission,espresso beans,kg,3.0,0.11,False
+2026-08-04,SoMa,oat milk,L,8.0,0.25,False
+2026-08-04,SoMa,cold brew concentrate,L,6.0,0.43,False
+2026-08-04,SoMa,espresso beans,kg,3.0,0.16,False
+2026-08-04,Castro,oat milk,L,8.0,0.3,False
+2026-08-04,Castro,cold brew concentrate,L,6.0,0.84,False
+2026-08-04,Castro,espresso beans,kg,3.0,0.1,False
+2026-08-04,Sunset,oat milk,L,8.0,0.6,False
+2026-08-04,Sunset,cold brew concentrate,L,6.0,0.48,False
+2026-08-04,Sunset,espresso beans,kg,3.0,0.01,False
+2026-08-04,Marina,oat milk,L,8.0,0.23,False
+2026-08-04,Marina,cold brew concentrate,L,6.0,0.76,False
+2026-08-04,Marina,espresso beans,kg,3.0,0.04,False
+2026-08-05,Mission,oat milk,L,8.0,0.36,False
+2026-08-05,Mission,cold brew concentrate,L,6.0,0.74,False
+2026-08-05,Mission,espresso beans,kg,3.0,0.13,False
+2026-08-05,SoMa,oat milk,L,8.0,0.26,False
+2026-08-05,SoMa,cold brew concentrate,L,6.0,0.37,False
+2026-08-05,SoMa,espresso beans,kg,3.0,0.05,False
+2026-08-05,Castro,oat milk,L,8.0,0.67,False
+2026-08-05,Castro,cold brew concentrate,L,6.0,0.71,False
+2026-08-05,Castro,espresso beans,kg,3.0,0.15,False
+2026-08-05,Sunset,oat milk,L,8.0,0.27,False
+2026-08-05,Sunset,cold brew concentrate,L,6.0,3.43,False
+2026-08-05,Sunset,espresso beans,kg,3.0,0.15,False
+2026-08-05,Marina,oat milk,L,8.0,0.36,False
+2026-08-05,Marina,cold brew concentrate,L,6.0,0.83,False
+2026-08-05,Marina,espresso beans,kg,3.0,0.02,False
+2026-08-06,Mission,oat milk,L,8.0,0.57,False
+2026-08-06,Mission,cold brew concentrate,L,6.0,0.52,False
+2026-08-06,Mission,espresso beans,kg,3.0,0.13,False
+2026-08-06,SoMa,oat milk,L,8.0,0.58,False
+2026-08-06,SoMa,cold brew concentrate,L,6.0,0.44,False
+2026-08-06,SoMa,espresso beans,kg,3.0,0.15,False
+2026-08-06,Castro,oat milk,L,8.0,0.78,False
+2026-08-06,Castro,cold brew concentrate,L,6.0,1.66,False
+2026-08-06,Castro,espresso beans,kg,3.0,0.16,False
+2026-08-06,Sunset,oat milk,L,8.0,0.48,False
+2026-08-06,Sunset,cold brew concentrate,L,6.0,3.52,False
+2026-08-06,Sunset,espresso beans,kg,3.0,0.03,False
+2026-08-06,Marina,oat milk,L,8.0,0.45,False
+2026-08-06,Marina,cold brew concentrate,L,6.0,0.7,False
+2026-08-06,Marina,espresso beans,kg,3.0,0.11,False
+2026-08-07,Mission,oat milk,L,8.0,0.65,False
+2026-08-07,Mission,cold brew concentrate,L,6.0,1.79,False
+2026-08-07,Mission,espresso beans,kg,3.0,0.07,False
+2026-08-07,SoMa,oat milk,L,8.0,0.62,False
+2026-08-07,SoMa,cold brew concentrate,L,6.0,0.4,False
+2026-08-07,SoMa,espresso beans,kg,3.0,0.05,False
+2026-08-07,Castro,oat milk,L,8.0,0.28,False
+2026-08-07,Castro,cold brew concentrate,L,6.0,1.37,False
+2026-08-07,Castro,espresso beans,kg,3.0,0.18,False
+2026-08-07,Sunset,oat milk,L,8.0,0.77,False
+2026-08-07,Sunset,cold brew concentrate,L,6.0,3.87,False
+2026-08-07,Sunset,espresso beans,kg,3.0,0.17,False
+2026-08-07,Marina,oat milk,L,8.0,0.45,False
+2026-08-07,Marina,cold brew concentrate,L,6.0,0.73,False
+2026-08-07,Marina,espresso beans,kg,3.0,0.01,False
+2026-08-08,Mission,oat milk,L,8.0,0.27,False
+2026-08-08,Mission,cold brew concentrate,L,6.0,0.36,False
+2026-08-08,Mission,espresso beans,kg,3.0,0.15,False
+2026-08-08,SoMa,oat milk,L,8.0,0.28,False
+2026-08-08,SoMa,cold brew concentrate,L,6.0,0.8,False
+2026-08-08,SoMa,espresso beans,kg,3.0,0.01,False
+2026-08-08,Castro,oat milk,L,8.0,0.48,False
+2026-08-08,Castro,cold brew concentrate,L,6.0,0.67,False
+2026-08-08,Castro,espresso beans,kg,3.0,0.05,False
+2026-08-08,Sunset,oat milk,L,8.0,0.27,False
+2026-08-08,Sunset,cold brew concentrate,L,6.0,0.79,False
+2026-08-08,Sunset,espresso beans,kg,3.0,0.04,False
+2026-08-08,Marina,oat milk,L,8.0,0.55,False
+2026-08-08,Marina,cold brew concentrate,L,6.0,0.86,False
+2026-08-08,Marina,espresso beans,kg,3.0,0.13,False
+2026-08-09,Mission,oat milk,L,8.0,0.47,False
+2026-08-09,Mission,cold brew concentrate,L,6.0,1.36,False
+2026-08-09,Mission,espresso beans,kg,3.0,0.04,False
+2026-08-09,SoMa,oat milk,L,8.0,0.26,False
+2026-08-09,SoMa,cold brew concentrate,L,6.0,0.83,False
+2026-08-09,SoMa,espresso beans,kg,3.0,0.03,False
+2026-08-09,Castro,oat milk,L,8.0,0.44,False
+2026-08-09,Castro,cold brew concentrate,L,6.0,0.56,False
+2026-08-09,Castro,espresso beans,kg,3.0,0.16,False
+2026-08-09,Sunset,oat milk,L,8.0,0.42,False
+2026-08-09,Sunset,cold brew concentrate,L,6.0,0.71,False
+2026-08-09,Sunset,espresso beans,kg,3.0,0.2,False
+2026-08-09,Marina,oat milk,L,8.0,0.23,False
+2026-08-09,Marina,cold brew concentrate,L,6.0,0.55,False
+2026-08-09,Marina,espresso beans,kg,3.0,0.13,False
+2026-08-10,Mission,oat milk,L,8.0,0.26,False
+2026-08-10,Mission,cold brew concentrate,L,6.0,0.62,False
+2026-08-10,Mission,espresso beans,kg,3.0,0.03,False
+2026-08-10,SoMa,oat milk,L,8.0,0.69,False
+2026-08-10,SoMa,cold brew concentrate,L,6.0,0.45,False
+2026-08-10,SoMa,espresso beans,kg,3.0,0.19,False
+2026-08-10,Castro,oat milk,L,8.0,0.76,False
+2026-08-10,Castro,cold brew concentrate,L,6.0,0.54,False
+2026-08-10,Castro,espresso beans,kg,3.0,0.14,False
+2026-08-10,Sunset,oat milk,L,8.0,0.47,False
+2026-08-10,Sunset,cold brew concentrate,L,6.0,0.77,False
+2026-08-10,Sunset,espresso beans,kg,3.0,0.07,False
+2026-08-10,Marina,oat milk,L,8.0,0.58,False
+2026-08-10,Marina,cold brew concentrate,L,6.0,0.35,False
+2026-08-10,Marina,espresso beans,kg,3.0,0.1,False
+2026-08-11,Mission,oat milk,L,8.0,0.54,False
+2026-08-11,Mission,cold brew concentrate,L,6.0,0.6,False
+2026-08-11,Mission,espresso beans,kg,3.0,0.19,False
+2026-08-11,SoMa,oat milk,L,8.0,0.62,False
+2026-08-11,SoMa,cold brew concentrate,L,6.0,0.54,False
+2026-08-11,SoMa,espresso beans,kg,3.0,0.11,False
+2026-08-11,Castro,oat milk,L,8.0,0.59,False
+2026-08-11,Castro,cold brew concentrate,L,6.0,0.71,False
+2026-08-11,Castro,espresso beans,kg,3.0,0.02,False
+2026-08-11,Sunset,oat milk,L,8.0,0.52,False
+2026-08-11,Sunset,cold brew concentrate,L,6.0,0.55,False
+2026-08-11,Sunset,espresso beans,kg,3.0,0.11,False
+2026-08-11,Marina,oat milk,L,8.0,0.58,False
+2026-08-11,Marina,cold brew concentrate,L,6.0,0.48,False
+2026-08-11,Marina,espresso beans,kg,3.0,0.0,False
+2026-08-12,Mission,oat milk,L,8.0,0.44,False
+2026-08-12,Mission,cold brew concentrate,L,6.0,0.44,False
+2026-08-12,Mission,espresso beans,kg,3.0,0.01,False
+2026-08-12,SoMa,oat milk,L,8.0,0.29,False
+2026-08-12,SoMa,cold brew concentrate,L,6.0,0.47,False
+2026-08-12,SoMa,espresso beans,kg,3.0,0.04,False
+2026-08-12,Castro,oat milk,L,8.0,0.35,False
+2026-08-12,Castro,cold brew concentrate,L,6.0,0.31,False
+2026-08-12,Castro,espresso beans,kg,3.0,0.17,False
+2026-08-12,Sunset,oat milk,L,8.0,0.52,False
+2026-08-12,Sunset,cold brew concentrate,L,6.0,0.4,False
+2026-08-12,Sunset,espresso beans,kg,3.0,0.14,False
+2026-08-12,Marina,oat milk,L,8.0,0.54,False
+2026-08-12,Marina,cold brew concentrate,L,6.0,1.74,False
+2026-08-12,Marina,espresso beans,kg,3.0,0.04,False
+2026-08-13,Mission,oat milk,L,8.0,0.33,False
+2026-08-13,Mission,cold brew concentrate,L,6.0,1.45,False
+2026-08-13,Mission,espresso beans,kg,3.0,0.08,False
+2026-08-13,SoMa,oat milk,L,8.0,0.33,False
+2026-08-13,SoMa,cold brew concentrate,L,6.0,0.82,False
+2026-08-13,SoMa,espresso beans,kg,3.0,0.05,False
+2026-08-13,Castro,oat milk,L,8.0,0.24,False
+2026-08-13,Castro,cold brew concentrate,L,6.0,0.52,False
+2026-08-13,Castro,espresso beans,kg,3.0,0.11,False
+2026-08-13,Sunset,oat milk,L,8.0,0.73,False
+2026-08-13,Sunset,cold brew concentrate,L,6.0,0.33,False
+2026-08-13,Sunset,espresso beans,kg,3.0,0.06,False
+2026-08-13,Marina,oat milk,L,8.0,0.54,False
+2026-08-13,Marina,cold brew concentrate,L,6.0,0.55,False
+2026-08-13,Marina,espresso beans,kg,3.0,0.02,False
+2026-08-14,Mission,oat milk,L,8.0,0.38,False
+2026-08-14,Mission,cold brew concentrate,L,6.0,0.46,False
+2026-08-14,Mission,espresso beans,kg,3.0,0.19,False
+2026-08-14,SoMa,oat milk,L,8.0,0.28,False
+2026-08-14,SoMa,cold brew concentrate,L,6.0,0.34,False
+2026-08-14,SoMa,espresso beans,kg,3.0,0.13,False
+2026-08-14,Castro,oat milk,L,8.0,0.21,False
+2026-08-14,Castro,cold brew concentrate,L,6.0,0.67,False
+2026-08-14,Castro,espresso beans,kg,3.0,0.13,False
+2026-08-14,Sunset,oat milk,L,8.0,0.6,False
+2026-08-14,Sunset,cold brew concentrate,L,6.0,0.63,False
+2026-08-14,Sunset,espresso beans,kg,3.0,0.01,False
+2026-08-14,Marina,oat milk,L,8.0,0.22,False
+2026-08-14,Marina,cold brew concentrate,L,6.0,0.66,False
+2026-08-14,Marina,espresso beans,kg,3.0,0.13,False
+2026-08-15,Mission,oat milk,L,8.0,0.7,False
+2026-08-15,Mission,cold brew concentrate,L,6.0,0.68,False
+2026-08-15,Mission,espresso beans,kg,3.0,0.08,False
+2026-08-15,SoMa,oat milk,L,8.0,0.69,False
+2026-08-15,SoMa,cold brew concentrate,L,6.0,0.73,False
+2026-08-15,SoMa,espresso beans,kg,3.0,0.08,False
+2026-08-15,Castro,oat milk,L,8.0,0.34,False
+2026-08-15,Castro,cold brew concentrate,L,6.0,1.27,False
+2026-08-15,Castro,espresso beans,kg,3.0,0.13,False
+2026-08-15,Sunset,oat milk,L,8.0,0.36,False
+2026-08-15,Sunset,cold brew concentrate,L,6.0,0.52,False
+2026-08-15,Sunset,espresso beans,kg,3.0,0.1,False
+2026-08-15,Marina,oat milk,L,8.0,0.55,False
+2026-08-15,Marina,cold brew concentrate,L,6.0,0.5,False
+2026-08-15,Marina,espresso beans,kg,3.0,0.07,False
+2026-08-16,Mission,oat milk,L,8.0,0.56,False
+2026-08-16,Mission,cold brew concentrate,L,6.0,0.6,False
+2026-08-16,Mission,espresso beans,kg,3.0,0.04,False
+2026-08-16,SoMa,oat milk,L,8.0,0.2,False
+2026-08-16,SoMa,cold brew concentrate,L,6.0,1.56,False
+2026-08-16,SoMa,espresso beans,kg,3.0,0.08,False
+2026-08-16,Castro,oat milk,L,8.0,0.39,False
+2026-08-16,Castro,cold brew concentrate,L,6.0,1.72,False
+2026-08-16,Castro,espresso beans,kg,3.0,0.18,False
+2026-08-16,Sunset,oat milk,L,8.0,0.54,False
+2026-08-16,Sunset,cold brew concentrate,L,6.0,0.76,False
+2026-08-16,Sunset,espresso beans,kg,3.0,0.04,False
+2026-08-16,Marina,oat milk,L,8.0,0.56,False
+2026-08-16,Marina,cold brew concentrate,L,6.0,0.59,False
+2026-08-16,Marina,espresso beans,kg,3.0,0.08,False
+2026-08-17,Mission,oat milk,L,8.0,0.41,False
+2026-08-17,Mission,cold brew concentrate,L,6.0,0.4,False
+2026-08-17,Mission,espresso beans,kg,3.0,0.11,False
+2026-08-17,SoMa,oat milk,L,8.0,0.43,False
+2026-08-17,SoMa,cold brew concentrate,L,6.0,0.48,False
+2026-08-17,SoMa,espresso beans,kg,3.0,0.05,False
+2026-08-17,Castro,oat milk,L,8.0,0.23,False
+2026-08-17,Castro,cold brew concentrate,L,6.0,0.58,False
+2026-08-17,Castro,espresso beans,kg,3.0,0.17,False
+2026-08-17,Sunset,oat milk,L,8.0,0.61,False
+2026-08-17,Sunset,cold brew concentrate,L,6.0,3.77,False
+2026-08-17,Sunset,espresso beans,kg,3.0,0.17,False
+2026-08-17,Marina,oat milk,L,8.0,0.63,False
+2026-08-17,Marina,cold brew concentrate,L,6.0,0.52,False
+2026-08-17,Marina,espresso beans,kg,3.0,0.18,False
+2026-08-18,Mission,oat milk,L,8.0,0.49,False
+2026-08-18,Mission,cold brew concentrate,L,6.0,0.85,False
+2026-08-18,Mission,espresso beans,kg,3.0,0.18,False
+2026-08-18,SoMa,oat milk,L,8.0,0.59,False
+2026-08-18,SoMa,cold brew concentrate,L,6.0,0.61,False
+2026-08-18,SoMa,espresso beans,kg,3.0,0.14,False
+2026-08-18,Castro,oat milk,L,8.0,0.79,False
+2026-08-18,Castro,cold brew concentrate,L,6.0,0.34,False
+2026-08-18,Castro,espresso beans,kg,3.0,0.18,False
+2026-08-18,Sunset,oat milk,L,8.0,0.51,False
+2026-08-18,Sunset,cold brew concentrate,L,6.0,3.49,False
+2026-08-18,Sunset,espresso beans,kg,3.0,0.13,False
+2026-08-18,Marina,oat milk,L,8.0,0.45,False
+2026-08-18,Marina,cold brew concentrate,L,6.0,0.31,False
+2026-08-18,Marina,espresso beans,kg,3.0,0.06,False
+2026-08-19,Mission,oat milk,L,8.0,0.47,False
+2026-08-19,Mission,cold brew concentrate,L,6.0,0.31,False
+2026-08-19,Mission,espresso beans,kg,3.0,0.1,False
+2026-08-19,SoMa,oat milk,L,8.0,0.31,False
+2026-08-19,SoMa,cold brew concentrate,L,6.0,0.71,False
+2026-08-19,SoMa,espresso beans,kg,3.0,0.11,False
+2026-08-19,Castro,oat milk,L,8.0,0.65,False
+2026-08-19,Castro,cold brew concentrate,L,6.0,0.4,False
+2026-08-19,Castro,espresso beans,kg,3.0,0.09,False
+2026-08-19,Sunset,oat milk,L,8.0,0.69,False
+2026-08-19,Sunset,cold brew concentrate,L,6.0,0.74,False
+2026-08-19,Sunset,espresso beans,kg,3.0,0.0,False
+2026-08-19,Marina,oat milk,L,8.0,0.35,False
+2026-08-19,Marina,cold brew concentrate,L,6.0,0.83,False
+2026-08-19,Marina,espresso beans,kg,3.0,0.15,False
+2026-08-20,Mission,oat milk,L,8.0,0.32,False
+2026-08-20,Mission,cold brew concentrate,L,6.0,0.78,False
+2026-08-20,Mission,espresso beans,kg,3.0,0.2,False
+2026-08-20,SoMa,oat milk,L,8.0,0.3,False
+2026-08-20,SoMa,cold brew concentrate,L,6.0,1.68,False
+2026-08-20,SoMa,espresso beans,kg,3.0,0.04,False
+2026-08-20,Castro,oat milk,L,8.0,0.61,False
+2026-08-20,Castro,cold brew concentrate,L,6.0,0.87,False
+2026-08-20,Castro,espresso beans,kg,3.0,0.06,False
+2026-08-20,Sunset,oat milk,L,8.0,0.23,False
+2026-08-20,Sunset,cold brew concentrate,L,6.0,0.67,False
+2026-08-20,Sunset,espresso beans,kg,3.0,0.03,False
+2026-08-20,Marina,oat milk,L,8.0,0.32,False
+2026-08-20,Marina,cold brew concentrate,L,6.0,0.48,False
+2026-08-20,Marina,espresso beans,kg,3.0,0.01,False
+2026-08-21,Mission,oat milk,L,8.0,0.27,False
+2026-08-21,Mission,cold brew concentrate,L,6.0,0.38,False
+2026-08-21,Mission,espresso beans,kg,3.0,0.0,False
+2026-08-21,SoMa,oat milk,L,8.0,0.54,False
+2026-08-21,SoMa,cold brew concentrate,L,6.0,0.4,False
+2026-08-21,SoMa,espresso beans,kg,3.0,0.08,False
+2026-08-21,Castro,oat milk,L,8.0,0.73,False
+2026-08-21,Castro,cold brew concentrate,L,6.0,0.37,False
+2026-08-21,Castro,espresso beans,kg,3.0,0.18,False
+2026-08-21,Sunset,oat milk,L,8.0,0.51,False
+2026-08-21,Sunset,cold brew concentrate,L,6.0,3.93,False
+2026-08-21,Sunset,espresso beans,kg,3.0,0.06,False
+2026-08-21,Marina,oat milk,L,8.0,0.44,False
+2026-08-21,Marina,cold brew concentrate,L,6.0,0.79,False
+2026-08-21,Marina,espresso beans,kg,3.0,0.08,False
+2026-08-22,Mission,oat milk,L,8.0,0.78,False
+2026-08-22,Mission,cold brew concentrate,L,6.0,0.8,False
+2026-08-22,Mission,espresso beans,kg,3.0,0.17,False
+2026-08-22,SoMa,oat milk,L,8.0,0.42,False
+2026-08-22,SoMa,cold brew concentrate,L,6.0,0.56,False
+2026-08-22,SoMa,espresso beans,kg,3.0,0.19,False
+2026-08-22,Castro,oat milk,L,8.0,0.57,False
+2026-08-22,Castro,cold brew concentrate,L,6.0,1.73,False
+2026-08-22,Castro,espresso beans,kg,3.0,0.19,False
+2026-08-22,Sunset,oat milk,L,8.0,0.46,False
+2026-08-22,Sunset,cold brew concentrate,L,6.0,0.35,False
+2026-08-22,Sunset,espresso beans,kg,3.0,0.01,False
+2026-08-22,Marina,oat milk,L,8.0,0.75,False
+2026-08-22,Marina,cold brew concentrate,L,6.0,0.73,False
+2026-08-22,Marina,espresso beans,kg,3.0,0.03,False
+2026-08-23,Mission,oat milk,L,8.0,0.32,False
+2026-08-23,Mission,cold brew concentrate,L,6.0,0.54,False
+2026-08-23,Mission,espresso beans,kg,3.0,0.13,False
+2026-08-23,SoMa,oat milk,L,8.0,0.32,False
+2026-08-23,SoMa,cold brew concentrate,L,6.0,0.72,False
+2026-08-23,SoMa,espresso beans,kg,3.0,0.03,False
+2026-08-23,Castro,oat milk,L,8.0,0.76,False
+2026-08-23,Castro,cold brew concentrate,L,6.0,0.63,False
+2026-08-23,Castro,espresso beans,kg,3.0,0.07,False
+2026-08-23,Sunset,oat milk,L,8.0,0.76,False
+2026-08-23,Sunset,cold brew concentrate,L,6.0,0.55,False
+2026-08-23,Sunset,espresso beans,kg,3.0,0.09,False
+2026-08-23,Marina,oat milk,L,8.0,0.57,False
+2026-08-23,Marina,cold brew concentrate,L,6.0,0.41,False
+2026-08-23,Marina,espresso beans,kg,3.0,0.12,False
+2026-08-24,Mission,oat milk,L,8.0,0.66,False
+2026-08-24,Mission,cold brew concentrate,L,6.0,0.4,False
+2026-08-24,Mission,espresso beans,kg,3.0,0.17,False
+2026-08-24,SoMa,oat milk,L,8.0,0.51,False
+2026-08-24,SoMa,cold brew concentrate,L,6.0,0.66,False
+2026-08-24,SoMa,espresso beans,kg,3.0,0.01,False
+2026-08-24,Castro,oat milk,L,8.0,0.51,False
+2026-08-24,Castro,cold brew concentrate,L,6.0,0.51,False
+2026-08-24,Castro,espresso beans,kg,3.0,0.15,False
+2026-08-24,Sunset,oat milk,L,8.0,0.44,False
+2026-08-24,Sunset,cold brew concentrate,L,6.0,0.55,False
+2026-08-24,Sunset,espresso beans,kg,3.0,0.07,False
+2026-08-24,Marina,oat milk,L,8.0,0.75,False
+2026-08-24,Marina,cold brew concentrate,L,6.0,0.65,False
+2026-08-24,Marina,espresso beans,kg,3.0,0.18,False
+2026-08-25,Mission,oat milk,L,8.0,0.37,False
+2026-08-25,Mission,cold brew concentrate,L,6.0,1.65,False
+2026-08-25,Mission,espresso beans,kg,3.0,0.18,False
+2026-08-25,SoMa,oat milk,L,8.0,0.68,False
+2026-08-25,SoMa,cold brew concentrate,L,6.0,0.48,False
+2026-08-25,SoMa,espresso beans,kg,3.0,0.04,False
+2026-08-25,Castro,oat milk,L,8.0,0.74,False
+2026-08-25,Castro,cold brew concentrate,L,6.0,0.66,False
+2026-08-25,Castro,espresso beans,kg,3.0,0.11,False
+2026-08-25,Sunset,oat milk,L,8.0,0.79,False
+2026-08-25,Sunset,cold brew concentrate,L,6.0,0.72,False
+2026-08-25,Sunset,espresso beans,kg,3.0,0.03,False
+2026-08-25,Marina,oat milk,L,8.0,0.49,False
+2026-08-25,Marina,cold brew concentrate,L,6.0,0.46,False
+2026-08-25,Marina,espresso beans,kg,3.0,0.07,False
+2026-08-26,Mission,oat milk,L,8.0,0.8,False
+2026-08-26,Mission,cold brew concentrate,L,6.0,1.45,False
+2026-08-26,Mission,espresso beans,kg,3.0,0.12,False
+2026-08-26,SoMa,oat milk,L,8.0,0.56,False
+2026-08-26,SoMa,cold brew concentrate,L,6.0,0.48,False
+2026-08-26,SoMa,espresso beans,kg,3.0,0.18,False
+2026-08-26,Castro,oat milk,L,8.0,0.76,False
+2026-08-26,Castro,cold brew concentrate,L,6.0,0.6,False
+2026-08-26,Castro,espresso beans,kg,3.0,0.17,False
+2026-08-26,Sunset,oat milk,L,8.0,0.38,False
+2026-08-26,Sunset,cold brew concentrate,L,6.0,3.35,False
+2026-08-26,Sunset,espresso beans,kg,3.0,0.05,False
+2026-08-26,Marina,oat milk,L,8.0,0.54,False
+2026-08-26,Marina,cold brew concentrate,L,6.0,1.22,False
+2026-08-26,Marina,espresso beans,kg,3.0,0.01,False
+2026-08-27,Mission,oat milk,L,8.0,0.62,False
+2026-08-27,Mission,cold brew concentrate,L,6.0,0.34,False
+2026-08-27,Mission,espresso beans,kg,3.0,0.04,False
+2026-08-27,SoMa,oat milk,L,8.0,0.54,False
+2026-08-27,SoMa,cold brew concentrate,L,6.0,1.47,False
+2026-08-27,SoMa,espresso beans,kg,3.0,0.13,False
+2026-08-27,Castro,oat milk,L,8.0,0.49,False
+2026-08-27,Castro,cold brew concentrate,L,6.0,0.75,False
+2026-08-27,Castro,espresso beans,kg,3.0,0.07,False
+2026-08-27,Sunset,oat milk,L,8.0,0.21,False
+2026-08-27,Sunset,cold brew concentrate,L,6.0,0.68,False
+2026-08-27,Sunset,espresso beans,kg,3.0,0.14,False
+2026-08-27,Marina,oat milk,L,8.0,0.52,False
+2026-08-27,Marina,cold brew concentrate,L,6.0,0.69,False
+2026-08-27,Marina,espresso beans,kg,3.0,0.09,False
+2026-08-28,Mission,oat milk,L,8.0,0.59,False
+2026-08-28,Mission,cold brew concentrate,L,6.0,0.63,False
+2026-08-28,Mission,espresso beans,kg,3.0,0.16,False
+2026-08-28,SoMa,oat milk,L,8.0,0.71,False
+2026-08-28,SoMa,cold brew concentrate,L,6.0,0.37,False
+2026-08-28,SoMa,espresso beans,kg,3.0,0.17,False
+2026-08-28,Castro,oat milk,L,8.0,0.37,False
+2026-08-28,Castro,cold brew concentrate,L,6.0,0.44,False
+2026-08-28,Castro,espresso beans,kg,3.0,0.18,False
+2026-08-28,Sunset,oat milk,L,8.0,0.64,False
+2026-08-28,Sunset,cold brew concentrate,L,6.0,0.77,False
+2026-08-28,Sunset,espresso beans,kg,3.0,0.08,False
+2026-08-28,Marina,oat milk,L,8.0,0.57,False
+2026-08-28,Marina,cold brew concentrate,L,6.0,0.69,False
+2026-08-28,Marina,espresso beans,kg,3.0,0.17,False
+2026-08-29,Mission,oat milk,L,8.0,0.53,False
+2026-08-29,Mission,cold brew concentrate,L,6.0,0.42,False
+2026-08-29,Mission,espresso beans,kg,3.0,0.17,False
+2026-08-29,SoMa,oat milk,L,8.0,0.29,False
+2026-08-29,SoMa,cold brew concentrate,L,6.0,0.73,False
+2026-08-29,SoMa,espresso beans,kg,3.0,0.02,False
+2026-08-29,Castro,oat milk,L,8.0,0.32,False
+2026-08-29,Castro,cold brew concentrate,L,6.0,0.36,False
+2026-08-29,Castro,espresso beans,kg,3.0,0.08,False
+2026-08-29,Sunset,oat milk,L,8.0,0.71,False
+2026-08-29,Sunset,cold brew concentrate,L,6.0,0.47,False
+2026-08-29,Sunset,espresso beans,kg,3.0,0.09,False
+2026-08-29,Marina,oat milk,L,8.0,0.77,False
+2026-08-29,Marina,cold brew concentrate,L,6.0,1.7,False
+2026-08-29,Marina,espresso beans,kg,3.0,0.13,False
+2026-08-30,Mission,oat milk,L,8.0,0.35,False
+2026-08-30,Mission,cold brew concentrate,L,6.0,1.35,False
+2026-08-30,Mission,espresso beans,kg,3.0,0.15,False
+2026-08-30,SoMa,oat milk,L,8.0,0.41,False
+2026-08-30,SoMa,cold brew concentrate,L,6.0,0.45,False
+2026-08-30,SoMa,espresso beans,kg,3.0,0.07,False
+2026-08-30,Castro,oat milk,L,8.0,0.42,False
+2026-08-30,Castro,cold brew concentrate,L,6.0,0.76,False
+2026-08-30,Castro,espresso beans,kg,3.0,0.11,False
+2026-08-30,Sunset,oat milk,L,8.0,0.75,False
+2026-08-30,Sunset,cold brew concentrate,L,6.0,3.86,False
+2026-08-30,Sunset,espresso beans,kg,3.0,0.2,False
+2026-08-30,Marina,oat milk,L,8.0,0.29,False
+2026-08-30,Marina,cold brew concentrate,L,6.0,0.45,False
+2026-08-30,Marina,espresso beans,kg,3.0,0.06,False
+2026-08-31,Mission,oat milk,L,8.0,0.58,False
+2026-08-31,Mission,cold brew concentrate,L,6.0,0.5,False
+2026-08-31,Mission,espresso beans,kg,3.0,0.05,False
+2026-08-31,SoMa,oat milk,L,8.0,0.58,False
+2026-08-31,SoMa,cold brew concentrate,L,6.0,0.56,False
+2026-08-31,SoMa,espresso beans,kg,3.0,0.01,False
+2026-08-31,Castro,oat milk,L,8.0,0.71,False
+2026-08-31,Castro,cold brew concentrate,L,6.0,0.67,False
+2026-08-31,Castro,espresso beans,kg,3.0,0.04,False
+2026-08-31,Sunset,oat milk,L,8.0,0.36,False
+2026-08-31,Sunset,cold brew concentrate,L,6.0,0.63,False
+2026-08-31,Sunset,espresso beans,kg,3.0,0.12,False
+2026-08-31,Marina,oat milk,L,8.0,0.57,False
+2026-08-31,Marina,cold brew concentrate,L,6.0,0.6,False
+2026-08-31,Marina,espresso beans,kg,3.0,0.04,False
+2026-09-01,Mission,oat milk,L,8.0,0.39,False
+2026-09-01,Mission,cold brew concentrate,L,6.0,0.77,False
+2026-09-01,Mission,espresso beans,kg,3.0,0.08,False
+2026-09-01,SoMa,oat milk,L,8.0,0.23,False
+2026-09-01,SoMa,cold brew concentrate,L,6.0,1.34,False
+2026-09-01,SoMa,espresso beans,kg,3.0,0.13,False
+2026-09-01,Castro,oat milk,L,8.0,0.36,False
+2026-09-01,Castro,cold brew concentrate,L,6.0,0.83,False
+2026-09-01,Castro,espresso beans,kg,3.0,0.19,False
+2026-09-01,Sunset,oat milk,L,8.0,0.44,False
+2026-09-01,Sunset,cold brew concentrate,L,6.0,0.55,False
+2026-09-01,Sunset,espresso beans,kg,3.0,0.0,False
+2026-09-01,Marina,oat milk,L,8.0,0.7,False
+2026-09-01,Marina,cold brew concentrate,L,6.0,1.59,False
+2026-09-01,Marina,espresso beans,kg,3.0,0.17,False
+2026-09-02,Mission,oat milk,L,8.0,0.62,False
+2026-09-02,Mission,cold brew concentrate,L,6.0,0.51,False
+2026-09-02,Mission,espresso beans,kg,3.0,0.06,False
+2026-09-02,SoMa,oat milk,L,8.0,0.74,False
+2026-09-02,SoMa,cold brew concentrate,L,6.0,0.6,False
+2026-09-02,SoMa,espresso beans,kg,3.0,0.14,False
+2026-09-02,Castro,oat milk,L,8.0,0.66,False
+2026-09-02,Castro,cold brew concentrate,L,6.0,0.7,False
+2026-09-02,Castro,espresso beans,kg,3.0,0.09,False
+2026-09-02,Sunset,oat milk,L,8.0,0.25,False
+2026-09-02,Sunset,cold brew concentrate,L,6.0,0.43,False
+2026-09-02,Sunset,espresso beans,kg,3.0,0.05,False
+2026-09-02,Marina,oat milk,L,8.0,0.59,False
+2026-09-02,Marina,cold brew concentrate,L,6.0,0.46,False
+2026-09-02,Marina,espresso beans,kg,3.0,0.05,False
+2026-09-03,Mission,oat milk,L,8.0,0.45,False
+2026-09-03,Mission,cold brew concentrate,L,6.0,0.6,False
+2026-09-03,Mission,espresso beans,kg,3.0,0.06,False
+2026-09-03,SoMa,oat milk,L,8.0,0.7,False
+2026-09-03,SoMa,cold brew concentrate,L,6.0,0.51,False
+2026-09-03,SoMa,espresso beans,kg,3.0,0.19,False
+2026-09-03,Castro,oat milk,L,8.0,0.62,False
+2026-09-03,Castro,cold brew concentrate,L,6.0,0.54,False
+2026-09-03,Castro,espresso beans,kg,3.0,0.18,False
+2026-09-03,Sunset,oat milk,L,8.0,0.75,False
+2026-09-03,Sunset,cold brew concentrate,L,6.0,0.89,False
+2026-09-03,Sunset,espresso beans,kg,3.0,0.02,False
+2026-09-03,Marina,oat milk,L,8.0,0.22,False
+2026-09-03,Marina,cold brew concentrate,L,6.0,0.31,False
+2026-09-03,Marina,espresso beans,kg,3.0,0.02,False
+2026-09-04,Mission,oat milk,L,8.0,0.66,False
+2026-09-04,Mission,cold brew concentrate,L,6.0,0.61,False
+2026-09-04,Mission,espresso beans,kg,3.0,0.08,False
+2026-09-04,SoMa,oat milk,L,8.0,0.69,False
+2026-09-04,SoMa,cold brew concentrate,L,6.0,0.83,False
+2026-09-04,SoMa,espresso beans,kg,3.0,0.17,False
+2026-09-04,Castro,oat milk,L,8.0,0.46,False
+2026-09-04,Castro,cold brew concentrate,L,6.0,0.87,False
+2026-09-04,Castro,espresso beans,kg,3.0,0.04,False
+2026-09-04,Sunset,oat milk,L,8.0,0.39,False
+2026-09-04,Sunset,cold brew concentrate,L,6.0,3.0,False
+2026-09-04,Sunset,espresso beans,kg,3.0,0.08,False
+2026-09-04,Marina,oat milk,L,8.0,0.63,False
+2026-09-04,Marina,cold brew concentrate,L,6.0,1.4,False
+2026-09-04,Marina,espresso beans,kg,3.0,0.15,False
+2026-09-05,Mission,oat milk,L,8.0,0.64,False
+2026-09-05,Mission,cold brew concentrate,L,6.0,0.37,False
+2026-09-05,Mission,espresso beans,kg,3.0,0.12,False
+2026-09-05,SoMa,oat milk,L,8.0,0.58,False
+2026-09-05,SoMa,cold brew concentrate,L,6.0,0.73,False
+2026-09-05,SoMa,espresso beans,kg,3.0,0.19,False
+2026-09-05,Castro,oat milk,L,8.0,0.72,False
+2026-09-05,Castro,cold brew concentrate,L,6.0,0.57,False
+2026-09-05,Castro,espresso beans,kg,3.0,0.07,False
+2026-09-05,Sunset,oat milk,L,8.0,0.38,False
+2026-09-05,Sunset,cold brew concentrate,L,6.0,0.89,False
+2026-09-05,Sunset,espresso beans,kg,3.0,0.02,False
+2026-09-05,Marina,oat milk,L,8.0,0.42,False
+2026-09-05,Marina,cold brew concentrate,L,6.0,0.46,False
+2026-09-05,Marina,espresso beans,kg,3.0,0.13,False
+2026-09-06,Mission,oat milk,L,8.0,0.25,False
+2026-09-06,Mission,cold brew concentrate,L,6.0,0.57,False
+2026-09-06,Mission,espresso beans,kg,3.0,0.05,False
+2026-09-06,SoMa,oat milk,L,8.0,0.73,False
+2026-09-06,SoMa,cold brew concentrate,L,6.0,0.73,False
+2026-09-06,SoMa,espresso beans,kg,3.0,0.03,False
+2026-09-06,Castro,oat milk,L,8.0,0.74,False
+2026-09-06,Castro,cold brew concentrate,L,6.0,1.33,False
+2026-09-06,Castro,espresso beans,kg,3.0,0.16,False
+2026-09-06,Sunset,oat milk,L,8.0,0.45,False
+2026-09-06,Sunset,cold brew concentrate,L,6.0,3.43,False
+2026-09-06,Sunset,espresso beans,kg,3.0,0.18,False
+2026-09-06,Marina,oat milk,L,8.0,0.75,False
+2026-09-06,Marina,cold brew concentrate,L,6.0,0.85,False
+2026-09-06,Marina,espresso beans,kg,3.0,0.13,False
+2026-09-07,Mission,oat milk,L,8.0,0.71,False
+2026-09-07,Mission,cold brew concentrate,L,6.0,0.5,False
+2026-09-07,Mission,espresso beans,kg,3.0,0.14,False
+2026-09-07,SoMa,oat milk,L,8.0,0.24,False
+2026-09-07,SoMa,cold brew concentrate,L,6.0,0.64,False
+2026-09-07,SoMa,espresso beans,kg,3.0,0.08,False
+2026-09-07,Castro,oat milk,L,8.0,0.59,False
+2026-09-07,Castro,cold brew concentrate,L,6.0,0.83,False
+2026-09-07,Castro,espresso beans,kg,3.0,0.02,False
+2026-09-07,Sunset,oat milk,L,8.0,0.24,False
+2026-09-07,Sunset,cold brew concentrate,L,6.0,0.83,False
+2026-09-07,Sunset,espresso beans,kg,3.0,0.09,False
+2026-09-07,Marina,oat milk,L,8.0,0.42,False
+2026-09-07,Marina,cold brew concentrate,L,6.0,0.51,False
+2026-09-07,Marina,espresso beans,kg,3.0,0.1,False
+2026-09-08,Mission,oat milk,L,8.0,0.77,False
+2026-09-08,Mission,cold brew concentrate,L,6.0,0.78,False
+2026-09-08,Mission,espresso beans,kg,3.0,0.18,False
+2026-09-08,SoMa,oat milk,L,8.0,0.56,False
+2026-09-08,SoMa,cold brew concentrate,L,6.0,0.78,False
+2026-09-08,SoMa,espresso beans,kg,3.0,0.04,False
+2026-09-08,Castro,oat milk,L,8.0,0.27,False
+2026-09-08,Castro,cold brew concentrate,L,6.0,1.29,False
+2026-09-08,Castro,espresso beans,kg,3.0,0.13,False
+2026-09-08,Sunset,oat milk,L,8.0,0.25,False
+2026-09-08,Sunset,cold brew concentrate,L,6.0,0.69,False
+2026-09-08,Sunset,espresso beans,kg,3.0,0.17,False
+2026-09-08,Marina,oat milk,L,8.0,0.78,False
+2026-09-08,Marina,cold brew concentrate,L,6.0,0.39,False
+2026-09-08,Marina,espresso beans,kg,3.0,0.1,False
+2026-09-09,Mission,oat milk,L,8.0,0.46,False
+2026-09-09,Mission,cold brew concentrate,L,6.0,1.25,False
+2026-09-09,Mission,espresso beans,kg,3.0,0.09,False
+2026-09-09,SoMa,oat milk,L,8.0,0.36,False
+2026-09-09,SoMa,cold brew concentrate,L,6.0,1.64,False
+2026-09-09,SoMa,espresso beans,kg,3.0,0.1,False
+2026-09-09,Castro,oat milk,L,8.0,0.7,False
+2026-09-09,Castro,cold brew concentrate,L,6.0,0.74,False
+2026-09-09,Castro,espresso beans,kg,3.0,0.12,False
+2026-09-09,Sunset,oat milk,L,8.0,0.24,False
+2026-09-09,Sunset,cold brew concentrate,L,6.0,3.71,False
+2026-09-09,Sunset,espresso beans,kg,3.0,0.07,False
+2026-09-09,Marina,oat milk,L,8.0,0.5,False
+2026-09-09,Marina,cold brew concentrate,L,6.0,0.35,False
+2026-09-09,Marina,espresso beans,kg,3.0,0.0,False
+2026-09-10,Mission,oat milk,L,8.0,0.44,False
+2026-09-10,Mission,cold brew concentrate,L,6.0,1.72,False
+2026-09-10,Mission,espresso beans,kg,3.0,0.01,False
+2026-09-10,SoMa,oat milk,L,8.0,0.39,False
+2026-09-10,SoMa,cold brew concentrate,L,6.0,0.63,False
+2026-09-10,SoMa,espresso beans,kg,3.0,0.2,False
+2026-09-10,Castro,oat milk,L,8.0,0.76,False
+2026-09-10,Castro,cold brew concentrate,L,6.0,0.75,False
+2026-09-10,Castro,espresso beans,kg,3.0,0.04,False
+2026-09-10,Sunset,oat milk,L,8.0,0.33,False
+2026-09-10,Sunset,cold brew concentrate,L,6.0,0.84,False
+2026-09-10,Sunset,espresso beans,kg,3.0,0.1,False
+2026-09-10,Marina,oat milk,L,8.0,0.44,False
+2026-09-10,Marina,cold brew concentrate,L,6.0,0.66,False
+2026-09-10,Marina,espresso beans,kg,3.0,0.01,False
+2026-09-11,Mission,oat milk,L,8.0,0.45,False
+2026-09-11,Mission,cold brew concentrate,L,6.0,0.83,False
+2026-09-11,Mission,espresso beans,kg,3.0,0.12,False
+2026-09-11,SoMa,oat milk,L,8.0,0.75,False
+2026-09-11,SoMa,cold brew concentrate,L,6.0,0.76,False
+2026-09-11,SoMa,espresso beans,kg,3.0,0.17,False
+2026-09-11,Castro,oat milk,L,8.0,0.76,False
+2026-09-11,Castro,cold brew concentrate,L,6.0,1.78,False
+2026-09-11,Castro,espresso beans,kg,3.0,0.17,False
+2026-09-11,Sunset,oat milk,L,8.0,0.36,False
+2026-09-11,Sunset,cold brew concentrate,L,6.0,3.07,False
+2026-09-11,Sunset,espresso beans,kg,3.0,0.1,False
+2026-09-11,Marina,oat milk,L,8.0,0.48,False
+2026-09-11,Marina,cold brew concentrate,L,6.0,0.89,False
+2026-09-11,Marina,espresso beans,kg,3.0,0.1,False
+2026-09-12,Mission,oat milk,L,8.0,0.64,False
+2026-09-12,Mission,cold brew concentrate,L,6.0,0.81,False
+2026-09-12,Mission,espresso beans,kg,3.0,0.09,False
+2026-09-12,SoMa,oat milk,L,8.0,0.56,False
+2026-09-12,SoMa,cold brew concentrate,L,6.0,0.87,False
+2026-09-12,SoMa,espresso beans,kg,3.0,0.08,False
+2026-09-12,Castro,oat milk,L,8.0,0.35,False
+2026-09-12,Castro,cold brew concentrate,L,6.0,0.89,False
+2026-09-12,Castro,espresso beans,kg,3.0,0.15,False
+2026-09-12,Sunset,oat milk,L,8.0,0.24,False
+2026-09-12,Sunset,cold brew concentrate,L,6.0,0.51,False
+2026-09-12,Sunset,espresso beans,kg,3.0,0.02,False
+2026-09-12,Marina,oat milk,L,8.0,0.59,False
+2026-09-12,Marina,cold brew concentrate,L,6.0,0.45,False
+2026-09-12,Marina,espresso beans,kg,3.0,0.05,False
+2026-09-13,Mission,oat milk,L,8.0,0.44,False
+2026-09-13,Mission,cold brew concentrate,L,6.0,0.69,False
+2026-09-13,Mission,espresso beans,kg,3.0,0.06,False
+2026-09-13,SoMa,oat milk,L,8.0,0.22,False
+2026-09-13,SoMa,cold brew concentrate,L,6.0,1.47,False
+2026-09-13,SoMa,espresso beans,kg,3.0,0.01,False
+2026-09-13,Castro,oat milk,L,8.0,0.22,False
+2026-09-13,Castro,cold brew concentrate,L,6.0,0.67,False
+2026-09-13,Castro,espresso beans,kg,3.0,0.06,False
+2026-09-13,Sunset,oat milk,L,8.0,0.26,False
+2026-09-13,Sunset,cold brew concentrate,L,6.0,0.37,False
+2026-09-13,Sunset,espresso beans,kg,3.0,0.1,False
+2026-09-13,Marina,oat milk,L,8.0,0.71,False
+2026-09-13,Marina,cold brew concentrate,L,6.0,0.69,False
+2026-09-13,Marina,espresso beans,kg,3.0,0.12,False
+2026-09-14,Mission,oat milk,L,8.0,0.22,False
+2026-09-14,Mission,cold brew concentrate,L,6.0,1.62,False
+2026-09-14,Mission,espresso beans,kg,3.0,0.19,False
+2026-09-14,SoMa,oat milk,L,8.0,0.7,False
+2026-09-14,SoMa,cold brew concentrate,L,6.0,0.85,False
+2026-09-14,SoMa,espresso beans,kg,3.0,0.01,False
+2026-09-14,Castro,oat milk,L,8.0,0.25,False
+2026-09-14,Castro,cold brew concentrate,L,6.0,0.71,False
+2026-09-14,Castro,espresso beans,kg,3.0,0.03,False
+2026-09-14,Sunset,oat milk,L,8.0,0.28,False
+2026-09-14,Sunset,cold brew concentrate,L,6.0,0.36,False
+2026-09-14,Sunset,espresso beans,kg,3.0,0.18,False
+2026-09-14,Marina,oat milk,L,8.0,0.52,False
+2026-09-14,Marina,cold brew concentrate,L,6.0,0.51,False
+2026-09-14,Marina,espresso beans,kg,3.0,0.11,False
+2026-09-15,Mission,oat milk,L,8.0,0.65,False
+2026-09-15,Mission,cold brew concentrate,L,6.0,0.81,False
+2026-09-15,Mission,espresso beans,kg,3.0,0.13,False
+2026-09-15,SoMa,oat milk,L,8.0,0.41,False
+2026-09-15,SoMa,cold brew concentrate,L,6.0,0.81,False
+2026-09-15,SoMa,espresso beans,kg,3.0,0.1,False
+2026-09-15,Castro,oat milk,L,8.0,0.63,False
+2026-09-15,Castro,cold brew concentrate,L,6.0,0.57,False
+2026-09-15,Castro,espresso beans,kg,3.0,0.11,False
+2026-09-15,Sunset,oat milk,L,8.0,0.26,False
+2026-09-15,Sunset,cold brew concentrate,L,6.0,3.81,False
+2026-09-15,Sunset,espresso beans,kg,3.0,0.04,False
+2026-09-15,Marina,oat milk,L,8.0,0.73,False
+2026-09-15,Marina,cold brew concentrate,L,6.0,0.41,False
+2026-09-15,Marina,espresso beans,kg,3.0,0.13,False
+2026-09-16,Mission,oat milk,L,8.0,0.35,False
+2026-09-16,Mission,cold brew concentrate,L,6.0,1.51,False
+2026-09-16,Mission,espresso beans,kg,3.0,0.11,False
+2026-09-16,SoMa,oat milk,L,8.0,0.64,False
+2026-09-16,SoMa,cold brew concentrate,L,6.0,1.58,False
+2026-09-16,SoMa,espresso beans,kg,3.0,0.12,False
+2026-09-16,Castro,oat milk,L,8.0,0.0,True
+2026-09-16,Castro,cold brew concentrate,L,6.0,0.9,False
+2026-09-16,Castro,espresso beans,kg,3.0,0.1,False
+2026-09-16,Sunset,oat milk,L,8.0,0.25,False
+2026-09-16,Sunset,cold brew concentrate,L,6.0,0.48,False
+2026-09-16,Sunset,espresso beans,kg,3.0,0.06,False
+2026-09-16,Marina,oat milk,L,8.0,0.31,False
+2026-09-16,Marina,cold brew concentrate,L,6.0,0.44,False
+2026-09-16,Marina,espresso beans,kg,3.0,0.18,False
+2026-09-17,Mission,oat milk,L,8.0,0.25,False
+2026-09-17,Mission,cold brew concentrate,L,6.0,1.26,False
+2026-09-17,Mission,espresso beans,kg,3.0,0.03,False
+2026-09-17,SoMa,oat milk,L,8.0,0.76,False
+2026-09-17,SoMa,cold brew concentrate,L,6.0,0.41,False
+2026-09-17,SoMa,espresso beans,kg,3.0,0.14,False
+2026-09-17,Castro,oat milk,L,8.0,0.0,True
+2026-09-17,Castro,cold brew concentrate,L,6.0,0.47,False
+2026-09-17,Castro,espresso beans,kg,3.0,0.2,False
+2026-09-17,Sunset,oat milk,L,8.0,0.31,False
+2026-09-17,Sunset,cold brew concentrate,L,6.0,3.08,False
+2026-09-17,Sunset,espresso beans,kg,3.0,0.17,False
+2026-09-17,Marina,oat milk,L,8.0,0.22,False
+2026-09-17,Marina,cold brew concentrate,L,6.0,0.48,False
+2026-09-17,Marina,espresso beans,kg,3.0,0.12,False
+2026-09-18,Mission,oat milk,L,8.0,0.26,False
+2026-09-18,Mission,cold brew concentrate,L,6.0,0.57,False
+2026-09-18,Mission,espresso beans,kg,3.0,0.16,False
+2026-09-18,SoMa,oat milk,L,8.0,0.75,False
+2026-09-18,SoMa,cold brew concentrate,L,6.0,0.74,False
+2026-09-18,SoMa,espresso beans,kg,3.0,0.09,False
+2026-09-18,Castro,oat milk,L,8.0,0.0,True
+2026-09-18,Castro,cold brew concentrate,L,6.0,0.76,False
+2026-09-18,Castro,espresso beans,kg,3.0,0.09,False
+2026-09-18,Sunset,oat milk,L,8.0,0.25,False
+2026-09-18,Sunset,cold brew concentrate,L,6.0,0.78,False
+2026-09-18,Sunset,espresso beans,kg,3.0,0.11,False
+2026-09-18,Marina,oat milk,L,8.0,0.72,False
+2026-09-18,Marina,cold brew concentrate,L,6.0,1.74,False
+2026-09-18,Marina,espresso beans,kg,3.0,0.19,False
+2026-09-19,Mission,oat milk,L,8.0,0.75,False
+2026-09-19,Mission,cold brew concentrate,L,6.0,0.55,False
+2026-09-19,Mission,espresso beans,kg,3.0,0.05,False
+2026-09-19,SoMa,oat milk,L,8.0,0.59,False
+2026-09-19,SoMa,cold brew concentrate,L,6.0,0.61,False
+2026-09-19,SoMa,espresso beans,kg,3.0,0.18,False
+2026-09-19,Castro,oat milk,L,8.0,0.0,True
+2026-09-19,Castro,cold brew concentrate,L,6.0,0.56,False
+2026-09-19,Castro,espresso beans,kg,3.0,0.12,False
+2026-09-19,Sunset,oat milk,L,8.0,0.79,False
+2026-09-19,Sunset,cold brew concentrate,L,6.0,0.89,False
+2026-09-19,Sunset,espresso beans,kg,3.0,0.01,False
+2026-09-19,Marina,oat milk,L,8.0,0.56,False
+2026-09-19,Marina,cold brew concentrate,L,6.0,0.32,False
+2026-09-19,Marina,espresso beans,kg,3.0,0.07,False
+2026-09-20,Mission,oat milk,L,8.0,0.5,False
+2026-09-20,Mission,cold brew concentrate,L,6.0,0.48,False
+2026-09-20,Mission,espresso beans,kg,3.0,0.19,False
+2026-09-20,SoMa,oat milk,L,8.0,0.24,False
+2026-09-20,SoMa,cold brew concentrate,L,6.0,0.83,False
+2026-09-20,SoMa,espresso beans,kg,3.0,0.03,False
+2026-09-20,Castro,oat milk,L,8.0,0.0,True
+2026-09-20,Castro,cold brew concentrate,L,6.0,0.52,False
+2026-09-20,Castro,espresso beans,kg,3.0,0.12,False
+2026-09-20,Sunset,oat milk,L,8.0,0.35,False
+2026-09-20,Sunset,cold brew concentrate,L,6.0,3.91,False
+2026-09-20,Sunset,espresso beans,kg,3.0,0.13,False
+2026-09-20,Marina,oat milk,L,8.0,0.24,False
+2026-09-20,Marina,cold brew concentrate,L,6.0,0.56,False
+2026-09-20,Marina,espresso beans,kg,3.0,0.03,False
+2026-09-21,Mission,oat milk,L,8.0,0.75,False
+2026-09-21,Mission,cold brew concentrate,L,6.0,0.51,False
+2026-09-21,Mission,espresso beans,kg,3.0,0.01,False
+2026-09-21,SoMa,oat milk,L,8.0,0.47,False
+2026-09-21,SoMa,cold brew concentrate,L,6.0,0.37,False
+2026-09-21,SoMa,espresso beans,kg,3.0,0.09,False
+2026-09-21,Castro,oat milk,L,8.0,0.0,True
+2026-09-21,Castro,cold brew concentrate,L,6.0,0.69,False
+2026-09-21,Castro,espresso beans,kg,3.0,0.05,False
+2026-09-21,Sunset,oat milk,L,8.0,0.52,False
+2026-09-21,Sunset,cold brew concentrate,L,6.0,0.53,False
+2026-09-21,Sunset,espresso beans,kg,3.0,0.13,False
+2026-09-21,Marina,oat milk,L,8.0,0.75,False
+2026-09-21,Marina,cold brew concentrate,L,6.0,0.8,False
+2026-09-21,Marina,espresso beans,kg,3.0,0.1,False
+2026-09-22,Mission,oat milk,L,8.0,0.43,False
+2026-09-22,Mission,cold brew concentrate,L,6.0,0.45,False
+2026-09-22,Mission,espresso beans,kg,3.0,0.09,False
+2026-09-22,SoMa,oat milk,L,8.0,0.3,False
+2026-09-22,SoMa,cold brew concentrate,L,6.0,0.55,False
+2026-09-22,SoMa,espresso beans,kg,3.0,0.17,False
+2026-09-22,Castro,oat milk,L,8.0,0.0,True
+2026-09-22,Castro,cold brew concentrate,L,6.0,0.89,False
+2026-09-22,Castro,espresso beans,kg,3.0,0.07,False
+2026-09-22,Sunset,oat milk,L,8.0,0.74,False
+2026-09-22,Sunset,cold brew concentrate,L,6.0,3.85,False
+2026-09-22,Sunset,espresso beans,kg,3.0,0.17,False
+2026-09-22,Marina,oat milk,L,8.0,0.71,False
+2026-09-22,Marina,cold brew concentrate,L,6.0,1.7,False
+2026-09-22,Marina,espresso beans,kg,3.0,0.02,False
+2026-09-23,Mission,oat milk,L,8.0,0.79,False
+2026-09-23,Mission,cold brew concentrate,L,6.0,0.78,False
+2026-09-23,Mission,espresso beans,kg,3.0,0.06,False
+2026-09-23,SoMa,oat milk,L,8.0,0.21,False
+2026-09-23,SoMa,cold brew concentrate,L,6.0,0.72,False
+2026-09-23,SoMa,espresso beans,kg,3.0,0.07,False
+2026-09-23,Castro,oat milk,L,22.0,7.13,False
+2026-09-23,Castro,cold brew concentrate,L,6.0,0.43,False
+2026-09-23,Castro,espresso beans,kg,3.0,0.02,False
+2026-09-23,Sunset,oat milk,L,8.0,0.62,False
+2026-09-23,Sunset,cold brew concentrate,L,6.0,3.18,False
+2026-09-23,Sunset,espresso beans,kg,3.0,0.14,False
+2026-09-23,Marina,oat milk,L,8.0,0.27,False
+2026-09-23,Marina,cold brew concentrate,L,6.0,0.43,False
+2026-09-23,Marina,espresso beans,kg,3.0,0.07,False
+2026-09-24,Mission,oat milk,L,8.0,0.7,False
+2026-09-24,Mission,cold brew concentrate,L,6.0,0.83,False
+2026-09-24,Mission,espresso beans,kg,3.0,0.18,False
+2026-09-24,SoMa,oat milk,L,8.0,0.42,False
+2026-09-24,SoMa,cold brew concentrate,L,6.0,0.77,False
+2026-09-24,SoMa,espresso beans,kg,3.0,0.1,False
+2026-09-24,Castro,oat milk,L,22.0,7.89,False
+2026-09-24,Castro,cold brew concentrate,L,6.0,0.35,False
+2026-09-24,Castro,espresso beans,kg,3.0,0.16,False
+2026-09-24,Sunset,oat milk,L,8.0,0.61,False
+2026-09-24,Sunset,cold brew concentrate,L,6.0,0.82,False
+2026-09-24,Sunset,espresso beans,kg,3.0,0.11,False
+2026-09-24,Marina,oat milk,L,8.0,0.33,False
+2026-09-24,Marina,cold brew concentrate,L,6.0,0.34,False
+2026-09-24,Marina,espresso beans,kg,3.0,0.1,False
+2026-09-25,Mission,oat milk,L,8.0,0.76,False
+2026-09-25,Mission,cold brew concentrate,L,6.0,0.34,False
+2026-09-25,Mission,espresso beans,kg,3.0,0.19,False
+2026-09-25,SoMa,oat milk,L,8.0,0.8,False
+2026-09-25,SoMa,cold brew concentrate,L,6.0,0.35,False
+2026-09-25,SoMa,espresso beans,kg,3.0,0.04,False
+2026-09-25,Castro,oat milk,L,22.0,6.29,False
+2026-09-25,Castro,cold brew concentrate,L,6.0,0.45,False
+2026-09-25,Castro,espresso beans,kg,3.0,0.04,False
+2026-09-25,Sunset,oat milk,L,8.0,0.6,False
+2026-09-25,Sunset,cold brew concentrate,L,6.0,0.84,False
+2026-09-25,Sunset,espresso beans,kg,3.0,0.2,False
+2026-09-25,Marina,oat milk,L,8.0,0.22,False
+2026-09-25,Marina,cold brew concentrate,L,6.0,0.6,False
+2026-09-25,Marina,espresso beans,kg,3.0,0.13,False
+2026-09-26,Mission,oat milk,L,8.0,0.63,False
+2026-09-26,Mission,cold brew concentrate,L,6.0,1.42,False
+2026-09-26,Mission,espresso beans,kg,3.0,0.18,False
+2026-09-26,SoMa,oat milk,L,8.0,0.36,False
+2026-09-26,SoMa,cold brew concentrate,L,6.0,0.68,False
+2026-09-26,SoMa,espresso beans,kg,3.0,0.19,False
+2026-09-26,Castro,oat milk,L,22.0,5.94,False
+2026-09-26,Castro,cold brew concentrate,L,6.0,0.86,False
+2026-09-26,Castro,espresso beans,kg,3.0,0.06,False
+2026-09-26,Sunset,oat milk,L,8.0,0.6,False
+2026-09-26,Sunset,cold brew concentrate,L,6.0,3.57,False
+2026-09-26,Sunset,espresso beans,kg,3.0,0.04,False
+2026-09-26,Marina,oat milk,L,8.0,0.52,False
+2026-09-26,Marina,cold brew concentrate,L,6.0,1.33,False
+2026-09-26,Marina,espresso beans,kg,3.0,0.03,False
+2026-09-27,Mission,oat milk,L,8.0,0.24,False
+2026-09-27,Mission,cold brew concentrate,L,6.0,0.6,False
+2026-09-27,Mission,espresso beans,kg,3.0,0.09,False
+2026-09-27,SoMa,oat milk,L,8.0,0.58,False
+2026-09-27,SoMa,cold brew concentrate,L,6.0,0.37,False
+2026-09-27,SoMa,espresso beans,kg,3.0,0.19,False
+2026-09-27,Castro,oat milk,L,22.0,7.65,False
+2026-09-27,Castro,cold brew concentrate,L,6.0,0.71,False
+2026-09-27,Castro,espresso beans,kg,3.0,0.08,False
+2026-09-27,Sunset,oat milk,L,8.0,0.42,False
+2026-09-27,Sunset,cold brew concentrate,L,6.0,0.47,False
+2026-09-27,Sunset,espresso beans,kg,3.0,0.18,False
+2026-09-27,Marina,oat milk,L,8.0,0.7,False
+2026-09-27,Marina,cold brew concentrate,L,6.0,0.79,False
+2026-09-27,Marina,espresso beans,kg,3.0,0.15,False
+2026-09-28,Mission,oat milk,L,8.0,0.37,False
+2026-09-28,Mission,cold brew concentrate,L,6.0,0.56,False
+2026-09-28,Mission,espresso beans,kg,3.0,0.03,False
+2026-09-28,SoMa,oat milk,L,8.0,0.78,False
+2026-09-28,SoMa,cold brew concentrate,L,6.0,0.39,False
+2026-09-28,SoMa,espresso beans,kg,3.0,0.2,False
+2026-09-28,Castro,oat milk,L,22.0,6.25,False
+2026-09-28,Castro,cold brew concentrate,L,6.0,0.8,False
+2026-09-28,Castro,espresso beans,kg,3.0,0.0,False
+2026-09-28,Sunset,oat milk,L,8.0,0.46,False
+2026-09-28,Sunset,cold brew concentrate,L,6.0,0.74,False
+2026-09-28,Sunset,espresso beans,kg,3.0,0.04,False
+2026-09-28,Marina,oat milk,L,8.0,0.22,False
+2026-09-28,Marina,cold brew concentrate,L,6.0,0.88,False
+2026-09-28,Marina,espresso beans,kg,3.0,0.01,False
+2026-09-29,Mission,oat milk,L,8.0,0.72,False
+2026-09-29,Mission,cold brew concentrate,L,6.0,0.74,False
+2026-09-29,Mission,espresso beans,kg,3.0,0.06,False
+2026-09-29,SoMa,oat milk,L,8.0,0.51,False
+2026-09-29,SoMa,cold brew concentrate,L,6.0,0.85,False
+2026-09-29,SoMa,espresso beans,kg,3.0,0.11,False
+2026-09-29,Castro,oat milk,L,22.0,7.42,False
+2026-09-29,Castro,cold brew concentrate,L,6.0,0.46,False
+2026-09-29,Castro,espresso beans,kg,3.0,0.08,False
+2026-09-29,Sunset,oat milk,L,8.0,0.5,False
+2026-09-29,Sunset,cold brew concentrate,L,6.0,3.07,False
+2026-09-29,Sunset,espresso beans,kg,3.0,0.11,False
+2026-09-29,Marina,oat milk,L,8.0,0.26,False
+2026-09-29,Marina,cold brew concentrate,L,6.0,0.32,False
+2026-09-29,Marina,espresso beans,kg,3.0,0.06,False

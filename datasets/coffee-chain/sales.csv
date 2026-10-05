@@ -1,0 +1,2394 @@
+date,store,drink,weather,qty,revenue
+2026-08-01,Mission,Latte,sunny,49,257.25
+2026-08-01,Mission,Cappuccino,sunny,43,212.85
+2026-08-01,Mission,Americano,sunny,45,177.75
+2026-08-01,Mission,Cold Brew,sunny,66,363.0
+2026-08-01,Mission,Matcha Latte,sunny,20,115.0
+2026-08-01,Mission,Mocha,sunny,18,101.7
+2026-08-01,Mission,Chai,sunny,24,122.4
+2026-08-01,Mission,Espresso,sunny,21,68.25
+2026-08-01,SoMa,Latte,cloudy,37,194.25
+2026-08-01,SoMa,Cappuccino,cloudy,20,99.0
+2026-08-01,SoMa,Americano,cloudy,25,98.75
+2026-08-01,SoMa,Cold Brew,cloudy,27,148.5
+2026-08-01,SoMa,Matcha Latte,cloudy,12,69.0
+2026-08-01,SoMa,Mocha,cloudy,12,67.8
+2026-08-01,SoMa,Chai,cloudy,16,81.6
+2026-08-01,SoMa,Espresso,cloudy,13,42.25
+2026-08-01,Castro,Latte,sunny,49,257.25
+2026-08-01,Castro,Cappuccino,sunny,27,133.65
+2026-08-01,Castro,Americano,sunny,35,138.25
+2026-08-01,Castro,Cold Brew,sunny,71,390.5
+2026-08-01,Castro,Matcha Latte,sunny,16,92.0
+2026-08-01,Castro,Mocha,sunny,18,101.7
+2026-08-01,Castro,Chai,sunny,18,91.8
+2026-08-01,Castro,Espresso,sunny,21,68.25
+2026-08-01,Sunset,Latte,cloudy,43,225.75
+2026-08-01,Sunset,Cappuccino,cloudy,28,138.6
+2026-08-01,Sunset,Americano,cloudy,32,126.4
+2026-08-01,Sunset,Cold Brew,cloudy,35,192.5
+2026-08-01,Sunset,Matcha Latte,cloudy,15,86.25
+2026-08-01,Sunset,Mocha,cloudy,13,73.45
+2026-08-01,Sunset,Chai,cloudy,16,81.6
+2026-08-01,Sunset,Espresso,cloudy,17,55.25
+2026-08-01,Marina,Latte,sunny,77,404.25
+2026-08-01,Marina,Cappuccino,sunny,58,287.1
+2026-08-01,Marina,Americano,sunny,56,221.2
+2026-08-01,Marina,Cold Brew,sunny,68,374.0
+2026-08-01,Marina,Matcha Latte,sunny,23,132.25
+2026-08-01,Marina,Mocha,sunny,21,118.65
+2026-08-01,Marina,Chai,sunny,29,147.9
+2026-08-01,Marina,Espresso,sunny,30,97.5
+2026-08-02,Mission,Latte,sunny,79,414.75
+2026-08-02,Mission,Cappuccino,sunny,33,163.35
+2026-08-02,Mission,Americano,sunny,42,165.9
+2026-08-02,Mission,Cold Brew,sunny,59,324.5
+2026-08-02,Mission,Matcha Latte,sunny,20,115.0
+2026-08-02,Mission,Mocha,sunny,22,124.3
+2026-08-02,Mission,Chai,sunny,23,117.3
+2026-08-02,Mission,Espresso,sunny,29,94.25
+2026-08-02,SoMa,Latte,sunny,42,220.5
+2026-08-02,SoMa,Cappuccino,sunny,21,103.95
+2026-08-02,SoMa,Americano,sunny,29,114.55
+2026-08-02,SoMa,Cold Brew,sunny,40,220.0
+2026-08-02,SoMa,Matcha Latte,sunny,12,69.0
+2026-08-02,SoMa,Mocha,sunny,8,45.2
+2026-08-02,SoMa,Chai,sunny,15,76.5
+2026-08-02,SoMa,Espresso,sunny,17,55.25
+2026-08-02,Castro,Latte,sunny,38,199.5
+2026-08-02,Castro,Cappuccino,sunny,26,128.7
+2026-08-02,Castro,Americano,sunny,37,146.15
+2026-08-02,Castro,Cold Brew,sunny,51,280.5
+2026-08-02,Castro,Matcha Latte,sunny,22,126.5
+2026-08-02,Castro,Mocha,sunny,16,90.4
+2026-08-02,Castro,Chai,sunny,20,102.0
+2026-08-02,Castro,Espresso,sunny,21,68.25
+2026-08-02,Sunset,Latte,sunny,48,252.0
+2026-08-02,Sunset,Cappuccino,sunny,26,128.7
+2026-08-02,Sunset,Americano,sunny,30,118.5
+2026-08-02,Sunset,Cold Brew,sunny,46,253.0
+2026-08-02,Sunset,Matcha Latte,sunny,15,86.25
+2026-08-02,Sunset,Mocha,sunny,11,62.15
+2026-08-02,Sunset,Chai,sunny,14,71.4
+2026-08-02,Sunset,Espresso,sunny,18,58.5
+2026-08-02,Marina,Latte,rainy,94,493.5
+2026-08-02,Marina,Cappuccino,rainy,44,217.8
+2026-08-02,Marina,Americano,rainy,55,217.25
+2026-08-02,Marina,Cold Brew,rainy,26,143.0
+2026-08-02,Marina,Matcha Latte,rainy,24,138.0
+2026-08-02,Marina,Mocha,rainy,30,169.5
+2026-08-02,Marina,Chai,rainy,37,188.7
+2026-08-02,Marina,Espresso,rainy,31,100.75
+2026-08-03,Mission,Latte,sunny,64,336.0
+2026-08-03,Mission,Cappuccino,sunny,36,178.2
+2026-08-03,Mission,Americano,sunny,41,161.95
+2026-08-03,Mission,Cold Brew,sunny,63,346.5
+2026-08-03,Mission,Matcha Latte,sunny,25,143.75
+2026-08-03,Mission,Mocha,sunny,18,101.7
+2026-08-03,Mission,Chai,sunny,23,117.3
+2026-08-03,Mission,Espresso,sunny,24,78.0
+2026-08-03,SoMa,Latte,sunny,78,409.5
+2026-08-03,SoMa,Cappuccino,sunny,42,207.9
+2026-08-03,SoMa,Americano,sunny,49,193.55
+2026-08-03,SoMa,Cold Brew,sunny,63,346.5
+2026-08-03,SoMa,Matcha Latte,sunny,30,172.5
+2026-08-03,SoMa,Mocha,sunny,19,107.35
+2026-08-03,SoMa,Chai,sunny,26,132.6
+2026-08-03,SoMa,Espresso,sunny,35,113.75
+2026-08-03,Castro,Latte,sunny,56,294.0
+2026-08-03,Castro,Cappuccino,sunny,31,153.45
+2026-08-03,Castro,Americano,sunny,45,177.75
+2026-08-03,Castro,Cold Brew,sunny,43,236.5
+2026-08-03,Castro,Matcha Latte,sunny,17,97.75
+2026-08-03,Castro,Mocha,sunny,14,79.1
+2026-08-03,Castro,Chai,sunny,19,96.9
+2026-08-03,Castro,Espresso,sunny,24,78.0
+2026-08-03,Sunset,Latte,rainy,40,210.0
+2026-08-03,Sunset,Cappuccino,rainy,28,138.6
+2026-08-03,Sunset,Americano,rainy,32,126.4
+2026-08-03,Sunset,Cold Brew,rainy,15,82.5
+2026-08-03,Sunset,Matcha Latte,rainy,15,86.25
+2026-08-03,Sunset,Mocha,rainy,15,84.75
+2026-08-03,Sunset,Chai,rainy,18,91.8
+2026-08-03,Sunset,Espresso,rainy,19,61.75
+2026-08-03,Marina,Latte,sunny,47,246.75
+2026-08-03,Marina,Cappuccino,sunny,21,103.95
+2026-08-03,Marina,Americano,sunny,30,118.5
+2026-08-03,Marina,Cold Brew,sunny,59,324.5
+2026-08-03,Marina,Matcha Latte,sunny,18,103.5
+2026-08-03,Marina,Mocha,sunny,19,107.35
+2026-08-03,Marina,Chai,sunny,20,102.0
+2026-08-03,Marina,Espresso,sunny,22,71.5
+2026-08-04,Mission,Latte,sunny,55,288.75
+2026-08-04,Mission,Cappuccino,sunny,36,178.2
+2026-08-04,Mission,Americano,sunny,38,150.1
+2026-08-04,Mission,Cold Brew,sunny,63,346.5
+2026-08-04,Mission,Matcha Latte,sunny,24,138.0
+2026-08-04,Mission,Mocha,sunny,20,113.0
+2026-08-04,Mission,Chai,sunny,20,102.0
+2026-08-04,Mission,Espresso,sunny,21,68.25
+2026-08-04,SoMa,Latte,cloudy,68,357.0
+2026-08-04,SoMa,Cappuccino,cloudy,41,202.95
+2026-08-04,SoMa,Americano,cloudy,35,138.25
+2026-08-04,SoMa,Cold Brew,cloudy,50,275.0
+2026-08-04,SoMa,Matcha Latte,cloudy,27,155.25
+2026-08-04,SoMa,Mocha,cloudy,20,113.0
+2026-08-04,SoMa,Chai,cloudy,23,117.3
+2026-08-04,SoMa,Espresso,cloudy,28,91.0
+2026-08-04,Castro,Latte,sunny,44,231.0
+2026-08-04,Castro,Cappuccino,sunny,26,128.7
+2026-08-04,Castro,Americano,sunny,30,118.5
+2026-08-04,Castro,Cold Brew,sunny,58,319.0
+2026-08-04,Castro,Matcha Latte,sunny,18,103.5
+2026-08-04,Castro,Mocha,sunny,16,90.4
+2026-08-04,Castro,Chai,sunny,19,96.9
+2026-08-04,Castro,Espresso,sunny,24,78.0
+2026-08-04,Sunset,Latte,cloudy,53,278.25
+2026-08-04,Sunset,Cappuccino,cloudy,22,108.9
+2026-08-04,Sunset,Americano,cloudy,31,122.45
+2026-08-04,Sunset,Cold Brew,cloudy,33,181.5
+2026-08-04,Sunset,Matcha Latte,cloudy,17,97.75
+2026-08-04,Sunset,Mocha,cloudy,11,62.15
+2026-08-04,Sunset,Chai,cloudy,17,86.7
+2026-08-04,Sunset,Espresso,cloudy,16,52.0
+2026-08-04,Marina,Latte,cloudy,53,278.25
+2026-08-04,Marina,Cappuccino,cloudy,30,148.5
+2026-08-04,Marina,Americano,cloudy,38,150.1
+2026-08-04,Marina,Cold Brew,cloudy,45,247.5
+2026-08-04,Marina,Matcha Latte,cloudy,17,97.75
+2026-08-04,Marina,Mocha,cloudy,16,90.4
+2026-08-04,Marina,Chai,cloudy,14,71.4
+2026-08-04,Marina,Espresso,cloudy,18,58.5
+2026-08-05,Mission,Latte,sunny,48,252.0
+2026-08-05,Mission,Cappuccino,sunny,38,188.1
+2026-08-05,Mission,Americano,sunny,45,177.75
+2026-08-05,Mission,Cold Brew,sunny,66,363.0
+2026-08-05,Mission,Matcha Latte,sunny,22,126.5
+2026-08-05,Mission,Mocha,sunny,17,96.05
+2026-08-05,Mission,Chai,sunny,26,132.6
+2026-08-05,Mission,Espresso,sunny,27,87.75
+2026-08-05,SoMa,Latte,sunny,81,425.25
+2026-08-05,SoMa,Cappuccino,sunny,48,237.6
+2026-08-05,SoMa,Americano,sunny,46,181.7
+2026-08-05,SoMa,Cold Brew,sunny,75,412.5
+2026-08-05,SoMa,Matcha Latte,sunny,24,138.0
+2026-08-05,SoMa,Mocha,sunny,23,129.95
+2026-08-05,SoMa,Chai,sunny,22,112.2
+2026-08-05,SoMa,Espresso,sunny,31,100.75
+2026-08-05,Castro,Latte,cloudy,58,304.5
+2026-08-05,Castro,Cappuccino,cloudy,31,153.45
+2026-08-05,Castro,Americano,cloudy,39,154.05
+2026-08-05,Castro,Cold Brew,cloudy,41,225.5
+2026-08-05,Castro,Matcha Latte,cloudy,14,80.5
+2026-08-05,Castro,Mocha,cloudy,17,96.05
+2026-08-05,Castro,Chai,cloudy,18,91.8
+2026-08-05,Castro,Espresso,cloudy,22,71.5
+2026-08-05,Sunset,Latte,rainy,44,231.0
+2026-08-05,Sunset,Cappuccino,rainy,26,128.7
+2026-08-05,Sunset,Americano,rainy,28,110.6
+2026-08-05,Sunset,Cold Brew,rainy,14,77.0
+2026-08-05,Sunset,Matcha Latte,rainy,11,63.25
+2026-08-05,Sunset,Mocha,rainy,15,84.75
+2026-08-05,Sunset,Chai,rainy,21,107.1
+2026-08-05,Sunset,Espresso,rainy,18,58.5
+2026-08-05,Marina,Latte,sunny,58,304.5
+2026-08-05,Marina,Cappuccino,sunny,28,138.6
+2026-08-05,Marina,Americano,sunny,38,150.1
+2026-08-05,Marina,Cold Brew,sunny,42,231.0
+2026-08-05,Marina,Matcha Latte,sunny,13,74.75
+2026-08-05,Marina,Mocha,sunny,16,90.4
+2026-08-05,Marina,Chai,sunny,15,76.5
+2026-08-05,Marina,Espresso,sunny,21,68.25
+2026-08-06,Mission,Latte,cloudy,55,288.75
+2026-08-06,Mission,Cappuccino,cloudy,37,183.15
+2026-08-06,Mission,Americano,cloudy,39,154.05
+2026-08-06,Mission,Cold Brew,cloudy,46,253.0
+2026-08-06,Mission,Matcha Latte,cloudy,18,103.5
+2026-08-06,Mission,Mocha,cloudy,18,101.7
+2026-08-06,Mission,Chai,cloudy,25,127.5
+2026-08-06,Mission,Espresso,cloudy,27,87.75
+2026-08-06,SoMa,Latte,sunny,54,283.5
+2026-08-06,SoMa,Cappuccino,sunny,42,207.9
+2026-08-06,SoMa,Americano,sunny,48,189.6
+2026-08-06,SoMa,Cold Brew,sunny,74,407.0
+2026-08-06,SoMa,Matcha Latte,sunny,20,115.0
+2026-08-06,SoMa,Mocha,sunny,25,141.25
+2026-08-06,SoMa,Chai,sunny,26,132.6
+2026-08-06,SoMa,Espresso,sunny,25,81.25
+2026-08-06,Castro,Latte,rainy,53,278.25
+2026-08-06,Castro,Cappuccino,rainy,34,168.3
+2026-08-06,Castro,Americano,rainy,31,122.45
+2026-08-06,Castro,Cold Brew,rainy,19,104.5
+2026-08-06,Castro,Matcha Latte,rainy,21,120.75
+2026-08-06,Castro,Mocha,rainy,22,124.3
+2026-08-06,Castro,Chai,rainy,26,132.6
+2026-08-06,Castro,Espresso,rainy,23,74.75
+2026-08-06,Sunset,Latte,rainy,53,278.25
+2026-08-06,Sunset,Cappuccino,rainy,27,133.65
+2026-08-06,Sunset,Americano,rainy,29,114.55
+2026-08-06,Sunset,Cold Brew,rainy,11,60.5
+2026-08-06,Sunset,Matcha Latte,rainy,14,80.5
+2026-08-06,Sunset,Mocha,rainy,18,101.7
+2026-08-06,Sunset,Chai,rainy,17,86.7
+2026-08-06,Sunset,Espresso,rainy,15,48.75
+2026-08-06,Marina,Latte,cloudy,46,241.5
+2026-08-06,Marina,Cappuccino,cloudy,32,158.4
+2026-08-06,Marina,Americano,cloudy,40,158.0
+2026-08-06,Marina,Cold Brew,cloudy,31,170.5
+2026-08-06,Marina,Matcha Latte,cloudy,16,92.0
+2026-08-06,Marina,Mocha,cloudy,14,79.1
+2026-08-06,Marina,Chai,cloudy,18,91.8
+2026-08-06,Marina,Espresso,cloudy,19,61.75
+2026-08-07,Mission,Latte,rainy,67,351.75
+2026-08-07,Mission,Cappuccino,rainy,36,178.2
+2026-08-07,Mission,Americano,rainy,37,146.15
+2026-08-07,Mission,Cold Brew,rainy,21,115.5
+2026-08-07,Mission,Matcha Latte,rainy,23,132.25
+2026-08-07,Mission,Mocha,rainy,21,118.65
+2026-08-07,Mission,Chai,rainy,32,163.2
+2026-08-07,Mission,Espresso,rainy,31,100.75
+2026-08-07,SoMa,Latte,sunny,92,483.0
+2026-08-07,SoMa,Cappuccino,sunny,44,217.8
+2026-08-07,SoMa,Americano,sunny,56,221.2
+2026-08-07,SoMa,Cold Brew,sunny,88,484.0
+2026-08-07,SoMa,Matcha Latte,sunny,23,132.25
+2026-08-07,SoMa,Mocha,sunny,25,141.25
+2026-08-07,SoMa,Chai,sunny,25,127.5
+2026-08-07,SoMa,Espresso,sunny,30,97.5
+2026-08-07,Castro,Latte,rainy,39,204.75
+2026-08-07,Castro,Cappuccino,rainy,30,148.5
+2026-08-07,Castro,Americano,rainy,38,150.1
+2026-08-07,Castro,Cold Brew,rainy,16,88.0
+2026-08-07,Castro,Matcha Latte,rainy,20,115.0
+2026-08-07,Castro,Mocha,rainy,18,101.7
+2026-08-07,Castro,Chai,rainy,24,122.4
+2026-08-07,Castro,Espresso,rainy,24,78.0
+2026-08-07,Sunset,Latte,rainy,35,183.75
+2026-08-07,Sunset,Cappuccino,rainy,21,103.95
+2026-08-07,Sunset,Americano,rainy,26,102.7
+2026-08-07,Sunset,Cold Brew,rainy,16,88.0
+2026-08-07,Sunset,Matcha Latte,rainy,12,69.0
+2026-08-07,Sunset,Mocha,rainy,13,73.45
+2026-08-07,Sunset,Chai,rainy,19,96.9
+2026-08-07,Sunset,Espresso,rainy,22,71.5
+2026-08-07,Marina,Latte,sunny,51,267.75
+2026-08-07,Marina,Cappuccino,sunny,38,188.1
+2026-08-07,Marina,Americano,sunny,46,181.7
+2026-08-07,Marina,Cold Brew,sunny,58,319.0
+2026-08-07,Marina,Matcha Latte,sunny,20,115.0
+2026-08-07,Marina,Mocha,sunny,16,90.4
+2026-08-07,Marina,Chai,sunny,18,91.8
+2026-08-07,Marina,Espresso,sunny,16,52.0
+2026-08-08,Mission,Latte,sunny,52,273.0
+2026-08-08,Mission,Cappuccino,sunny,27,133.65
+2026-08-08,Mission,Americano,sunny,40,158.0
+2026-08-08,Mission,Cold Brew,sunny,47,258.5
+2026-08-08,Mission,Matcha Latte,sunny,23,132.25
+2026-08-08,Mission,Mocha,sunny,20,113.0
+2026-08-08,Mission,Chai,sunny,18,91.8
+2026-08-08,Mission,Espresso,sunny,25,81.25
+2026-08-08,SoMa,Latte,sunny,36,189.0
+2026-08-08,SoMa,Cappuccino,sunny,24,118.8
+2026-08-08,SoMa,Americano,sunny,29,114.55
+2026-08-08,SoMa,Cold Brew,sunny,35,192.5
+2026-08-08,SoMa,Matcha Latte,sunny,14,80.5
+2026-08-08,SoMa,Mocha,sunny,12,67.8
+2026-08-08,SoMa,Chai,sunny,17,86.7
+2026-08-08,SoMa,Espresso,sunny,15,48.75
+2026-08-08,Castro,Latte,sunny,53,278.25
+2026-08-08,Castro,Cappuccino,sunny,27,133.65
+2026-08-08,Castro,Americano,sunny,31,122.45
+2026-08-08,Castro,Cold Brew,sunny,60,330.0
+2026-08-08,Castro,Matcha Latte,sunny,17,97.75
+2026-08-08,Castro,Mocha,sunny,14,79.1
+2026-08-08,Castro,Chai,sunny,20,102.0
+2026-08-08,Castro,Espresso,sunny,22,71.5
+2026-08-08,Sunset,Latte,sunny,46,241.5
+2026-08-08,Sunset,Cappuccino,sunny,24,118.8
+2026-08-08,Sunset,Americano,sunny,28,110.6
+2026-08-08,Sunset,Cold Brew,sunny,42,231.0
+2026-08-08,Sunset,Matcha Latte,sunny,14,80.5
+2026-08-08,Sunset,Mocha,sunny,10,56.5
+2026-08-08,Sunset,Chai,sunny,15,76.5
+2026-08-08,Sunset,Espresso,sunny,18,58.5
+2026-08-08,Marina,Latte,cloudy,72,378.0
+2026-08-08,Marina,Cappuccino,cloudy,50,247.5
+2026-08-08,Marina,Americano,cloudy,61,240.95
+2026-08-08,Marina,Cold Brew,cloudy,51,280.5
+2026-08-08,Marina,Matcha Latte,cloudy,21,120.75
+2026-08-08,Marina,Mocha,cloudy,26,146.9
+2026-08-08,Marina,Chai,cloudy,28,142.8
+2026-08-08,Marina,Espresso,cloudy,39,126.75
+2026-08-09,Mission,Latte,rainy,57,299.25
+2026-08-09,Mission,Cappuccino,rainy,40,198.0
+2026-08-09,Mission,Americano,rainy,31,122.45
+2026-08-09,Mission,Cold Brew,rainy,19,104.5
+2026-08-09,Mission,Matcha Latte,rainy,23,132.25
+2026-08-09,Mission,Mocha,rainy,20,113.0
+2026-08-09,Mission,Chai,rainy,28,142.8
+2026-08-09,Mission,Espresso,rainy,25,81.25
+2026-08-09,SoMa,Latte,sunny,34,178.5
+2026-08-09,SoMa,Cappuccino,sunny,23,113.85
+2026-08-09,SoMa,Americano,sunny,28,110.6
+2026-08-09,SoMa,Cold Brew,sunny,33,181.5
+2026-08-09,SoMa,Matcha Latte,sunny,14,80.5
+2026-08-09,SoMa,Mocha,sunny,9,50.85
+2026-08-09,SoMa,Chai,sunny,16,81.6
+2026-08-09,SoMa,Espresso,sunny,18,58.5
+2026-08-09,Castro,Latte,cloudy,64,336.0
+2026-08-09,Castro,Cappuccino,cloudy,32,158.4
+2026-08-09,Castro,Americano,cloudy,25,98.75
+2026-08-09,Castro,Cold Brew,cloudy,33,181.5
+2026-08-09,Castro,Matcha Latte,cloudy,20,115.0
+2026-08-09,Castro,Mocha,cloudy,18,101.7
+2026-08-09,Castro,Chai,cloudy,23,117.3
+2026-08-09,Castro,Espresso,cloudy,20,65.0
+2026-08-09,Sunset,Latte,sunny,37,194.25
+2026-08-09,Sunset,Cappuccino,sunny,23,113.85
+2026-08-09,Sunset,Americano,sunny,25,98.75
+2026-08-09,Sunset,Cold Brew,sunny,44,242.0
+2026-08-09,Sunset,Matcha Latte,sunny,13,74.75
+2026-08-09,Sunset,Mocha,sunny,13,73.45
+2026-08-09,Sunset,Chai,sunny,12,61.2
+2026-08-09,Sunset,Espresso,sunny,19,61.75
+2026-08-09,Marina,Latte,sunny,73,383.25
+2026-08-09,Marina,Cappuccino,sunny,47,232.65
+2026-08-09,Marina,Americano,sunny,46,181.7
+2026-08-09,Marina,Cold Brew,sunny,93,511.5
+2026-08-09,Marina,Matcha Latte,sunny,27,155.25
+2026-08-09,Marina,Mocha,sunny,24,135.6
+2026-08-09,Marina,Chai,sunny,28,142.8
+2026-08-09,Marina,Espresso,sunny,36,117.0
+2026-08-10,Mission,Latte,sunny,64,336.0
+2026-08-10,Mission,Cappuccino,sunny,36,178.2
+2026-08-10,Mission,Americano,sunny,30,118.5
+2026-08-10,Mission,Cold Brew,sunny,65,357.5
+2026-08-10,Mission,Matcha Latte,sunny,19,109.25
+2026-08-10,Mission,Mocha,sunny,20,113.0
+2026-08-10,Mission,Chai,sunny,17,86.7
+2026-08-10,Mission,Espresso,sunny,26,84.5
+2026-08-10,SoMa,Latte,sunny,85,446.25
+2026-08-10,SoMa,Cappuccino,sunny,40,198.0
+2026-08-10,SoMa,Americano,sunny,35,138.25
+2026-08-10,SoMa,Cold Brew,sunny,64,352.0
+2026-08-10,SoMa,Matcha Latte,sunny,22,126.5
+2026-08-10,SoMa,Mocha,sunny,26,146.9
+2026-08-10,SoMa,Chai,sunny,28,142.8
+2026-08-10,SoMa,Espresso,sunny,33,107.25
+2026-08-10,Castro,Latte,cloudy,51,267.75
+2026-08-10,Castro,Cappuccino,cloudy,31,153.45
+2026-08-10,Castro,Americano,cloudy,29,114.55
+2026-08-10,Castro,Cold Brew,cloudy,38,209.0
+2026-08-10,Castro,Matcha Latte,cloudy,18,103.5
+2026-08-10,Castro,Mocha,cloudy,14,79.1
+2026-08-10,Castro,Chai,cloudy,21,107.1
+2026-08-10,Castro,Espresso,cloudy,24,78.0
+2026-08-10,Sunset,Latte,sunny,42,220.5
+2026-08-10,Sunset,Cappuccino,sunny,24,118.8
+2026-08-10,Sunset,Americano,sunny,22,86.9
+2026-08-10,Sunset,Cold Brew,sunny,36,198.0
+2026-08-10,Sunset,Matcha Latte,sunny,11,63.25
+2026-08-10,Sunset,Mocha,sunny,16,90.4
+2026-08-10,Sunset,Chai,sunny,16,81.6
+2026-08-10,Sunset,Espresso,sunny,21,68.25
+2026-08-10,Marina,Latte,sunny,44,231.0
+2026-08-10,Marina,Cappuccino,sunny,33,163.35
+2026-08-10,Marina,Americano,sunny,35,138.25
+2026-08-10,Marina,Cold Brew,sunny,47,258.5
+2026-08-10,Marina,Matcha Latte,sunny,17,97.75
+2026-08-10,Marina,Mocha,sunny,16,90.4
+2026-08-10,Marina,Chai,sunny,19,96.9
+2026-08-10,Marina,Espresso,sunny,22,71.5
+2026-08-11,Mission,Latte,sunny,70,367.5
+2026-08-11,Mission,Cappuccino,sunny,34,168.3
+2026-08-11,Mission,Americano,sunny,41,161.95
+2026-08-11,Mission,Cold Brew,sunny,62,341.0
+2026-08-11,Mission,Matcha Latte,sunny,21,120.75
+2026-08-11,Mission,Mocha,sunny,17,96.05
+2026-08-11,Mission,Chai,sunny,25,127.5
+2026-08-11,Mission,Espresso,sunny,25,81.25
+2026-08-11,SoMa,Latte,sunny,90,401.62
+2026-08-11,SoMa,Cappuccino,sunny,48,237.6
+2026-08-11,SoMa,Americano,sunny,45,177.75
+2026-08-11,SoMa,Cold Brew,sunny,71,390.5
+2026-08-11,SoMa,Matcha Latte,sunny,29,166.75
+2026-08-11,SoMa,Mocha,sunny,20,113.0
+2026-08-11,SoMa,Chai,sunny,27,137.7
+2026-08-11,SoMa,Espresso,sunny,26,84.5
+2026-08-11,Castro,Latte,sunny,57,299.25
+2026-08-11,Castro,Cappuccino,sunny,33,163.35
+2026-08-11,Castro,Americano,sunny,37,146.15
+2026-08-11,Castro,Cold Brew,sunny,54,297.0
+2026-08-11,Castro,Matcha Latte,sunny,18,103.5
+2026-08-11,Castro,Mocha,sunny,13,73.45
+2026-08-11,Castro,Chai,sunny,20,102.0
+2026-08-11,Castro,Espresso,sunny,20,65.0
+2026-08-11,Sunset,Latte,sunny,45,236.25
+2026-08-11,Sunset,Cappuccino,sunny,25,123.75
+2026-08-11,Sunset,Americano,sunny,29,114.55
+2026-08-11,Sunset,Cold Brew,sunny,40,220.0
+2026-08-11,Sunset,Matcha Latte,sunny,16,92.0
+2026-08-11,Sunset,Mocha,sunny,14,79.1
+2026-08-11,Sunset,Chai,sunny,15,76.5
+2026-08-11,Sunset,Espresso,sunny,14,45.5
+2026-08-11,Marina,Latte,sunny,50,262.5
+2026-08-11,Marina,Cappuccino,sunny,30,148.5
+2026-08-11,Marina,Americano,sunny,35,138.25
+2026-08-11,Marina,Cold Brew,sunny,55,302.5
+2026-08-11,Marina,Matcha Latte,sunny,17,97.75
+2026-08-11,Marina,Mocha,sunny,17,96.05
+2026-08-11,Marina,Chai,sunny,21,107.1
+2026-08-11,Marina,Espresso,sunny,23,74.75
+2026-08-12,Mission,Latte,cloudy,63,330.75
+2026-08-12,Mission,Cappuccino,cloudy,37,183.15
+2026-08-12,Mission,Americano,cloudy,34,134.3
+2026-08-12,Mission,Cold Brew,cloudy,45,247.5
+2026-08-12,Mission,Matcha Latte,cloudy,22,126.5
+2026-08-12,Mission,Mocha,cloudy,16,90.4
+2026-08-12,Mission,Chai,cloudy,22,112.2
+2026-08-12,Mission,Espresso,cloudy,25,81.25
+2026-08-12,SoMa,Latte,sunny,84,374.85
+2026-08-12,SoMa,Cappuccino,sunny,38,188.1
+2026-08-12,SoMa,Americano,sunny,54,213.3
+2026-08-12,SoMa,Cold Brew,sunny,79,434.5
+2026-08-12,SoMa,Matcha Latte,sunny,23,132.25
+2026-08-12,SoMa,Mocha,sunny,25,141.25
+2026-08-12,SoMa,Chai,sunny,19,96.9
+2026-08-12,SoMa,Espresso,sunny,31,100.75
+2026-08-12,Castro,Latte,cloudy,53,278.25
+2026-08-12,Castro,Cappuccino,cloudy,28,138.6
+2026-08-12,Castro,Americano,cloudy,30,118.5
+2026-08-12,Castro,Cold Brew,cloudy,43,236.5
+2026-08-12,Castro,Matcha Latte,cloudy,15,86.25
+2026-08-12,Castro,Mocha,cloudy,15,84.75
+2026-08-12,Castro,Chai,cloudy,19,96.9
+2026-08-12,Castro,Espresso,cloudy,20,65.0
+2026-08-12,Sunset,Latte,sunny,42,220.5
+2026-08-12,Sunset,Cappuccino,sunny,22,108.9
+2026-08-12,Sunset,Americano,sunny,27,106.65
+2026-08-12,Sunset,Cold Brew,sunny,43,236.5
+2026-08-12,Sunset,Matcha Latte,sunny,13,74.75
+2026-08-12,Sunset,Mocha,sunny,11,62.15
+2026-08-12,Sunset,Chai,sunny,14,71.4
+2026-08-12,Sunset,Espresso,sunny,15,48.75
+2026-08-12,Marina,Latte,rainy,51,267.75
+2026-08-12,Marina,Cappuccino,rainy,29,143.55
+2026-08-12,Marina,Americano,rainy,38,150.1
+2026-08-12,Marina,Cold Brew,rainy,20,110.0
+2026-08-12,Marina,Matcha Latte,rainy,20,115.0
+2026-08-12,Marina,Mocha,rainy,21,118.65
+2026-08-12,Marina,Chai,rainy,23,117.3
+2026-08-12,Marina,Espresso,rainy,20,65.0
+2026-08-13,Mission,Latte,rainy,49,257.25
+2026-08-13,Mission,Cappuccino,rainy,32,158.4
+2026-08-13,Mission,Americano,rainy,36,142.2
+2026-08-13,Mission,Cold Brew,rainy,19,104.5
+2026-08-13,Mission,Matcha Latte,rainy,18,103.5
+2026-08-13,Mission,Mocha,rainy,25,141.25
+2026-08-13,Mission,Chai,rainy,33,168.3
+2026-08-13,Mission,Espresso,rainy,25,81.25
+2026-08-13,SoMa,Latte,sunny,87,388.24
+2026-08-13,SoMa,Cappuccino,sunny,46,227.7
+2026-08-13,SoMa,Americano,sunny,47,185.65
+2026-08-13,SoMa,Cold Brew,sunny,90,495.0
+2026-08-13,SoMa,Matcha Latte,sunny,28,161.0
+2026-08-13,SoMa,Mocha,sunny,23,129.95
+2026-08-13,SoMa,Chai,sunny,24,122.4
+2026-08-13,SoMa,Espresso,sunny,35,113.75
+2026-08-13,Castro,Latte,cloudy,53,278.25
+2026-08-13,Castro,Cappuccino,cloudy,33,163.35
+2026-08-13,Castro,Americano,cloudy,32,126.4
+2026-08-13,Castro,Cold Brew,cloudy,37,203.5
+2026-08-13,Castro,Matcha Latte,cloudy,21,120.75
+2026-08-13,Castro,Mocha,cloudy,13,73.45
+2026-08-13,Castro,Chai,cloudy,19,96.9
+2026-08-13,Castro,Espresso,cloudy,24,78.0
+2026-08-13,Sunset,Latte,cloudy,35,183.75
+2026-08-13,Sunset,Cappuccino,cloudy,18,89.1
+2026-08-13,Sunset,Americano,cloudy,26,102.7
+2026-08-13,Sunset,Cold Brew,cloudy,30,165.0
+2026-08-13,Sunset,Matcha Latte,cloudy,14,80.5
+2026-08-13,Sunset,Mocha,cloudy,11,62.15
+2026-08-13,Sunset,Chai,cloudy,13,66.3
+2026-08-13,Sunset,Espresso,cloudy,14,45.5
+2026-08-13,Marina,Latte,sunny,54,283.5
+2026-08-13,Marina,Cappuccino,sunny,23,113.85
+2026-08-13,Marina,Americano,sunny,29,114.55
+2026-08-13,Marina,Cold Brew,sunny,53,291.5
+2026-08-13,Marina,Matcha Latte,sunny,19,109.25
+2026-08-13,Marina,Mocha,sunny,18,101.7
+2026-08-13,Marina,Chai,sunny,20,102.0
+2026-08-13,Marina,Espresso,sunny,26,84.5
+2026-08-14,Mission,Latte,cloudy,60,315.0
+2026-08-14,Mission,Cappuccino,cloudy,31,153.45
+2026-08-14,Mission,Americano,cloudy,38,150.1
+2026-08-14,Mission,Cold Brew,cloudy,50,275.0
+2026-08-14,Mission,Matcha Latte,cloudy,20,115.0
+2026-08-14,Mission,Mocha,cloudy,18,101.7
+2026-08-14,Mission,Chai,cloudy,19,96.9
+2026-08-14,Mission,Espresso,cloudy,22,71.5
+2026-08-14,SoMa,Latte,sunny,87,388.24
+2026-08-14,SoMa,Cappuccino,sunny,44,217.8
+2026-08-14,SoMa,Americano,sunny,45,177.75
+2026-08-14,SoMa,Cold Brew,sunny,86,473.0
+2026-08-14,SoMa,Matcha Latte,sunny,23,132.25
+2026-08-14,SoMa,Mocha,sunny,26,146.9
+2026-08-14,SoMa,Chai,sunny,27,137.7
+2026-08-14,SoMa,Espresso,sunny,28,91.0
+2026-08-14,Castro,Latte,sunny,40,210.0
+2026-08-14,Castro,Cappuccino,sunny,32,158.4
+2026-08-14,Castro,Americano,sunny,34,134.3
+2026-08-14,Castro,Cold Brew,sunny,55,302.5
+2026-08-14,Castro,Matcha Latte,sunny,14,80.5
+2026-08-14,Castro,Mocha,sunny,16,90.4
+2026-08-14,Castro,Chai,sunny,16,81.6
+2026-08-14,Castro,Espresso,sunny,25,81.25
+2026-08-14,Sunset,Latte,cloudy,49,257.25
+2026-08-14,Sunset,Cappuccino,cloudy,22,108.9
+2026-08-14,Sunset,Americano,cloudy,30,118.5
+2026-08-14,Sunset,Cold Brew,cloudy,34,187.0
+2026-08-14,Sunset,Matcha Latte,cloudy,14,80.5
+2026-08-14,Sunset,Mocha,cloudy,16,90.4
+2026-08-14,Sunset,Chai,cloudy,13,66.3
+2026-08-14,Sunset,Espresso,cloudy,21,68.25
+2026-08-14,Marina,Latte,sunny,60,315.0
+2026-08-14,Marina,Cappuccino,sunny,29,143.55
+2026-08-14,Marina,Americano,sunny,36,142.2
+2026-08-14,Marina,Cold Brew,sunny,55,302.5
+2026-08-14,Marina,Matcha Latte,sunny,17,97.75
+2026-08-14,Marina,Mocha,sunny,13,73.45
+2026-08-14,Marina,Chai,sunny,19,96.9
+2026-08-14,Marina,Espresso,sunny,24,78.0
+2026-08-15,Mission,Latte,cloudy,71,372.75
+2026-08-15,Mission,Cappuccino,cloudy,37,183.15
+2026-08-15,Mission,Americano,cloudy,44,173.8
+2026-08-15,Mission,Cold Brew,cloudy,42,231.0
+2026-08-15,Mission,Matcha Latte,cloudy,18,103.5
+2026-08-15,Mission,Mocha,cloudy,19,107.35
+2026-08-15,Mission,Chai,cloudy,23,117.3
+2026-08-15,Mission,Espresso,cloudy,24,78.0
+2026-08-15,SoMa,Latte,sunny,40,178.5
+2026-08-15,SoMa,Cappuccino,sunny,22,108.9
+2026-08-15,SoMa,Americano,sunny,22,86.9
+2026-08-15,SoMa,Cold Brew,sunny,48,264.0
+2026-08-15,SoMa,Matcha Latte,sunny,13,74.75
+2026-08-15,SoMa,Mocha,sunny,10,56.5
+2026-08-15,SoMa,Chai,sunny,15,76.5
+2026-08-15,SoMa,Espresso,sunny,16,52.0
+2026-08-15,Castro,Latte,rainy,41,215.25
+2026-08-15,Castro,Cappuccino,rainy,26,128.7
+2026-08-15,Castro,Americano,rainy,38,150.1
+2026-08-15,Castro,Cold Brew,rainy,18,99.0
+2026-08-15,Castro,Matcha Latte,rainy,18,103.5
+2026-08-15,Castro,Mocha,rainy,24,135.6
+2026-08-15,Castro,Chai,rainy,20,102.0
+2026-08-15,Castro,Espresso,rainy,11,35.75
+2026-08-15,Sunset,Latte,cloudy,42,220.5
+2026-08-15,Sunset,Cappuccino,cloudy,27,133.65
+2026-08-15,Sunset,Americano,cloudy,33,130.35
+2026-08-15,Sunset,Cold Brew,cloudy,29,159.5
+2026-08-15,Sunset,Matcha Latte,cloudy,15,86.25
+2026-08-15,Sunset,Mocha,cloudy,11,62.15
+2026-08-15,Sunset,Chai,cloudy,14,71.4
+2026-08-15,Sunset,Espresso,cloudy,17,55.25
+2026-08-15,Marina,Latte,cloudy,81,425.25
+2026-08-15,Marina,Cappuccino,cloudy,54,267.3
+2026-08-15,Marina,Americano,cloudy,41,161.95
+2026-08-15,Marina,Cold Brew,cloudy,50,275.0
+2026-08-15,Marina,Matcha Latte,cloudy,29,166.75
+2026-08-15,Marina,Mocha,cloudy,28,158.2
+2026-08-15,Marina,Chai,cloudy,30,153.0
+2026-08-15,Marina,Espresso,cloudy,38,123.5
+2026-08-16,Mission,Latte,cloudy,63,330.75
+2026-08-16,Mission,Cappuccino,cloudy,33,163.35
+2026-08-16,Mission,Americano,cloudy,44,173.8
+2026-08-16,Mission,Cold Brew,cloudy,54,297.0
+2026-08-16,Mission,Matcha Latte,cloudy,22,126.5
+2026-08-16,Mission,Mocha,cloudy,20,113.0
+2026-08-16,Mission,Chai,cloudy,21,107.1
+2026-08-16,Mission,Espresso,cloudy,23,74.75
+2026-08-16,SoMa,Latte,rainy,40,178.5
+2026-08-16,SoMa,Cappuccino,rainy,23,113.85
+2026-08-16,SoMa,Americano,rainy,30,118.5
+2026-08-16,SoMa,Cold Brew,rainy,15,82.5
+2026-08-16,SoMa,Matcha Latte,rainy,13,74.75
+2026-08-16,SoMa,Mocha,rainy,16,90.4
+2026-08-16,SoMa,Chai,rainy,19,96.9
+2026-08-16,SoMa,Espresso,rainy,14,45.5
+2026-08-16,Castro,Latte,rainy,50,262.5
+2026-08-16,Castro,Cappuccino,rainy,33,163.35
+2026-08-16,Castro,Americano,rainy,30,118.5
+2026-08-16,Castro,Cold Brew,rainy,17,93.5
+2026-08-16,Castro,Matcha Latte,rainy,17,97.75
+2026-08-16,Castro,Mocha,rainy,20,113.0
+2026-08-16,Castro,Chai,rainy,23,117.3
+2026-08-16,Castro,Espresso,rainy,21,68.25
+2026-08-16,Sunset,Latte,cloudy,45,236.25
+2026-08-16,Sunset,Cappuccino,cloudy,26,128.7
+2026-08-16,Sunset,Americano,cloudy,31,122.45
+2026-08-16,Sunset,Cold Brew,cloudy,30,165.0
+2026-08-16,Sunset,Matcha Latte,cloudy,15,86.25
+2026-08-16,Sunset,Mocha,cloudy,12,67.8
+2026-08-16,Sunset,Chai,cloudy,15,76.5
+2026-08-16,Sunset,Espresso,cloudy,19,61.75
+2026-08-16,Marina,Latte,sunny,70,367.5
+2026-08-16,Marina,Cappuccino,sunny,49,242.55
+2026-08-16,Marina,Americano,sunny,57,225.15
+2026-08-16,Marina,Cold Brew,sunny,83,456.5
+2026-08-16,Marina,Matcha Latte,sunny,28,161.0
+2026-08-16,Marina,Mocha,sunny,21,118.65
+2026-08-16,Marina,Chai,sunny,31,158.1
+2026-08-16,Marina,Espresso,sunny,31,100.75
+2026-08-17,Mission,Latte,sunny,69,362.25
+2026-08-17,Mission,Cappuccino,sunny,34,168.3
+2026-08-17,Mission,Americano,sunny,44,173.8
+2026-08-17,Mission,Cold Brew,sunny,69,379.5
+2026-08-17,Mission,Matcha Latte,sunny,18,103.5
+2026-08-17,Mission,Mocha,sunny,15,84.75
+2026-08-17,Mission,Chai,sunny,18,91.8
+2026-08-17,Mission,Espresso,sunny,24,78.0
+2026-08-17,SoMa,Latte,sunny,84,374.85
+2026-08-17,SoMa,Cappuccino,sunny,38,188.1
+2026-08-17,SoMa,Americano,sunny,54,213.3
+2026-08-17,SoMa,Cold Brew,sunny,93,511.5
+2026-08-17,SoMa,Matcha Latte,sunny,29,166.75
+2026-08-17,SoMa,Mocha,sunny,22,124.3
+2026-08-17,SoMa,Chai,sunny,34,173.4
+2026-08-17,SoMa,Espresso,sunny,32,104.0
+2026-08-17,Castro,Latte,sunny,56,294.0
+2026-08-17,Castro,Cappuccino,sunny,29,143.55
+2026-08-17,Castro,Americano,sunny,30,118.5
+2026-08-17,Castro,Cold Brew,sunny,41,225.5
+2026-08-17,Castro,Matcha Latte,sunny,13,74.75
+2026-08-17,Castro,Mocha,sunny,15,84.75
+2026-08-17,Castro,Chai,sunny,20,102.0
+2026-08-17,Castro,Espresso,sunny,25,81.25
+2026-08-17,Sunset,Latte,rainy,44,231.0
+2026-08-17,Sunset,Cappuccino,rainy,24,118.8
+2026-08-17,Sunset,Americano,rainy,27,106.65
+2026-08-17,Sunset,Cold Brew,rainy,15,82.5
+2026-08-17,Sunset,Matcha Latte,rainy,13,74.75
+2026-08-17,Sunset,Mocha,rainy,18,101.7
+2026-08-17,Sunset,Chai,rainy,22,112.2
+2026-08-17,Sunset,Espresso,rainy,16,52.0
+2026-08-17,Marina,Latte,sunny,52,273.0
+2026-08-17,Marina,Cappuccino,sunny,37,183.15
+2026-08-17,Marina,Americano,sunny,37,146.15
+2026-08-17,Marina,Cold Brew,sunny,62,341.0
+2026-08-17,Marina,Matcha Latte,sunny,16,92.0
+2026-08-17,Marina,Mocha,sunny,14,79.1
+2026-08-17,Marina,Chai,sunny,23,117.3
+2026-08-17,Marina,Espresso,sunny,24,78.0
+2026-08-18,Mission,Latte,sunny,65,341.25
+2026-08-18,Mission,Cappuccino,sunny,39,193.05
+2026-08-18,Mission,Americano,sunny,43,169.85
+2026-08-18,Mission,Cold Brew,sunny,67,368.5
+2026-08-18,Mission,Matcha Latte,sunny,22,126.5
+2026-08-18,Mission,Mocha,sunny,16,90.4
+2026-08-18,Mission,Chai,sunny,22,112.2
+2026-08-18,Mission,Espresso,sunny,24,78.0
+2026-08-18,SoMa,Latte,sunny,86,451.5
+2026-08-18,SoMa,Cappuccino,sunny,48,237.6
+2026-08-18,SoMa,Americano,sunny,57,225.15
+2026-08-18,SoMa,Cold Brew,sunny,92,506.0
+2026-08-18,SoMa,Matcha Latte,sunny,26,149.5
+2026-08-18,SoMa,Mocha,sunny,27,152.55
+2026-08-18,SoMa,Chai,sunny,32,163.2
+2026-08-18,SoMa,Espresso,sunny,34,110.5
+2026-08-18,Castro,Latte,sunny,41,215.25
+2026-08-18,Castro,Cappuccino,sunny,32,158.4
+2026-08-18,Castro,Americano,sunny,33,130.35
+2026-08-18,Castro,Cold Brew,sunny,54,297.0
+2026-08-18,Castro,Matcha Latte,sunny,18,103.5
+2026-08-18,Castro,Mocha,sunny,15,84.75
+2026-08-18,Castro,Chai,sunny,19,96.9
+2026-08-18,Castro,Espresso,sunny,22,71.5
+2026-08-18,Sunset,Latte,rainy,41,215.25
+2026-08-18,Sunset,Cappuccino,rainy,25,123.75
+2026-08-18,Sunset,Americano,rainy,31,122.45
+2026-08-18,Sunset,Cold Brew,rainy,15,82.5
+2026-08-18,Sunset,Matcha Latte,rainy,15,86.25
+2026-08-18,Sunset,Mocha,rainy,13,73.45
+2026-08-18,Sunset,Chai,rainy,20,102.0
+2026-08-18,Sunset,Espresso,rainy,19,61.75
+2026-08-18,Marina,Latte,sunny,44,231.0
+2026-08-18,Marina,Cappuccino,sunny,32,158.4
+2026-08-18,Marina,Americano,sunny,28,110.6
+2026-08-18,Marina,Cold Brew,sunny,59,324.5
+2026-08-18,Marina,Matcha Latte,sunny,18,103.5
+2026-08-18,Marina,Mocha,sunny,20,113.0
+2026-08-18,Marina,Chai,sunny,16,81.6
+2026-08-18,Marina,Espresso,sunny,20,65.0
+2026-08-19,Mission,Latte,cloudy,53,278.25
+2026-08-19,Mission,Cappuccino,cloudy,37,183.15
+2026-08-19,Mission,Americano,cloudy,40,158.0
+2026-08-19,Mission,Cold Brew,cloudy,40,220.0
+2026-08-19,Mission,Matcha Latte,cloudy,21,120.75
+2026-08-19,Mission,Mocha,cloudy,17,96.05
+2026-08-19,Mission,Chai,cloudy,21,107.1
+2026-08-19,Mission,Espresso,cloudy,26,84.5
+2026-08-19,SoMa,Latte,sunny,67,351.75
+2026-08-19,SoMa,Cappuccino,sunny,40,198.0
+2026-08-19,SoMa,Americano,sunny,48,189.6
+2026-08-19,SoMa,Cold Brew,sunny,69,379.5
+2026-08-19,SoMa,Matcha Latte,sunny,26,149.5
+2026-08-19,SoMa,Mocha,sunny,22,124.3
+2026-08-19,SoMa,Chai,sunny,36,183.6
+2026-08-19,SoMa,Espresso,sunny,32,104.0
+2026-08-19,Castro,Latte,cloudy,46,241.5
+2026-08-19,Castro,Cappuccino,cloudy,26,128.7
+2026-08-19,Castro,Americano,cloudy,35,138.25
+2026-08-19,Castro,Cold Brew,cloudy,33,181.5
+2026-08-19,Castro,Matcha Latte,cloudy,18,103.5
+2026-08-19,Castro,Mocha,cloudy,17,96.05
+2026-08-19,Castro,Chai,cloudy,17,86.7
+2026-08-19,Castro,Espresso,cloudy,23,74.75
+2026-08-19,Sunset,Latte,sunny,44,231.0
+2026-08-19,Sunset,Cappuccino,sunny,21,103.95
+2026-08-19,Sunset,Americano,sunny,24,94.8
+2026-08-19,Sunset,Cold Brew,sunny,36,198.0
+2026-08-19,Sunset,Matcha Latte,sunny,15,86.25
+2026-08-19,Sunset,Mocha,sunny,13,73.45
+2026-08-19,Sunset,Chai,sunny,16,81.6
+2026-08-19,Sunset,Espresso,sunny,14,45.5
+2026-08-19,Marina,Latte,sunny,49,257.25
+2026-08-19,Marina,Cappuccino,sunny,35,173.25
+2026-08-19,Marina,Americano,sunny,35,138.25
+2026-08-19,Marina,Cold Brew,sunny,54,297.0
+2026-08-19,Marina,Matcha Latte,sunny,18,103.5
+2026-08-19,Marina,Mocha,sunny,14,79.1
+2026-08-19,Marina,Chai,sunny,16,81.6
+2026-08-19,Marina,Espresso,sunny,19,61.75
+2026-08-20,Mission,Latte,sunny,68,357.0
+2026-08-20,Mission,Cappuccino,sunny,28,138.6
+2026-08-20,Mission,Americano,sunny,44,173.8
+2026-08-20,Mission,Cold Brew,sunny,62,341.0
+2026-08-20,Mission,Matcha Latte,sunny,21,120.75
+2026-08-20,Mission,Mocha,sunny,17,96.05
+2026-08-20,Mission,Chai,sunny,17,86.7
+2026-08-20,Mission,Espresso,sunny,24,78.0
+2026-08-20,SoMa,Latte,rainy,67,351.75
+2026-08-20,SoMa,Cappuccino,rainy,48,237.6
+2026-08-20,SoMa,Americano,rainy,49,193.55
+2026-08-20,SoMa,Cold Brew,rainy,23,126.5
+2026-08-20,SoMa,Matcha Latte,rainy,26,149.5
+2026-08-20,SoMa,Mocha,rainy,27,152.55
+2026-08-20,SoMa,Chai,rainy,35,178.5
+2026-08-20,SoMa,Espresso,rainy,32,104.0
+2026-08-20,Castro,Latte,cloudy,49,257.25
+2026-08-20,Castro,Cappuccino,cloudy,32,158.4
+2026-08-20,Castro,Americano,cloudy,27,106.65
+2026-08-20,Castro,Cold Brew,cloudy,46,253.0
+2026-08-20,Castro,Matcha Latte,cloudy,18,103.5
+2026-08-20,Castro,Mocha,cloudy,14,79.1
+2026-08-20,Castro,Chai,cloudy,23,117.3
+2026-08-20,Castro,Espresso,cloudy,19,61.75
+2026-08-20,Sunset,Latte,sunny,43,225.75
+2026-08-20,Sunset,Cappuccino,sunny,24,118.8
+2026-08-20,Sunset,Americano,sunny,28,110.6
+2026-08-20,Sunset,Cold Brew,sunny,43,236.5
+2026-08-20,Sunset,Matcha Latte,sunny,17,97.75
+2026-08-20,Sunset,Mocha,sunny,10,56.5
+2026-08-20,Sunset,Chai,sunny,17,86.7
+2026-08-20,Sunset,Espresso,sunny,14,45.5
+2026-08-20,Marina,Latte,cloudy,56,294.0
+2026-08-20,Marina,Cappuccino,cloudy,32,158.4
+2026-08-20,Marina,Americano,cloudy,32,126.4
+2026-08-20,Marina,Cold Brew,cloudy,45,247.5
+2026-08-20,Marina,Matcha Latte,cloudy,20,115.0
+2026-08-20,Marina,Mocha,cloudy,14,79.1
+2026-08-20,Marina,Chai,cloudy,17,86.7
+2026-08-20,Marina,Espresso,cloudy,25,81.25
+2026-08-21,Mission,Latte,sunny,41,215.25
+2026-08-21,Mission,Cappuccino,sunny,42,207.9
+2026-08-21,Mission,Americano,sunny,41,161.95
+2026-08-21,Mission,Cold Brew,sunny,70,385.0
+2026-08-21,Mission,Matcha Latte,sunny,20,115.0
+2026-08-21,Mission,Mocha,sunny,17,96.05
+2026-08-21,Mission,Chai,sunny,22,112.2
+2026-08-21,Mission,Espresso,sunny,25,81.25
+2026-08-21,SoMa,Latte,sunny,83,435.75
+2026-08-21,SoMa,Cappuccino,sunny,43,212.85
+2026-08-21,SoMa,Americano,sunny,58,229.1
+2026-08-21,SoMa,Cold Brew,sunny,88,484.0
+2026-08-21,SoMa,Matcha Latte,sunny,31,178.25
+2026-08-21,SoMa,Mocha,sunny,24,135.6
+2026-08-21,SoMa,Chai,sunny,23,117.3
+2026-08-21,SoMa,Espresso,sunny,36,117.0
+2026-08-21,Castro,Latte,sunny,57,299.25
+2026-08-21,Castro,Cappuccino,sunny,25,123.75
+2026-08-21,Castro,Americano,sunny,30,118.5
+2026-08-21,Castro,Cold Brew,sunny,44,242.0
+2026-08-21,Castro,Matcha Latte,sunny,15,86.25
+2026-08-21,Castro,Mocha,sunny,16,90.4
+2026-08-21,Castro,Chai,sunny,18,91.8
+2026-08-21,Castro,Espresso,sunny,18,58.5
+2026-08-21,Marina,Latte,sunny,41,215.25
+2026-08-21,Marina,Cappuccino,sunny,28,138.6
+2026-08-21,Marina,Americano,sunny,37,146.15
+2026-08-21,Marina,Cold Brew,sunny,73,401.5
+2026-08-21,Marina,Matcha Latte,sunny,20,115.0
+2026-08-21,Marina,Mocha,sunny,14,79.1
+2026-08-21,Marina,Chai,sunny,19,96.9
+2026-08-21,Marina,Espresso,sunny,26,84.5
+2026-08-22,Mission,Latte,sunny,74,388.5
+2026-08-22,Mission,Cappuccino,sunny,27,133.65
+2026-08-22,Mission,Americano,sunny,37,146.15
+2026-08-22,Mission,Cold Brew,sunny,62,341.0
+2026-08-22,Mission,Matcha Latte,sunny,23,132.25
+2026-08-22,Mission,Mocha,sunny,15,84.75
+2026-08-22,Mission,Chai,sunny,21,107.1
+2026-08-22,Mission,Espresso,sunny,21,68.25
+2026-08-22,SoMa,Latte,sunny,37,194.25
+2026-08-22,SoMa,Cappuccino,sunny,22,108.9
+2026-08-22,SoMa,Americano,sunny,18,71.1
+2026-08-22,SoMa,Cold Brew,sunny,47,258.5
+2026-08-22,SoMa,Matcha Latte,sunny,13,74.75
+2026-08-22,SoMa,Mocha,sunny,15,84.75
+2026-08-22,SoMa,Chai,sunny,16,81.6
+2026-08-22,SoMa,Espresso,sunny,16,52.0
+2026-08-22,Castro,Latte,rainy,51,267.75
+2026-08-22,Castro,Cappuccino,rainy,33,163.35
+2026-08-22,Castro,Americano,rainy,24,94.8
+2026-08-22,Castro,Cold Brew,rainy,16,88.0
+2026-08-22,Castro,Matcha Latte,rainy,17,97.75
+2026-08-22,Castro,Mocha,rainy,20,113.0
+2026-08-22,Castro,Chai,rainy,25,127.5
+2026-08-22,Castro,Espresso,rainy,21,68.25
+2026-08-22,Marina,Latte,cloudy,77,404.25
+2026-08-22,Marina,Cappuccino,cloudy,45,222.75
+2026-08-22,Marina,Americano,cloudy,49,193.55
+2026-08-22,Marina,Cold Brew,cloudy,63,346.5
+2026-08-22,Marina,Matcha Latte,cloudy,27,155.25
+2026-08-22,Marina,Mocha,cloudy,21,118.65
+2026-08-22,Marina,Chai,cloudy,28,142.8
+2026-08-22,Marina,Espresso,cloudy,34,110.5
+2026-08-23,Mission,Latte,cloudy,51,267.75
+2026-08-23,Mission,Cappuccino,cloudy,34,168.3
+2026-08-23,Mission,Americano,cloudy,40,158.0
+2026-08-23,Mission,Cold Brew,cloudy,46,253.0
+2026-08-23,Mission,Matcha Latte,cloudy,18,103.5
+2026-08-23,Mission,Mocha,cloudy,19,107.35
+2026-08-23,Mission,Chai,cloudy,17,86.7
+2026-08-23,Mission,Espresso,cloudy,29,94.25
+2026-08-23,SoMa,Latte,sunny,37,194.25
+2026-08-23,SoMa,Cappuccino,sunny,24,118.8
+2026-08-23,SoMa,Americano,sunny,28,110.6
+2026-08-23,SoMa,Cold Brew,sunny,43,236.5
+2026-08-23,SoMa,Matcha Latte,sunny,12,69.0
+2026-08-23,SoMa,Mocha,sunny,9,50.85
+2026-08-23,SoMa,Chai,sunny,15,76.5
+2026-08-23,SoMa,Espresso,sunny,14,45.5
+2026-08-23,Castro,Latte,sunny,48,252.0
+2026-08-23,Castro,Cappuccino,sunny,31,153.45
+2026-08-23,Castro,Americano,sunny,31,122.45
+2026-08-23,Castro,Cold Brew,sunny,61,335.5
+2026-08-23,Castro,Matcha Latte,sunny,15,86.25
+2026-08-23,Castro,Mocha,sunny,16,90.4
+2026-08-23,Castro,Chai,sunny,20,102.0
+2026-08-23,Castro,Espresso,sunny,24,78.0
+2026-08-23,Sunset,Latte,sunny,56,294.0
+2026-08-23,Sunset,Cappuccino,sunny,22,108.9
+2026-08-23,Sunset,Americano,sunny,29,114.55
+2026-08-23,Sunset,Cold Brew,sunny,53,291.5
+2026-08-23,Sunset,Matcha Latte,sunny,13,74.75
+2026-08-23,Sunset,Mocha,sunny,13,73.45
+2026-08-23,Sunset,Chai,sunny,14,71.4
+2026-08-23,Sunset,Espresso,sunny,18,58.5
+2026-08-23,Marina,Latte,sunny,84,441.0
+2026-08-23,Marina,Cappuccino,sunny,39,193.05
+2026-08-23,Marina,Americano,sunny,51,201.45
+2026-08-23,Marina,Cold Brew,sunny,86,473.0
+2026-08-23,Marina,Matcha Latte,sunny,26,149.5
+2026-08-23,Marina,Mocha,sunny,21,118.65
+2026-08-23,Marina,Chai,sunny,32,163.2
+2026-08-23,Marina,Espresso,sunny,29,94.25
+2026-08-24,Mission,Latte,sunny,61,320.25
+2026-08-24,Mission,Cappuccino,sunny,35,173.25
+2026-08-24,Mission,Americano,sunny,34,134.3
+2026-08-24,Mission,Cold Brew,sunny,76,418.0
+2026-08-24,Mission,Matcha Latte,sunny,21,120.75
+2026-08-24,Mission,Mocha,sunny,20,113.0
+2026-08-24,Mission,Chai,sunny,24,122.4
+2026-08-24,Mission,Espresso,sunny,21,68.25
+2026-08-24,SoMa,Latte,sunny,84,441.0
+2026-08-24,SoMa,Cappuccino,sunny,39,193.05
+2026-08-24,SoMa,Americano,sunny,55,217.25
+2026-08-24,SoMa,Cold Brew,sunny,87,478.5
+2026-08-24,SoMa,Matcha Latte,sunny,24,138.0
+2026-08-24,SoMa,Mocha,sunny,24,135.6
+2026-08-24,SoMa,Chai,sunny,27,137.7
+2026-08-24,SoMa,Espresso,sunny,27,87.75
+2026-08-24,Castro,Latte,sunny,48,252.0
+2026-08-24,Castro,Cappuccino,sunny,25,123.75
+2026-08-24,Castro,Americano,sunny,32,126.4
+2026-08-24,Castro,Cold Brew,sunny,58,319.0
+2026-08-24,Castro,Matcha Latte,sunny,16,92.0
+2026-08-24,Castro,Mocha,sunny,14,79.1
+2026-08-24,Castro,Chai,sunny,17,86.7
+2026-08-24,Castro,Espresso,sunny,21,68.25
+2026-08-24,Sunset,Latte,cloudy,46,241.5
+2026-08-24,Sunset,Cappuccino,cloudy,25,123.75
+2026-08-24,Sunset,Americano,cloudy,26,102.7
+2026-08-24,Sunset,Cold Brew,cloudy,30,165.0
+2026-08-24,Sunset,Matcha Latte,cloudy,15,86.25
+2026-08-24,Sunset,Mocha,cloudy,13,73.45
+2026-08-24,Sunset,Chai,cloudy,17,86.7
+2026-08-24,Sunset,Espresso,cloudy,17,55.25
+2026-08-24,Marina,Latte,sunny,55,288.75
+2026-08-24,Marina,Cappuccino,sunny,31,153.45
+2026-08-24,Marina,Americano,sunny,32,126.4
+2026-08-24,Marina,Cold Brew,sunny,74,407.0
+2026-08-24,Marina,Matcha Latte,sunny,16,92.0
+2026-08-24,Marina,Mocha,sunny,13,73.45
+2026-08-24,Marina,Chai,sunny,21,107.1
+2026-08-24,Marina,Espresso,sunny,18,58.5
+2026-08-25,Mission,Latte,rainy,50,262.5
+2026-08-25,Mission,Cappuccino,rainy,41,202.95
+2026-08-25,Mission,Americano,rainy,34,134.3
+2026-08-25,Mission,Cold Brew,rainy,22,84.7
+2026-08-25,Mission,Matcha Latte,rainy,21,120.75
+2026-08-25,Mission,Mocha,rainy,22,124.3
+2026-08-25,Mission,Chai,rainy,28,142.8
+2026-08-25,Mission,Espresso,rainy,25,81.25
+2026-08-25,SoMa,Latte,sunny,64,336.0
+2026-08-25,SoMa,Cappuccino,sunny,39,193.05
+2026-08-25,SoMa,Americano,sunny,45,177.75
+2026-08-25,SoMa,Cold Brew,sunny,100,550.0
+2026-08-25,SoMa,Matcha Latte,sunny,25,143.75
+2026-08-25,SoMa,Mocha,sunny,26,146.9
+2026-08-25,SoMa,Chai,sunny,30,153.0
+2026-08-25,SoMa,Espresso,sunny,29,94.25
+2026-08-25,Castro,Latte,sunny,55,288.75
+2026-08-25,Castro,Cappuccino,sunny,27,133.65
+2026-08-25,Castro,Americano,sunny,43,169.85
+2026-08-25,Castro,Cold Brew,sunny,44,242.0
+2026-08-25,Castro,Matcha Latte,sunny,14,80.5
+2026-08-25,Castro,Mocha,sunny,12,67.8
+2026-08-25,Castro,Chai,sunny,17,86.7
+2026-08-25,Castro,Espresso,sunny,20,65.0
+2026-08-25,Sunset,Latte,sunny,32,168.0
+2026-08-25,Sunset,Cappuccino,sunny,22,108.9
+2026-08-25,Sunset,Americano,sunny,33,130.35
+2026-08-25,Sunset,Cold Brew,sunny,39,214.5
+2026-08-25,Sunset,Matcha Latte,sunny,16,92.0
+2026-08-25,Sunset,Mocha,sunny,12,67.8
+2026-08-25,Sunset,Chai,sunny,18,91.8
+2026-08-25,Sunset,Espresso,sunny,15,48.75
+2026-08-25,Marina,Latte,cloudy,48,252.0
+2026-08-25,Marina,Cappuccino,cloudy,26,128.7
+2026-08-25,Marina,Americano,cloudy,32,126.4
+2026-08-25,Marina,Cold Brew,cloudy,43,236.5
+2026-08-25,Marina,Matcha Latte,cloudy,17,97.75
+2026-08-25,Marina,Mocha,cloudy,17,96.05
+2026-08-25,Marina,Chai,cloudy,22,112.2
+2026-08-25,Marina,Espresso,cloudy,21,68.25
+2026-08-26,Mission,Latte,rainy,63,330.75
+2026-08-26,Mission,Cappuccino,rainy,39,193.05
+2026-08-26,Mission,Americano,rainy,37,146.15
+2026-08-26,Mission,Cold Brew,rainy,23,88.55
+2026-08-26,Mission,Matcha Latte,rainy,18,103.5
+2026-08-26,Mission,Mocha,rainy,27,152.55
+2026-08-26,Mission,Chai,rainy,28,142.8
+2026-08-26,Mission,Espresso,rainy,24,78.0
+2026-08-26,SoMa,Latte,sunny,60,315.0
+2026-08-26,SoMa,Cappuccino,sunny,46,227.7
+2026-08-26,SoMa,Americano,sunny,48,189.6
+2026-08-26,SoMa,Cold Brew,sunny,83,456.5
+2026-08-26,SoMa,Matcha Latte,sunny,24,138.0
+2026-08-26,SoMa,Mocha,sunny,26,146.9
+2026-08-26,SoMa,Chai,sunny,22,112.2
+2026-08-26,SoMa,Espresso,sunny,29,94.25
+2026-08-26,Castro,Latte,cloudy,46,241.5
+2026-08-26,Castro,Cappuccino,cloudy,30,148.5
+2026-08-26,Castro,Americano,cloudy,34,134.3
+2026-08-26,Castro,Cold Brew,cloudy,46,253.0
+2026-08-26,Castro,Matcha Latte,cloudy,15,86.25
+2026-08-26,Castro,Mocha,cloudy,16,90.4
+2026-08-26,Castro,Chai,cloudy,25,127.5
+2026-08-26,Castro,Espresso,cloudy,23,74.75
+2026-08-26,Sunset,Latte,rainy,36,189.0
+2026-08-26,Sunset,Cappuccino,rainy,24,118.8
+2026-08-26,Sunset,Americano,rainy,28,110.6
+2026-08-26,Sunset,Cold Brew,rainy,15,82.5
+2026-08-26,Sunset,Matcha Latte,rainy,15,86.25
+2026-08-26,Sunset,Mocha,rainy,16,90.4
+2026-08-26,Sunset,Chai,rainy,18,91.8
+2026-08-26,Sunset,Espresso,rainy,13,42.25
+2026-08-26,Marina,Latte,rainy,54,283.5
+2026-08-26,Marina,Cappuccino,rainy,37,183.15
+2026-08-26,Marina,Americano,rainy,36,142.2
+2026-08-26,Marina,Cold Brew,rainy,15,82.5
+2026-08-26,Marina,Matcha Latte,rainy,17,97.75
+2026-08-26,Marina,Mocha,rainy,18,101.7
+2026-08-26,Marina,Chai,rainy,22,112.2
+2026-08-26,Marina,Espresso,rainy,23,74.75
+2026-08-27,Mission,Latte,sunny,59,309.75
+2026-08-27,Mission,Cappuccino,sunny,33,163.35
+2026-08-27,Mission,Americano,sunny,50,197.5
+2026-08-27,Mission,Cold Brew,sunny,72,277.2
+2026-08-27,Mission,Matcha Latte,sunny,23,132.25
+2026-08-27,Mission,Mocha,sunny,14,79.1
+2026-08-27,Mission,Chai,sunny,20,102.0
+2026-08-27,Mission,Espresso,sunny,23,74.75
+2026-08-27,SoMa,Latte,rainy,92,483.0
+2026-08-27,SoMa,Cappuccino,rainy,43,212.85
+2026-08-27,SoMa,Americano,rainy,55,217.25
+2026-08-27,SoMa,Cold Brew,rainy,22,121.0
+2026-08-27,SoMa,Matcha Latte,rainy,22,126.5
+2026-08-27,SoMa,Mocha,rainy,30,169.5
+2026-08-27,SoMa,Chai,rainy,35,178.5
+2026-08-27,SoMa,Espresso,rainy,31,100.75
+2026-08-27,Castro,Latte,sunny,62,325.5
+2026-08-27,Castro,Cappuccino,sunny,24,118.8
+2026-08-27,Castro,Americano,sunny,33,130.35
+2026-08-27,Castro,Cold Brew,sunny,56,308.0
+2026-08-27,Castro,Matcha Latte,sunny,20,115.0
+2026-08-27,Castro,Mocha,sunny,13,73.45
+2026-08-27,Castro,Chai,sunny,21,107.1
+2026-08-27,Castro,Espresso,sunny,21,68.25
+2026-08-27,Sunset,Latte,cloudy,38,199.5
+2026-08-27,Sunset,Cappuccino,cloudy,24,118.8
+2026-08-27,Sunset,Americano,cloudy,29,114.55
+2026-08-27,Sunset,Cold Brew,cloudy,32,176.0
+2026-08-27,Sunset,Matcha Latte,cloudy,13,74.75
+2026-08-27,Sunset,Mocha,cloudy,11,62.15
+2026-08-27,Sunset,Chai,cloudy,15,76.5
+2026-08-27,Sunset,Espresso,cloudy,20,65.0
+2026-08-27,Marina,Latte,cloudy,46,241.5
+2026-08-27,Marina,Cappuccino,cloudy,33,163.35
+2026-08-27,Marina,Americano,cloudy,33,130.35
+2026-08-27,Marina,Cold Brew,cloudy,41,225.5
+2026-08-27,Marina,Matcha Latte,cloudy,13,74.75
+2026-08-27,Marina,Mocha,cloudy,17,96.05
+2026-08-27,Marina,Chai,cloudy,18,91.8
+2026-08-27,Marina,Espresso,cloudy,21,68.25
+2026-08-28,Mission,Latte,sunny,61,320.25
+2026-08-28,Mission,Cappuccino,sunny,40,198.0
+2026-08-28,Mission,Americano,sunny,40,158.0
+2026-08-28,Mission,Cold Brew,sunny,61,234.85
+2026-08-28,Mission,Matcha Latte,sunny,19,109.25
+2026-08-28,Mission,Mocha,sunny,18,101.7
+2026-08-28,Mission,Chai,sunny,22,112.2
+2026-08-28,Mission,Espresso,sunny,25,81.25
+2026-08-28,SoMa,Latte,sunny,64,336.0
+2026-08-28,SoMa,Cappuccino,sunny,47,232.65
+2026-08-28,SoMa,Americano,sunny,48,189.6
+2026-08-28,SoMa,Cold Brew,sunny,83,456.5
+2026-08-28,SoMa,Matcha Latte,sunny,28,161.0
+2026-08-28,SoMa,Mocha,sunny,30,169.5
+2026-08-28,SoMa,Chai,sunny,24,122.4
+2026-08-28,SoMa,Espresso,sunny,36,117.0
+2026-08-28,Castro,Latte,cloudy,52,273.0
+2026-08-28,Castro,Cappuccino,cloudy,35,173.25
+2026-08-28,Castro,Americano,cloudy,34,134.3
+2026-08-28,Castro,Cold Brew,cloudy,41,225.5
+2026-08-28,Castro,Matcha Latte,cloudy,21,120.75
+2026-08-28,Castro,Mocha,cloudy,17,96.05
+2026-08-28,Castro,Chai,cloudy,19,96.9
+2026-08-28,Castro,Espresso,cloudy,18,58.5
+2026-08-28,Sunset,Latte,cloudy,36,189.0
+2026-08-28,Sunset,Cappuccino,cloudy,29,143.55
+2026-08-28,Sunset,Americano,cloudy,30,118.5
+2026-08-28,Sunset,Cold Brew,cloudy,34,187.0
+2026-08-28,Sunset,Matcha Latte,cloudy,13,74.75
+2026-08-28,Sunset,Mocha,cloudy,11,62.15
+2026-08-28,Sunset,Chai,cloudy,18,91.8
+2026-08-28,Sunset,Espresso,cloudy,19,61.75
+2026-08-28,Marina,Latte,sunny,56,294.0
+2026-08-28,Marina,Cappuccino,sunny,30,148.5
+2026-08-28,Marina,Americano,sunny,32,126.4
+2026-08-28,Marina,Cold Brew,sunny,60,330.0
+2026-08-28,Marina,Matcha Latte,sunny,20,115.0
+2026-08-28,Marina,Mocha,sunny,16,90.4
+2026-08-28,Marina,Chai,sunny,20,102.0
+2026-08-28,Marina,Espresso,sunny,21,68.25
+2026-08-29,Mission,Latte,sunny,60,315.0
+2026-08-29,Mission,Cappuccino,sunny,34,168.3
+2026-08-29,Mission,Americano,sunny,43,169.85
+2026-08-29,Mission,Cold Brew,sunny,71,273.35
+2026-08-29,Mission,Matcha Latte,sunny,22,126.5
+2026-08-29,Mission,Mocha,sunny,19,107.35
+2026-08-29,Mission,Chai,sunny,26,132.6
+2026-08-29,Mission,Espresso,sunny,19,61.75
+2026-08-29,SoMa,Latte,sunny,35,183.75
+2026-08-29,SoMa,Cappuccino,sunny,23,113.85
+2026-08-29,SoMa,Americano,sunny,26,102.7
+2026-08-29,SoMa,Cold Brew,sunny,40,220.0
+2026-08-29,SoMa,Matcha Latte,sunny,13,74.75
+2026-08-29,SoMa,Mocha,sunny,10,56.5
+2026-08-29,SoMa,Chai,sunny,13,66.3
+2026-08-29,SoMa,Espresso,sunny,17,55.25
+2026-08-29,Castro,Latte,sunny,57,299.25
+2026-08-29,Castro,Cappuccino,sunny,35,173.25
+2026-08-29,Castro,Americano,sunny,29,114.55
+2026-08-29,Castro,Cold Brew,sunny,56,308.0
+2026-08-29,Castro,Matcha Latte,sunny,18,103.5
+2026-08-29,Castro,Mocha,sunny,17,96.05
+2026-08-29,Castro,Chai,sunny,20,102.0
+2026-08-29,Castro,Espresso,sunny,24,78.0
+2026-08-29,Sunset,Latte,sunny,41,215.25
+2026-08-29,Sunset,Cappuccino,sunny,21,103.95
+2026-08-29,Sunset,Americano,sunny,34,134.3
+2026-08-29,Sunset,Cold Brew,sunny,50,275.0
+2026-08-29,Sunset,Matcha Latte,sunny,11,63.25
+2026-08-29,Sunset,Mocha,sunny,15,84.75
+2026-08-29,Sunset,Chai,sunny,17,86.7
+2026-08-29,Sunset,Espresso,sunny,17,55.25
+2026-08-29,Marina,Latte,rainy,72,378.0
+2026-08-29,Marina,Cappuccino,rainy,48,237.6
+2026-08-29,Marina,Americano,rainy,44,173.8
+2026-08-29,Marina,Cold Brew,rainy,33,181.5
+2026-08-29,Marina,Matcha Latte,rainy,23,132.25
+2026-08-29,Marina,Mocha,rainy,34,192.1
+2026-08-29,Marina,Chai,rainy,39,198.9
+2026-08-29,Marina,Espresso,rainy,33,107.25
+2026-08-30,Mission,Latte,rainy,58,304.5
+2026-08-30,Mission,Cappuccino,rainy,31,153.45
+2026-08-30,Mission,Americano,rainy,34,134.3
+2026-08-30,Mission,Cold Brew,rainy,23,88.55
+2026-08-30,Mission,Matcha Latte,rainy,18,103.5
+2026-08-30,Mission,Mocha,rainy,23,129.95
+2026-08-30,Mission,Chai,rainy,27,137.7
+2026-08-30,Mission,Espresso,rainy,20,65.0
+2026-08-30,SoMa,Latte,sunny,38,199.5
+2026-08-30,SoMa,Cappuccino,sunny,25,123.75
+2026-08-30,SoMa,Americano,sunny,23,90.85
+2026-08-30,SoMa,Cold Brew,sunny,41,225.5
+2026-08-30,SoMa,Matcha Latte,sunny,17,97.75
+2026-08-30,SoMa,Mocha,sunny,12,67.8
+2026-08-30,SoMa,Chai,sunny,14,71.4
+2026-08-30,SoMa,Espresso,sunny,15,48.75
+2026-08-30,Castro,Latte,sunny,48,252.0
+2026-08-30,Castro,Cappuccino,sunny,34,168.3
+2026-08-30,Castro,Americano,sunny,30,118.5
+2026-08-30,Castro,Cold Brew,sunny,45,247.5
+2026-08-30,Castro,Matcha Latte,sunny,18,103.5
+2026-08-30,Castro,Mocha,sunny,14,79.1
+2026-08-30,Castro,Chai,sunny,17,86.7
+2026-08-30,Castro,Espresso,sunny,21,68.25
+2026-08-30,Sunset,Latte,rainy,39,204.75
+2026-08-30,Sunset,Cappuccino,rainy,23,113.85
+2026-08-30,Sunset,Americano,rainy,30,118.5
+2026-08-30,Sunset,Cold Brew,rainy,16,88.0
+2026-08-30,Sunset,Matcha Latte,rainy,14,80.5
+2026-08-30,Sunset,Mocha,rainy,16,90.4
+2026-08-30,Sunset,Chai,rainy,21,107.1
+2026-08-30,Sunset,Espresso,rainy,18,58.5
+2026-08-30,Marina,Latte,sunny,71,372.75
+2026-08-30,Marina,Cappuccino,sunny,40,198.0
+2026-08-30,Marina,Americano,sunny,48,189.6
+2026-08-30,Marina,Cold Brew,sunny,81,445.5
+2026-08-30,Marina,Matcha Latte,sunny,21,120.75
+2026-08-30,Marina,Mocha,sunny,23,129.95
+2026-08-30,Marina,Chai,sunny,28,142.8
+2026-08-30,Marina,Espresso,sunny,35,113.75
+2026-08-31,Mission,Latte,cloudy,62,325.5
+2026-08-31,Mission,Cappuccino,cloudy,33,163.35
+2026-08-31,Mission,Americano,cloudy,40,158.0
+2026-08-31,Mission,Cold Brew,cloudy,50,192.5
+2026-08-31,Mission,Matcha Latte,cloudy,15,86.25
+2026-08-31,Mission,Mocha,cloudy,20,113.0
+2026-08-31,Mission,Chai,cloudy,20,102.0
+2026-08-31,Mission,Espresso,cloudy,22,71.5
+2026-08-31,SoMa,Latte,sunny,71,372.75
+2026-08-31,SoMa,Cappuccino,sunny,46,227.7
+2026-08-31,SoMa,Americano,sunny,65,256.75
+2026-08-31,SoMa,Cold Brew,sunny,84,462.0
+2026-08-31,SoMa,Matcha Latte,sunny,32,184.0
+2026-08-31,SoMa,Mocha,sunny,20,113.0
+2026-08-31,SoMa,Chai,sunny,25,127.5
+2026-08-31,SoMa,Espresso,sunny,30,97.5
+2026-08-31,Castro,Latte,sunny,43,225.75
+2026-08-31,Castro,Cappuccino,sunny,25,123.75
+2026-08-31,Castro,Americano,sunny,30,118.5
+2026-08-31,Castro,Cold Brew,sunny,57,313.5
+2026-08-31,Castro,Matcha Latte,sunny,20,115.0
+2026-08-31,Castro,Mocha,sunny,13,73.45
+2026-08-31,Castro,Chai,sunny,21,107.1
+2026-08-31,Castro,Espresso,sunny,17,55.25
+2026-08-31,Sunset,Latte,sunny,32,168.0
+2026-08-31,Sunset,Cappuccino,sunny,21,103.95
+2026-08-31,Sunset,Americano,sunny,30,118.5
+2026-08-31,Sunset,Cold Brew,sunny,53,291.5
+2026-08-31,Sunset,Matcha Latte,sunny,18,103.5
+2026-08-31,Sunset,Mocha,sunny,12,67.8
+2026-08-31,Sunset,Chai,sunny,13,66.3
+2026-08-31,Sunset,Espresso,sunny,17,55.25
+2026-08-31,Marina,Latte,sunny,53,278.25
+2026-08-31,Marina,Cappuccino,sunny,27,133.65
+2026-08-31,Marina,Americano,sunny,33,130.35
+2026-08-31,Marina,Cold Brew,sunny,54,297.0
+2026-08-31,Marina,Matcha Latte,sunny,18,103.5
+2026-08-31,Marina,Mocha,sunny,16,90.4
+2026-08-31,Marina,Chai,sunny,17,86.7
+2026-08-31,Marina,Espresso,sunny,23,74.75
+2026-09-01,Mission,Latte,sunny,65,341.25
+2026-09-01,Mission,Cappuccino,sunny,29,143.55
+2026-09-01,Mission,Americano,sunny,45,177.75
+2026-09-01,Mission,Cold Brew,sunny,83,319.55
+2026-09-01,Mission,Matcha Latte,sunny,15,86.25
+2026-09-01,Mission,Mocha,sunny,19,107.35
+2026-09-01,Mission,Chai,sunny,22,112.2
+2026-09-01,Mission,Espresso,sunny,26,84.5
+2026-09-01,SoMa,Latte,rainy,82,430.5
+2026-09-01,SoMa,Cappuccino,rainy,53,262.35
+2026-09-01,SoMa,Americano,rainy,45,177.75
+2026-09-01,SoMa,Cold Brew,rainy,23,126.5
+2026-09-01,SoMa,Matcha Latte,rainy,22,126.5
+2026-09-01,SoMa,Mocha,rainy,33,186.45
+2026-09-01,SoMa,Chai,rainy,34,173.4
+2026-09-01,SoMa,Espresso,rainy,30,97.5
+2026-09-01,Castro,Latte,sunny,45,236.25
+2026-09-01,Castro,Cappuccino,sunny,29,143.55
+2026-09-01,Castro,Americano,sunny,30,118.5
+2026-09-01,Castro,Cold Brew,sunny,49,269.5
+2026-09-01,Castro,Matcha Latte,sunny,16,92.0
+2026-09-01,Castro,Mocha,sunny,16,90.4
+2026-09-01,Castro,Chai,sunny,18,91.8
+2026-09-01,Castro,Espresso,sunny,22,71.5
+2026-09-01,Sunset,Latte,cloudy,32,168.0
+2026-09-01,Sunset,Cappuccino,cloudy,28,138.6
+2026-09-01,Sunset,Americano,cloudy,22,86.9
+2026-09-01,Sunset,Cold Brew,cloudy,30,165.0
+2026-09-01,Sunset,Matcha Latte,cloudy,12,69.0
+2026-09-01,Sunset,Mocha,cloudy,11,62.15
+2026-09-01,Sunset,Chai,cloudy,15,76.5
+2026-09-01,Sunset,Espresso,cloudy,19,61.75
+2026-09-01,Marina,Latte,rainy,59,309.75
+2026-09-01,Marina,Cappuccino,rainy,30,148.5
+2026-09-01,Marina,Americano,rainy,32,126.4
+2026-09-01,Marina,Cold Brew,rainy,16,88.0
+2026-09-01,Marina,Matcha Latte,rainy,15,86.25
+2026-09-01,Marina,Mocha,rainy,21,118.65
+2026-09-01,Marina,Chai,rainy,22,112.2
+2026-09-01,Marina,Espresso,rainy,20,65.0
+2026-09-02,Mission,Latte,sunny,55,288.75
+2026-09-02,Mission,Cappuccino,sunny,31,153.45
+2026-09-02,Mission,Americano,sunny,37,146.15
+2026-09-02,Mission,Cold Brew,sunny,82,315.7
+2026-09-02,Mission,Matcha Latte,sunny,24,138.0
+2026-09-02,Mission,Mocha,sunny,18,101.7
+2026-09-02,Mission,Chai,sunny,20,102.0
+2026-09-02,Mission,Espresso,sunny,30,97.5
+2026-09-02,SoMa,Latte,cloudy,69,362.25
+2026-09-02,SoMa,Cappuccino,cloudy,47,232.65
+2026-09-02,SoMa,Americano,cloudy,53,209.35
+2026-09-02,SoMa,Cold Brew,cloudy,56,308.0
+2026-09-02,SoMa,Matcha Latte,cloudy,22,126.5
+2026-09-02,SoMa,Mocha,cloudy,23,129.95
+2026-09-02,SoMa,Chai,cloudy,29,147.9
+2026-09-02,SoMa,Espresso,cloudy,39,126.75
+2026-09-02,Castro,Latte,cloudy,51,267.75
+2026-09-02,Castro,Cappuccino,cloudy,32,158.4
+2026-09-02,Castro,Americano,cloudy,31,122.45
+2026-09-02,Castro,Cold Brew,cloudy,37,203.5
+2026-09-02,Castro,Matcha Latte,cloudy,18,103.5
+2026-09-02,Castro,Mocha,cloudy,15,84.75
+2026-09-02,Castro,Chai,cloudy,18,91.8
+2026-09-02,Castro,Espresso,cloudy,22,71.5
+2026-09-02,Sunset,Latte,sunny,41,215.25
+2026-09-02,Sunset,Cappuccino,sunny,24,118.8
+2026-09-02,Sunset,Americano,sunny,24,94.8
+2026-09-02,Sunset,Cold Brew,sunny,34,187.0
+2026-09-02,Sunset,Matcha Latte,sunny,15,86.25
+2026-09-02,Sunset,Mocha,sunny,13,73.45
+2026-09-02,Sunset,Chai,sunny,15,76.5
+2026-09-02,Sunset,Espresso,sunny,19,61.75
+2026-09-02,Marina,Latte,cloudy,47,246.75
+2026-09-02,Marina,Cappuccino,cloudy,32,158.4
+2026-09-02,Marina,Americano,cloudy,30,118.5
+2026-09-02,Marina,Cold Brew,cloudy,36,198.0
+2026-09-02,Marina,Matcha Latte,cloudy,18,103.5
+2026-09-02,Marina,Mocha,cloudy,14,79.1
+2026-09-02,Marina,Chai,cloudy,23,117.3
+2026-09-02,Marina,Espresso,cloudy,20,65.0
+2026-09-03,Mission,Latte,sunny,68,357.0
+2026-09-03,Mission,Cappuccino,sunny,31,153.45
+2026-09-03,Mission,Americano,sunny,29,114.55
+2026-09-03,Mission,Cold Brew,sunny,70,269.5
+2026-09-03,Mission,Matcha Latte,sunny,19,109.25
+2026-09-03,Mission,Mocha,sunny,15,84.75
+2026-09-03,Mission,Chai,sunny,26,132.6
+2026-09-03,Mission,Espresso,sunny,23,74.75
+2026-09-03,SoMa,Latte,cloudy,71,372.75
+2026-09-03,SoMa,Cappuccino,cloudy,46,227.7
+2026-09-03,SoMa,Americano,cloudy,39,154.05
+2026-09-03,SoMa,Cold Brew,cloudy,47,258.5
+2026-09-03,SoMa,Matcha Latte,cloudy,31,178.25
+2026-09-03,SoMa,Mocha,cloudy,24,135.6
+2026-09-03,SoMa,Chai,cloudy,32,163.2
+2026-09-03,SoMa,Espresso,cloudy,26,84.5
+2026-09-03,Castro,Latte,cloudy,47,246.75
+2026-09-03,Castro,Cappuccino,cloudy,23,113.85
+2026-09-03,Castro,Americano,cloudy,40,158.0
+2026-09-03,Castro,Cold Brew,cloudy,30,165.0
+2026-09-03,Castro,Matcha Latte,cloudy,17,97.75
+2026-09-03,Castro,Mocha,cloudy,13,73.45
+2026-09-03,Castro,Chai,cloudy,18,91.8
+2026-09-03,Castro,Espresso,cloudy,20,65.0
+2026-09-03,Sunset,Latte,sunny,45,236.25
+2026-09-03,Sunset,Cappuccino,sunny,24,118.8
+2026-09-03,Sunset,Americano,sunny,27,106.65
+2026-09-03,Sunset,Cold Brew,sunny,51,280.5
+2026-09-03,Sunset,Matcha Latte,sunny,15,86.25
+2026-09-03,Sunset,Mocha,sunny,11,62.15
+2026-09-03,Sunset,Chai,sunny,16,81.6
+2026-09-03,Sunset,Espresso,sunny,18,58.5
+2026-09-03,Marina,Latte,sunny,51,267.75
+2026-09-03,Marina,Cappuccino,sunny,30,148.5
+2026-09-03,Marina,Americano,sunny,36,142.2
+2026-09-03,Marina,Cold Brew,sunny,48,264.0
+2026-09-03,Marina,Matcha Latte,sunny,18,103.5
+2026-09-03,Marina,Mocha,sunny,17,96.05
+2026-09-03,Marina,Chai,sunny,16,81.6
+2026-09-03,Marina,Espresso,sunny,23,74.75
+2026-09-03,Mission,Latte,sunny,68,357.0
+2026-09-03,Mission,Cappuccino,sunny,31,153.45
+2026-09-03,Mission,Americano,sunny,29,114.55
+2026-09-03,Mission,Cold Brew,sunny,70,269.5
+2026-09-03,Mission,Matcha Latte,sunny,19,109.25
+2026-09-03,Mission,Mocha,sunny,15,84.75
+2026-09-03,Mission,Chai,sunny,26,132.6
+2026-09-03,Mission,Espresso,sunny,23,74.75
+2026-09-04,Mission,Latte,sunny,62,325.5
+2026-09-04,Mission,Cappuccino,sunny,33,163.35
+2026-09-04,Mission,Americano,sunny,40,158.0
+2026-09-04,Mission,Cold Brew,sunny,73,281.05
+2026-09-04,Mission,Matcha Latte,sunny,19,109.25
+2026-09-04,Mission,Mocha,sunny,15,84.75
+2026-09-04,Mission,Chai,sunny,22,112.2
+2026-09-04,Mission,Espresso,sunny,30,97.5
+2026-09-04,SoMa,Latte,cloudy,85,446.25
+2026-09-04,SoMa,Cappuccino,cloudy,43,212.85
+2026-09-04,SoMa,Americano,cloudy,51,201.45
+2026-09-04,SoMa,Cold Brew,cloudy,56,308.0
+2026-09-04,SoMa,Matcha Latte,cloudy,28,161.0
+2026-09-04,SoMa,Mocha,cloudy,22,124.3
+2026-09-04,SoMa,Chai,cloudy,22,112.2
+2026-09-04,SoMa,Espresso,cloudy,26,84.5
+2026-09-04,Castro,Latte,sunny,48,252.0
+2026-09-04,Castro,Cappuccino,sunny,28,138.6
+2026-09-04,Castro,Americano,sunny,33,130.35
+2026-09-04,Castro,Cold Brew,sunny,52,286.0
+2026-09-04,Castro,Matcha Latte,sunny,18,103.5
+2026-09-04,Castro,Mocha,sunny,15,84.75
+2026-09-04,Castro,Chai,sunny,20,102.0
+2026-09-04,Castro,Espresso,sunny,19,61.75
+2026-09-04,Sunset,Latte,rainy,45,236.25
+2026-09-04,Sunset,Cappuccino,rainy,18,89.1
+2026-09-04,Sunset,Americano,rainy,29,114.55
+2026-09-04,Sunset,Cold Brew,rainy,13,71.5
+2026-09-04,Sunset,Matcha Latte,rainy,14,80.5
+2026-09-04,Sunset,Mocha,rainy,15,84.75
+2026-09-04,Sunset,Chai,rainy,20,102.0
+2026-09-04,Sunset,Espresso,rainy,18,58.5
+2026-09-04,Marina,Latte,rainy,61,320.25
+2026-09-04,Marina,Cappuccino,rainy,24,118.8
+2026-09-04,Marina,Americano,rainy,35,138.25
+2026-09-04,Marina,Cold Brew,rainy,19,104.5
+2026-09-04,Marina,Matcha Latte,rainy,17,97.75
+2026-09-04,Marina,Mocha,rainy,18,101.7
+2026-09-04,Marina,Chai,rainy,24,122.4
+2026-09-04,Marina,Espresso,rainy,24,78.0
+2026-09-05,Mission,Latte,cloudy,60,315.0
+2026-09-05,Mission,Cappuccino,cloudy,42,207.9
+2026-09-05,Mission,Americano,cloudy,38,150.1
+2026-09-05,Mission,Cold Brew,cloudy,50,192.5
+2026-09-05,Mission,Matcha Latte,cloudy,16,92.0
+2026-09-05,Mission,Mocha,cloudy,17,96.05
+2026-09-05,Mission,Chai,cloudy,21,107.1
+2026-09-05,Mission,Espresso,cloudy,30,97.5
+2026-09-05,SoMa,Latte,sunny,47,246.75
+2026-09-05,SoMa,Cappuccino,sunny,22,108.9
+2026-09-05,SoMa,Americano,sunny,30,118.5
+2026-09-05,SoMa,Cold Brew,sunny,35,192.5
+2026-09-05,SoMa,Matcha Latte,sunny,15,86.25
+2026-09-05,SoMa,Mocha,sunny,12,67.8
+2026-09-05,SoMa,Chai,sunny,13,66.3
+2026-09-05,SoMa,Espresso,sunny,18,58.5
+2026-09-05,Castro,Latte,sunny,43,225.75
+2026-09-05,Castro,Cappuccino,sunny,30,148.5
+2026-09-05,Castro,Americano,sunny,25,98.75
+2026-09-05,Castro,Cold Brew,sunny,52,286.0
+2026-09-05,Castro,Matcha Latte,sunny,17,97.75
+2026-09-05,Castro,Mocha,sunny,14,79.1
+2026-09-05,Castro,Chai,sunny,19,96.9
+2026-09-05,Castro,Espresso,sunny,24,78.0
+2026-09-05,Sunset,Latte,sunny,41,215.25
+2026-09-05,Sunset,Cappuccino,sunny,26,128.7
+2026-09-05,Sunset,Americano,sunny,28,110.6
+2026-09-05,Sunset,Cold Brew,sunny,45,247.5
+2026-09-05,Sunset,Matcha Latte,sunny,14,80.5
+2026-09-05,Sunset,Mocha,sunny,14,79.1
+2026-09-05,Sunset,Chai,sunny,17,86.7
+2026-09-05,Sunset,Espresso,sunny,17,55.25
+2026-09-05,Marina,Latte,sunny,81,425.25
+2026-09-05,Marina,Cappuccino,sunny,32,158.4
+2026-09-05,Marina,Americano,sunny,50,197.5
+2026-09-05,Marina,Cold Brew,sunny,84,462.0
+2026-09-05,Marina,Matcha Latte,sunny,20,115.0
+2026-09-05,Marina,Mocha,sunny,24,135.6
+2026-09-05,Marina,Chai,sunny,26,132.6
+2026-09-05,Marina,Espresso,sunny,28,91.0
+2026-09-06,Mission,Latte,sunny,57,299.25
+2026-09-06,Mission,Cappuccino,sunny,36,178.2
+2026-09-06,Mission,Americano,sunny,35,138.25
+2026-09-06,Mission,Cold Brew,sunny,71,273.35
+2026-09-06,Mission,Matcha Latte,sunny,22,126.5
+2026-09-06,Mission,Mocha,sunny,17,96.05
+2026-09-06,Mission,Chai,sunny,24,122.4
+2026-09-06,Mission,Espresso,sunny,21,68.25
+2026-09-06,SoMa,Latte,cloudy,49,257.25
+2026-09-06,SoMa,Cappuccino,cloudy,21,103.95
+2026-09-06,SoMa,Americano,cloudy,28,110.6
+2026-09-06,SoMa,Cold Brew,cloudy,31,170.5
+2026-09-06,SoMa,Matcha Latte,cloudy,13,74.75
+2026-09-06,SoMa,Mocha,cloudy,12,67.8
+2026-09-06,SoMa,Chai,cloudy,13,66.3
+2026-09-06,SoMa,Espresso,cloudy,12,39.0
+2026-09-06,Castro,Latte,rainy,41,215.25
+2026-09-06,Castro,Cappuccino,rainy,36,178.2
+2026-09-06,Castro,Americano,rainy,39,154.05
+2026-09-06,Castro,Cold Brew,rainy,17,93.5
+2026-09-06,Castro,Matcha Latte,rainy,14,80.5
+2026-09-06,Castro,Mocha,rainy,19,107.35
+2026-09-06,Castro,Chai,rainy,25,127.5
+2026-09-06,Castro,Espresso,rainy,20,65.0
+2026-09-06,Sunset,Latte,rainy,35,183.75
+2026-09-06,Sunset,Cappuccino,rainy,31,153.45
+2026-09-06,Sunset,Americano,rainy,28,110.6
+2026-09-06,Sunset,Cold Brew,rainy,14,77.0
+2026-09-06,Sunset,Matcha Latte,rainy,15,86.25
+2026-09-06,Sunset,Mocha,rainy,14,79.1
+2026-09-06,Sunset,Chai,rainy,16,81.6
+2026-09-06,Sunset,Espresso,rainy,18,58.5
+2026-09-06,Marina,Latte,cloudy,84,441.0
+2026-09-06,Marina,Cappuccino,cloudy,43,212.85
+2026-09-06,Marina,Americano,cloudy,47,185.65
+2026-09-06,Marina,Cold Brew,cloudy,54,297.0
+2026-09-06,Marina,Matcha Latte,cloudy,23,132.25
+2026-09-06,Marina,Mocha,cloudy,21,118.65
+2026-09-06,Marina,Chai,cloudy,27,137.7
+2026-09-06,Marina,Espresso,cloudy,30,97.5
+2026-09-07,Mission,Latte,sunny,56,294.0
+2026-09-07,Mission,Cappuccino,sunny,29,143.55
+2026-09-07,Mission,Americano,sunny,41,161.95
+2026-09-07,Mission,Cold Brew,sunny,77,296.45
+2026-09-07,Mission,Matcha Latte,sunny,21,120.75
+2026-09-07,Mission,Mocha,sunny,20,113.0
+2026-09-07,Mission,Chai,sunny,21,107.1
+2026-09-07,Mission,Espresso,sunny,26,84.5
+2026-09-07,SoMa,Latte,sunny,83,435.75
+2026-09-07,SoMa,Cappuccino,sunny,41,202.95
+2026-09-07,SoMa,Americano,sunny,58,229.1
+2026-09-07,SoMa,Cold Brew,sunny,78,429.0
+2026-09-07,SoMa,Matcha Latte,sunny,28,161.0
+2026-09-07,SoMa,Mocha,sunny,21,118.65
+2026-09-07,SoMa,Chai,sunny,26,132.6
+2026-09-07,SoMa,Espresso,sunny,32,104.0
+2026-09-07,Castro,Latte,sunny,58,304.5
+2026-09-07,Castro,Cappuccino,sunny,30,148.5
+2026-09-07,Castro,Americano,sunny,33,130.35
+2026-09-07,Castro,Cold Brew,sunny,51,280.5
+2026-09-07,Castro,Matcha Latte,sunny,18,103.5
+2026-09-07,Castro,Mocha,sunny,16,90.4
+2026-09-07,Castro,Chai,sunny,17,86.7
+2026-09-07,Castro,Espresso,sunny,20,65.0
+2026-09-07,Sunset,Latte,cloudy,48,252.0
+2026-09-07,Sunset,Cappuccino,cloudy,25,123.75
+2026-09-07,Sunset,Americano,cloudy,27,106.65
+2026-09-07,Sunset,Cold Brew,cloudy,27,148.5
+2026-09-07,Sunset,Matcha Latte,cloudy,14,80.5
+2026-09-07,Sunset,Mocha,cloudy,13,73.45
+2026-09-07,Sunset,Chai,cloudy,15,76.5
+2026-09-07,Sunset,Espresso,cloudy,22,71.5
+2026-09-07,Marina,Latte,sunny,49,257.25
+2026-09-07,Marina,Cappuccino,sunny,28,138.6
+2026-09-07,Marina,Americano,sunny,34,134.3
+2026-09-07,Marina,Cold Brew,sunny,57,313.5
+2026-09-07,Marina,Matcha Latte,sunny,18,103.5
+2026-09-07,Marina,Mocha,sunny,15,84.75
+2026-09-07,Marina,Chai,sunny,19,96.9
+2026-09-07,Marina,Espresso,sunny,24,78.0
+2026-09-08,Mission,Latte,sunny,68,357.0
+2026-09-08,Mission,Cappuccino,sunny,38,188.1
+2026-09-08,Mission,Americano,sunny,46,181.7
+2026-09-08,Mission,Cold Brew,sunny,51,280.5
+2026-09-08,Mission,Matcha Latte,sunny,20,115.0
+2026-09-08,Mission,Mocha,sunny,16,90.4
+2026-09-08,Mission,Chai,sunny,24,122.4
+2026-09-08,Mission,Espresso,sunny,23,74.75
+2026-09-08,SoMa,Latte,cloudy,80,420.0
+2026-09-08,SoMa,Cappuccino,cloudy,43,212.85
+2026-09-08,SoMa,Americano,cloudy,49,193.55
+2026-09-08,SoMa,Cold Brew,cloudy,49,269.5
+2026-09-08,SoMa,Matcha Latte,cloudy,24,138.0
+2026-09-08,SoMa,Mocha,cloudy,24,135.6
+2026-09-08,SoMa,Chai,cloudy,31,158.1
+2026-09-08,SoMa,Espresso,cloudy,30,97.5
+2026-09-08,Castro,Latte,rainy,50,262.5
+2026-09-08,Castro,Cappuccino,rainy,35,173.25
+2026-09-08,Castro,Americano,rainy,32,126.4
+2026-09-08,Castro,Cold Brew,rainy,15,82.5
+2026-09-08,Castro,Matcha Latte,rainy,18,103.5
+2026-09-08,Castro,Mocha,rainy,17,96.05
+2026-09-08,Castro,Chai,rainy,27,137.7
+2026-09-08,Castro,Espresso,rainy,21,68.25
+2026-09-08,Sunset,Latte,cloudy,44,231.0
+2026-09-08,Sunset,Cappuccino,cloudy,26,128.7
+2026-09-08,Sunset,Americano,cloudy,25,98.75
+2026-09-08,Sunset,Cold Brew,cloudy,29,159.5
+2026-09-08,Sunset,Matcha Latte,cloudy,11,63.25
+2026-09-08,Sunset,Mocha,cloudy,15,84.75
+2026-09-08,Sunset,Chai,cloudy,14,71.4
+2026-09-08,Sunset,Espresso,cloudy,17,55.25
+2026-09-08,Marina,Latte,cloudy,45,236.25
+2026-09-08,Marina,Cappuccino,cloudy,32,158.4
+2026-09-08,Marina,Americano,cloudy,36,142.2
+2026-09-08,Marina,Cold Brew,cloudy,34,187.0
+2026-09-08,Marina,Matcha Latte,cloudy,16,92.0
+2026-09-08,Marina,Mocha,cloudy,18,101.7
+2026-09-08,Marina,Chai,cloudy,20,102.0
+2026-09-08,Marina,Espresso,cloudy,21,68.25
+2026-09-09,Mission,Latte,rainy,61,320.25
+2026-09-09,Mission,Cappuccino,rainy,27,133.65
+2026-09-09,Mission,Americano,rainy,42,165.9
+2026-09-09,Mission,Cold Brew,rainy,19,104.5
+2026-09-09,Mission,Matcha Latte,rainy,14,80.5
+2026-09-09,Mission,Mocha,rainy,22,124.3
+2026-09-09,Mission,Chai,rainy,28,142.8
+2026-09-09,Mission,Espresso,rainy,21,68.25
+2026-09-09,SoMa,Latte,rainy,64,336.0
+2026-09-09,SoMa,Cappuccino,rainy,43,212.85
+2026-09-09,SoMa,Americano,rainy,44,173.8
+2026-09-09,SoMa,Cold Brew,rainy,25,137.5
+2026-09-09,SoMa,Matcha Latte,rainy,30,172.5
+2026-09-09,SoMa,Mocha,rainy,28,158.2
+2026-09-09,SoMa,Chai,rainy,37,188.7
+2026-09-09,SoMa,Espresso,rainy,37,120.25
+2026-09-09,Castro,Latte,sunny,49,257.25
+2026-09-09,Castro,Cappuccino,sunny,33,163.35
+2026-09-09,Castro,Americano,sunny,37,146.15
+2026-09-09,Castro,Cold Brew,sunny,52,286.0
+2026-09-09,Castro,Matcha Latte,sunny,17,97.75
+2026-09-09,Castro,Mocha,sunny,16,90.4
+2026-09-09,Castro,Chai,sunny,21,107.1
+2026-09-09,Castro,Espresso,sunny,20,65.0
+2026-09-09,Sunset,Latte,rainy,38,199.5
+2026-09-09,Sunset,Cappuccino,rainy,29,143.55
+2026-09-09,Sunset,Americano,rainy,30,118.5
+2026-09-09,Sunset,Cold Brew,rainy,14,77.0
+2026-09-09,Sunset,Matcha Latte,rainy,11,63.25
+2026-09-09,Sunset,Mocha,rainy,20,113.0
+2026-09-09,Sunset,Chai,rainy,22,112.2
+2026-09-09,Sunset,Espresso,rainy,22,71.5
+2026-09-09,Marina,Latte,sunny,53,278.25
+2026-09-09,Marina,Cappuccino,sunny,36,178.2
+2026-09-09,Marina,Americano,sunny,21,82.95
+2026-09-09,Marina,Cold Brew,sunny,56,308.0
+2026-09-09,Marina,Matcha Latte,sunny,20,115.0
+2026-09-09,Marina,Mocha,sunny,16,90.4
+2026-09-09,Marina,Chai,sunny,22,112.2
+2026-09-09,Marina,Espresso,sunny,24,78.0
+2026-09-10,Mission,Latte,rainy,55,288.75
+2026-09-10,Mission,Cappuccino,rainy,39,193.05
+2026-09-10,Mission,Americano,rainy,34,134.3
+2026-09-10,Mission,Cold Brew,rainy,23,126.5
+2026-09-10,Mission,Matcha Latte,rainy,20,115.0
+2026-09-10,Mission,Mocha,rainy,21,118.65
+2026-09-10,Mission,Chai,rainy,26,132.6
+2026-09-10,Mission,Espresso,rainy,26,84.5
+2026-09-10,Soma,Latte,sunny,65,341.25
+2026-09-10,Soma,Cappuccino,sunny,40,198.0
+2026-09-10,Soma,Americano,sunny,46,181.7
+2026-09-10,Soma,Cold Brew,sunny,91,500.5
+2026-09-10,Soma,Matcha Latte,sunny,17,97.75
+2026-09-10,Soma,Mocha,sunny,25,141.25
+2026-09-10,Soma,Chai,sunny,27,137.7
+2026-09-10,Soma,Espresso,sunny,32,104.0
+2026-09-10,Castro,Latte,sunny,47,246.75
+2026-09-10,Castro,Cappuccino,sunny,31,153.45
+2026-09-10,Castro,Americano,sunny,27,106.65
+2026-09-10,Castro,Cold Brew,sunny,46,253.0
+2026-09-10,Castro,Matcha Latte,sunny,19,109.25
+2026-09-10,Castro,Mocha,sunny,18,101.7
+2026-09-10,Castro,Chai,sunny,17,86.7
+2026-09-10,Castro,Espresso,sunny,17,55.25
+2026-09-10,Sunset,Latte,cloudy,48,252.0
+2026-09-10,Sunset,Cappuccino,cloudy,26,128.7
+2026-09-10,Sunset,Americano,cloudy,30,118.5
+2026-09-10,Sunset,Cold Brew,cloudy,29,159.5
+2026-09-10,Sunset,Matcha Latte,cloudy,12,69.0
+2026-09-10,Sunset,Mocha,cloudy,12,67.8
+2026-09-10,Sunset,Chai,cloudy,17,86.7
+2026-09-10,Sunset,Espresso,cloudy,22,71.5
+2026-09-10,Marina,Latte,sunny,61,320.25
+2026-09-10,Marina,Cappuccino,sunny,27,133.65
+2026-09-10,Marina,Americano,sunny,29,114.55
+2026-09-10,Marina,Cold Brew,sunny,56,308.0
+2026-09-10,Marina,Matcha Latte,sunny,21,120.75
+2026-09-10,Marina,Mocha,sunny,15,84.75
+2026-09-10,Marina,Chai,sunny,18,91.8
+2026-09-10,Marina,Espresso,sunny,23,74.75
+2026-09-11,Mission,Latte,cloudy,59,309.75
+2026-09-11,Mission,Cappuccino,cloudy,29,143.55
+2026-09-11,Mission,Americano,cloudy,38,150.1
+2026-09-11,Mission,Cold Brew,cloudy,41,225.5
+2026-09-11,Mission,Matcha Latte,cloudy,20,115.0
+2026-09-11,Mission,Mocha,cloudy,15,84.75
+2026-09-11,Mission,Chai,cloudy,25,127.5
+2026-09-11,Mission,Espresso,cloudy,29,94.25
+2026-09-11,Soma,Latte,sunny,75,393.75
+2026-09-11,Soma,Cappuccino,sunny,48,237.6
+2026-09-11,Soma,Americano,sunny,38,150.1
+2026-09-11,Soma,Cold Brew,sunny,66,363.0
+2026-09-11,Soma,Matcha Latte,sunny,21,120.75
+2026-09-11,Soma,Mocha,sunny,19,107.35
+2026-09-11,Soma,Chai,sunny,29,147.9
+2026-09-11,Soma,Espresso,sunny,36,117.0
+2026-09-11,Castro,Latte,rainy,54,283.5
+2026-09-11,Castro,Cappuccino,rainy,31,153.45
+2026-09-11,Castro,Americano,rainy,37,146.15
+2026-09-11,Castro,Cold Brew,rainy,14,77.0
+2026-09-11,Castro,Matcha Latte,rainy,17,97.75
+2026-09-11,Castro,Mocha,rainy,24,135.6
+2026-09-11,Castro,Chai,rainy,22,112.2
+2026-09-11,Castro,Espresso,rainy,19,61.75
+2026-09-11,Sunset,Latte,rainy,37,194.25
+2026-09-11,Sunset,Cappuccino,rainy,27,133.65
+2026-09-11,Sunset,Americano,rainy,30,118.5
+2026-09-11,Sunset,Cold Brew,rainy,10,55.0
+2026-09-11,Sunset,Matcha Latte,rainy,15,86.25
+2026-09-11,Sunset,Mocha,rainy,19,107.35
+2026-09-11,Sunset,Chai,rainy,18,91.8
+2026-09-11,Sunset,Espresso,rainy,20,65.0
+2026-09-11,Marina,Latte,sunny,49,257.25
+2026-09-11,Marina,Cappuccino,sunny,32,158.4
+2026-09-11,Marina,Americano,sunny,30,118.5
+2026-09-11,Marina,Cold Brew,sunny,64,352.0
+2026-09-11,Marina,Matcha Latte,sunny,16,92.0
+2026-09-11,Marina,Mocha,sunny,16,90.4
+2026-09-11,Marina,Chai,sunny,20,102.0
+2026-09-11,Marina,Espresso,sunny,20,65.0
+2026-09-12,Mission,Latte,sunny,60,315.0
+2026-09-12,Mission,Cappuccino,sunny,38,188.1
+2026-09-12,Mission,Americano,sunny,35,138.25
+2026-09-12,Mission,Cold Brew,sunny,55,302.5
+2026-09-12,Mission,Matcha Latte,sunny,20,115.0
+2026-09-12,Mission,Mocha,sunny,21,118.65
+2026-09-12,Mission,Chai,sunny,21,107.1
+2026-09-12,Mission,Espresso,sunny,21,68.25
+2026-09-12,Soma,Latte,cloudy,37,194.25
+2026-09-12,Soma,Cappuccino,cloudy,18,89.1
+2026-09-12,Soma,Americano,cloudy,24,94.8
+2026-09-12,Soma,Cold Brew,cloudy,36,198.0
+2026-09-12,Soma,Matcha Latte,cloudy,12,69.0
+2026-09-12,Soma,Mocha,cloudy,11,62.15
+2026-09-12,Soma,Chai,cloudy,14,71.4
+2026-09-12,Soma,Espresso,cloudy,15,48.75
+2026-09-12,Castro,Latte,sunny,62,325.5
+2026-09-12,Castro,Cappuccino,sunny,32,158.4
+2026-09-12,Castro,Americano,sunny,34,134.3
+2026-09-12,Castro,Cold Brew,sunny,52,286.0
+2026-09-12,Castro,Matcha Latte,sunny,17,97.75
+2026-09-12,Castro,Mocha,sunny,14,79.1
+2026-09-12,Castro,Chai,sunny,15,76.5
+2026-09-12,Castro,Espresso,sunny,21,68.25
+2026-09-12,Sunset,Latte,cloudy,36,189.0
+2026-09-12,Sunset,Cappuccino,cloudy,30,148.5
+2026-09-12,Sunset,Americano,cloudy,26,102.7
+2026-09-12,Sunset,Cold Brew,cloudy,29,159.5
+2026-09-12,Sunset,Matcha Latte,cloudy,14,80.5
+2026-09-12,Sunset,Mocha,cloudy,12,67.8
+2026-09-12,Sunset,Chai,cloudy,18,91.8
+2026-09-12,Sunset,Espresso,cloudy,19,61.75
+2026-09-12,Marina,Latte,sunny,67,351.75
+2026-09-12,Marina,Cappuccino,sunny,45,222.75
+2026-09-12,Marina,Americano,sunny,58,229.1
+2026-09-12,Marina,Cold Brew,sunny,80,440.0
+2026-09-12,Marina,Matcha Latte,sunny,24,138.0
+2026-09-12,Marina,Mocha,sunny,50,226.0
+2026-09-12,Marina,Chai,sunny,29,147.9
+2026-09-12,Marina,Espresso,sunny,32,104.0
+2026-09-13,Mission,Latte,sunny,62,325.5
+2026-09-13,Mission,Cappuccino,sunny,37,183.15
+2026-09-13,Mission,Americano,sunny,30,118.5
+2026-09-13,Mission,Cold Brew,sunny,46,253.0
+2026-09-13,Mission,Matcha Latte,sunny,17,97.75
+2026-09-13,Mission,Mocha,sunny,12,67.8
+2026-09-13,Mission,Chai,sunny,19,96.9
+2026-09-13,Mission,Espresso,sunny,27,87.75
+2026-09-13,Soma,Latte,rainy,39,204.75
+2026-09-13,Soma,Cappuccino,rainy,20,99.0
+2026-09-13,Soma,Americano,rainy,23,90.85
+2026-09-13,Soma,Cold Brew,rainy,11,60.5
+2026-09-13,Soma,Matcha Latte,rainy,13,74.75
+2026-09-13,Soma,Mocha,rainy,17,96.05
+2026-09-13,Soma,Chai,rainy,17,86.7
+2026-09-13,Soma,Espresso,rainy,16,52.0
+2026-09-13,Castro,Latte,sunny,46,241.5
+2026-09-13,Castro,Cappuccino,sunny,31,153.45
+2026-09-13,Castro,Americano,sunny,32,126.4
+2026-09-13,Castro,Cold Brew,sunny,55,302.5
+2026-09-13,Castro,Matcha Latte,sunny,18,103.5
+2026-09-13,Castro,Mocha,sunny,15,84.75
+2026-09-13,Castro,Chai,sunny,20,102.0
+2026-09-13,Castro,Espresso,sunny,18,58.5
+2026-09-13,Sunset,Latte,sunny,38,199.5
+2026-09-13,Sunset,Cappuccino,sunny,25,123.75
+2026-09-13,Sunset,Americano,sunny,27,106.65
+2026-09-13,Sunset,Cold Brew,sunny,42,231.0
+2026-09-13,Sunset,Matcha Latte,sunny,14,80.5
+2026-09-13,Sunset,Mocha,sunny,12,67.8
+2026-09-13,Sunset,Chai,sunny,16,81.6
+2026-09-13,Sunset,Espresso,sunny,16,52.0
+2026-09-13,Marina,Latte,cloudy,96,504.0
+2026-09-13,Marina,Cappuccino,cloudy,60,297.0
+2026-09-13,Marina,Americano,cloudy,54,213.3
+2026-09-13,Marina,Cold Brew,cloudy,55,302.5
+2026-09-13,Marina,Matcha Latte,cloudy,26,149.5
+2026-09-13,Marina,Mocha,cloudy,43,194.36
+2026-09-13,Marina,Chai,cloudy,27,137.7
+2026-09-13,Marina,Espresso,cloudy,26,84.5
+2026-09-14,Mission,Latte,rainy,67,351.75
+2026-09-14,Mission,Cappuccino,rainy,32,158.4
+2026-09-14,Mission,Americano,rainy,36,142.2
+2026-09-14,Mission,Cold Brew,rainy,22,121.0
+2026-09-14,Mission,Matcha Latte,rainy,22,126.5
+2026-09-14,Mission,Mocha,rainy,20,113.0
+2026-09-14,Mission,Chai,rainy,33,168.3
+2026-09-14,Mission,Espresso,rainy,20,65.0
+2026-09-14,Soma,Latte,cloudy,69,362.25
+2026-09-14,Soma,Cappuccino,cloudy,52,257.4
+2026-09-14,Soma,Americano,cloudy,54,213.3
+2026-09-14,Soma,Cold Brew,cloudy,50,275.0
+2026-09-14,Soma,Matcha Latte,cloudy,24,138.0
+2026-09-14,Soma,Mocha,cloudy,21,118.65
+2026-09-14,Soma,Chai,cloudy,25,127.5
+2026-09-14,Soma,Espresso,cloudy,23,74.75
+2026-09-14,Castro,Latte,sunny,45,236.25
+2026-09-14,Castro,Cappuccino,sunny,34,168.3
+2026-09-14,Castro,Americano,sunny,40,158.0
+2026-09-14,Castro,Cold Brew,sunny,51,280.5
+2026-09-14,Castro,Matcha Latte,sunny,21,120.75
+2026-09-14,Castro,Mocha,sunny,19,107.35
+2026-09-14,Castro,Chai,sunny,19,96.9
+2026-09-14,Castro,Espresso,sunny,24,78.0
+2026-09-14,Sunset,Latte,cloudy,31,162.75
+2026-09-14,Sunset,Cappuccino,cloudy,26,128.7
+2026-09-14,Sunset,Americano,cloudy,28,110.6
+2026-09-14,Sunset,Cold Brew,cloudy,37,203.5
+2026-09-14,Sunset,Matcha Latte,cloudy,16,92.0
+2026-09-14,Sunset,Mocha,cloudy,14,79.1
+2026-09-14,Sunset,Chai,cloudy,14,71.4
+2026-09-14,Sunset,Espresso,cloudy,18,58.5
+2026-09-14,Marina,Latte,sunny,55,288.75
+2026-09-14,Marina,Cappuccino,sunny,27,133.65
+2026-09-14,Marina,Americano,sunny,36,142.2
+2026-09-14,Marina,Cold Brew,sunny,57,313.5
+2026-09-14,Marina,Matcha Latte,sunny,19,109.25
+2026-09-14,Marina,Mocha,sunny,15,84.75
+2026-09-14,Marina,Chai,sunny,20,102.0
+2026-09-14,Marina,Espresso,sunny,28,91.0
+2026-09-15,Mission,Latte,cloudy,54,283.5
+2026-09-15,Mission,Cappuccino,cloudy,47,232.65
+2026-09-15,Mission,Americano,cloudy,38,150.1
+2026-09-15,Mission,Cold Brew,cloudy,46,253.0
+2026-09-15,Mission,Matcha Latte,cloudy,19,109.25
+2026-09-15,Mission,Mocha,cloudy,19,107.35
+2026-09-15,Mission,Chai,cloudy,21,107.1
+2026-09-15,Mission,Espresso,cloudy,26,84.5
+2026-09-15,SoMa,Latte,sunny,87,456.75
+2026-09-15,SoMa,Cappuccino,sunny,45,222.75
+2026-09-15,SoMa,Americano,sunny,48,189.6
+2026-09-15,SoMa,Cold Brew,sunny,66,363.0
+2026-09-15,SoMa,Matcha Latte,sunny,28,161.0
+2026-09-15,SoMa,Mocha,sunny,24,135.6
+2026-09-15,SoMa,Chai,sunny,28,142.8
+2026-09-15,SoMa,Espresso,sunny,30,97.5
+2026-09-15,Castro,Latte,sunny,48,252.0
+2026-09-15,Castro,Cappuccino,sunny,32,158.4
+2026-09-15,Castro,Americano,sunny,27,106.65
+2026-09-15,Castro,Cold Brew,sunny,49,269.5
+2026-09-15,Castro,Matcha Latte,sunny,17,97.75
+2026-09-15,Castro,Mocha,sunny,16,90.4
+2026-09-15,Castro,Chai,sunny,19,96.9
+2026-09-15,Castro,Espresso,sunny,23,74.75
+2026-09-15,Sunset,Latte,rainy,48,252.0
+2026-09-15,Sunset,Cappuccino,rainy,19,94.05
+2026-09-15,Sunset,Americano,rainy,26,102.7
+2026-09-15,Sunset,Cold Brew,rainy,11,60.5
+2026-09-15,Sunset,Matcha Latte,rainy,17,97.75
+2026-09-15,Sunset,Mocha,rainy,12,67.8
+2026-09-15,Sunset,Chai,rainy,22,112.2
+2026-09-15,Sunset,Espresso,rainy,17,55.25
+2026-09-15,Marina,Latte,sunny,58,304.5
+2026-09-15,Marina,Cappuccino,sunny,29,143.55
+2026-09-15,Marina,Americano,sunny,35,138.25
+2026-09-15,Marina,Cold Brew,sunny,52,286.0
+2026-09-15,Marina,Matcha Latte,sunny,15,86.25
+2026-09-15,Marina,Mocha,sunny,16,90.4
+2026-09-15,Marina,Chai,sunny,21,107.1
+2026-09-15,Marina,Espresso,sunny,20,65.0
+2026-09-16,Mission,Latte,rainy,59,309.75
+2026-09-16,Mission,Cappuccino,rainy,28,138.6
+2026-09-16,Mission,Americano,rainy,35,138.25
+2026-09-16,Mission,Cold Brew,rainy,19,104.5
+2026-09-16,Mission,Matcha Latte,rainy,23,132.25
+2026-09-16,Mission,Mocha,rainy,21,118.65
+2026-09-16,Mission,Chai,rainy,36,183.6
+2026-09-16,Mission,Espresso,rainy,31,100.75
+2026-09-16,SoMa,Latte,rainy,80,420.0
+2026-09-16,SoMa,Cappuccino,rainy,37,183.15
+2026-09-16,SoMa,Americano,rainy,51,201.45
+2026-09-16,SoMa,Cold Brew,rainy,28,154.0
+2026-09-16,SoMa,Matcha Latte,rainy,22,126.5
+2026-09-16,SoMa,Mocha,rainy,30,169.5
+2026-09-16,SoMa,Chai,rainy,36,183.6
+2026-09-16,SoMa,Espresso,rainy,41,133.25
+2026-09-16,Castro,Latte,sunny,63,330.75
+2026-09-16,Castro,Cappuccino,sunny,27,133.65
+2026-09-16,Castro,Americano,sunny,36,142.2
+2026-09-16,Castro,Cold Brew,sunny,60,330.0
+2026-09-16,Castro,Matcha Latte,sunny,28,161.0
+2026-09-16,Castro,Mocha,sunny,14,79.1
+2026-09-16,Castro,Chai,sunny,17,86.7
+2026-09-16,Castro,Espresso,sunny,20,65.0
+2026-09-16,Sunset,Latte,cloudy,37,194.25
+2026-09-16,Sunset,Cappuccino,cloudy,30,148.5
+2026-09-16,Sunset,Americano,cloudy,33,130.35
+2026-09-16,Sunset,Cold Brew,cloudy,38,209.0
+2026-09-16,Sunset,Matcha Latte,cloudy,14,80.5
+2026-09-16,Sunset,Mocha,cloudy,12,67.8
+2026-09-16,Sunset,Chai,cloudy,19,96.9
+2026-09-16,Sunset,Espresso,cloudy,19,61.75
+2026-09-16,Marina,Latte,cloudy,45,236.25
+2026-09-16,Marina,Cappuccino,cloudy,27,133.65
+2026-09-16,Marina,Americano,cloudy,33,130.35
+2026-09-16,Marina,Cold Brew,cloudy,43,236.5
+2026-09-16,Marina,Matcha Latte,cloudy,16,92.0
+2026-09-16,Marina,Mocha,cloudy,15,84.75
+2026-09-16,Marina,Chai,cloudy,19,96.9
+2026-09-16,Marina,Espresso,cloudy,22,71.5
+2026-09-17,Mission,Latte,rainy,66,346.5
+2026-09-17,Mission,Cappuccino,rainy,35,173.25
+2026-09-17,Mission,Americano,rainy,43,169.85
+2026-09-17,Mission,Cold Brew,rainy,23,126.5
+2026-09-17,Mission,Matcha Latte,rainy,19,109.25
+2026-09-17,Mission,Mocha,rainy,26,146.9
+2026-09-17,Mission,Chai,rainy,34,173.4
+2026-09-17,Mission,Espresso,rainy,23,74.75
+2026-09-17,SoMa,Latte,cloudy,70,367.5
+2026-09-17,SoMa,Cappuccino,cloudy,34,168.3
+2026-09-17,SoMa,Americano,cloudy,47,185.65
+2026-09-17,SoMa,Cold Brew,cloudy,46,253.0
+2026-09-17,SoMa,Matcha Latte,cloudy,28,161.0
+2026-09-17,SoMa,Mocha,cloudy,21,118.65
+2026-09-17,SoMa,Chai,cloudy,27,137.7
+2026-09-17,SoMa,Espresso,cloudy,33,107.25
+2026-09-17,Castro,Latte,cloudy,50,262.5
+2026-09-17,Castro,Cappuccino,cloudy,27,133.65
+2026-09-17,Castro,Americano,cloudy,31,122.45
+2026-09-17,Castro,Cold Brew,cloudy,39,214.5
+2026-09-17,Castro,Matcha Latte,cloudy,41,235.75
+2026-09-17,Castro,Mocha,cloudy,16,90.4
+2026-09-17,Castro,Chai,cloudy,16,81.6
+2026-09-17,Castro,Espresso,cloudy,18,58.5
+2026-09-17,Sunset,Latte,rainy,48,252.0
+2026-09-17,Sunset,Cappuccino,rainy,29,143.55
+2026-09-17,Sunset,Americano,rainy,22,86.9
+2026-09-17,Sunset,Cold Brew,rainy,17,93.5
+2026-09-17,Sunset,Matcha Latte,rainy,17,97.75
+2026-09-17,Sunset,Mocha,rainy,14,79.1
+2026-09-17,Sunset,Chai,rainy,21,107.1
+2026-09-17,Sunset,Espresso,rainy,20,65.0
+2026-09-17,Marina,Latte,cloudy,47,246.75
+2026-09-17,Marina,Cappuccino,cloudy,28,138.6
+2026-09-17,Marina,Americano,cloudy,35,138.25
+2026-09-17,Marina,Cold Brew,cloudy,38,209.0
+2026-09-17,Marina,Matcha Latte,cloudy,20,115.0
+2026-09-17,Marina,Mocha,cloudy,16,90.4
+2026-09-17,Marina,Chai,cloudy,19,96.9
+2026-09-17,Marina,Espresso,cloudy,18,58.5
+2026-09-17,Castro,Latte,cloudy,-40,-210.0
+2026-09-18,Mission,Latte,sunny,54,283.5
+2026-09-18,Mission,Cappuccino,sunny,39,193.05
+2026-09-18,Mission,Americano,sunny,42,165.9
+2026-09-18,Mission,Cold Brew,sunny,65,357.5
+2026-09-18,Mission,Matcha Latte,sunny,17,97.75
+2026-09-18,Mission,Mocha,sunny,14,79.1
+2026-09-18,Mission,Chai,sunny,22,112.2
+2026-09-18,Mission,Espresso,sunny,26,84.5
+2026-09-18,SoMa,Latte,sunny,61,320.25
+2026-09-18,SoMa,Cappuccino,sunny,51,252.45
+2026-09-18,SoMa,Americano,sunny,51,201.45
+2026-09-18,SoMa,Cold Brew,sunny,77,423.5
+2026-09-18,SoMa,Matcha Latte,sunny,29,166.75
+2026-09-18,SoMa,Mocha,sunny,23,129.95
+2026-09-18,SoMa,Chai,sunny,30,153.0
+2026-09-18,SoMa,Espresso,sunny,25,81.25
+2026-09-18,Castro,Latte,cloudy,50,262.5
+2026-09-18,Castro,Cappuccino,cloudy,36,178.2
+2026-09-18,Castro,Americano,cloudy,30,118.5
+2026-09-18,Castro,Cold Brew,cloudy,34,187.0
+2026-09-18,Castro,Matcha Latte,cloudy,46,264.5
+2026-09-18,Castro,Mocha,cloudy,17,96.05
+2026-09-18,Castro,Chai,cloudy,16,81.6
+2026-09-18,Castro,Espresso,cloudy,23,74.75
+2026-09-18,Sunset,Latte,cloudy,44,231.0
+2026-09-18,Sunset,Cappuccino,cloudy,27,133.65
+2026-09-18,Sunset,Americano,cloudy,26,102.7
+2026-09-18,Sunset,Cold Brew,cloudy,33,181.5
+2026-09-18,Sunset,Matcha Latte,cloudy,13,74.75
+2026-09-18,Sunset,Mocha,cloudy,10,56.5
+2026-09-18,Sunset,Chai,cloudy,16,81.6
+2026-09-18,Sunset,Espresso,cloudy,18,58.5
+2026-09-18,Marina,Latte,rainy,45,236.25
+2026-09-18,Marina,Cappuccino,rainy,24,118.8
+2026-09-18,Marina,Americano,rainy,25,98.75
+2026-09-18,Marina,Cold Brew,rainy,22,121.0
+2026-09-18,Marina,Matcha Latte,rainy,16,92.0
+2026-09-18,Marina,Mocha,rainy,19,107.35
+2026-09-18,Marina,Chai,rainy,23,117.3
+2026-09-18,Marina,Espresso,rainy,20,65.0
+2026-09-19,Mission,Latte,sunny,68,357.0
+2026-09-19,Mission,Cappuccino,sunny,34,168.3
+2026-09-19,Mission,Americano,sunny,39,154.05
+2026-09-19,Mission,Cold Brew,sunny,62,341.0
+2026-09-19,Mission,Matcha Latte,sunny,17,97.75
+2026-09-19,Mission,Mocha,sunny,21,118.65
+2026-09-19,Mission,Chai,sunny,21,107.1
+2026-09-19,Mission,Espresso,sunny,23,74.75
+2026-09-19,SoMa,Latte,cloudy,43,225.75
+2026-09-19,SoMa,Cappuccino,cloudy,23,113.85
+2026-09-19,SoMa,Americano,cloudy,23,90.85
+2026-09-19,SoMa,Cold Brew,cloudy,30,165.0
+2026-09-19,SoMa,Matcha Latte,cloudy,13,74.75
+2026-09-19,SoMa,Mocha,cloudy,12,67.8
+2026-09-19,SoMa,Chai,cloudy,17,86.7
+2026-09-19,SoMa,Espresso,cloudy,16,52.0
+2026-09-19,Castro,Latte,sunny,59,309.75
+2026-09-19,Castro,Cappuccino,sunny,26,128.7
+2026-09-19,Castro,Americano,sunny,34,134.3
+2026-09-19,Castro,Cold Brew,sunny,60,330.0
+2026-09-19,Castro,Matcha Latte,sunny,45,258.75
+2026-09-19,Castro,Mocha,sunny,14,79.1
+2026-09-19,Castro,Chai,sunny,21,107.1
+2026-09-19,Castro,Espresso,sunny,14,45.5
+2026-09-19,Sunset,Latte,sunny,46,241.5
+2026-09-19,Sunset,Cappuccino,sunny,28,138.6
+2026-09-19,Sunset,Americano,sunny,29,114.55
+2026-09-19,Sunset,Cold Brew,sunny,40,220.0
+2026-09-19,Sunset,Matcha Latte,sunny,12,69.0
+2026-09-19,Sunset,Mocha,sunny,14,79.1
+2026-09-19,Sunset,Chai,sunny,14,71.4
+2026-09-19,Sunset,Espresso,sunny,18,58.5
+2026-09-19,Marina,Latte,sunny,77,404.25
+2026-09-19,Marina,Cappuccino,sunny,42,207.9
+2026-09-19,Marina,Americano,sunny,56,221.2
+2026-09-19,Marina,Cold Brew,sunny,84,462.0
+2026-09-19,Marina,Matcha Latte,sunny,29,166.75
+2026-09-19,Marina,Mocha,sunny,38,171.76
+2026-09-19,Marina,Chai,sunny,27,137.7
+2026-09-19,Marina,Espresso,sunny,35,113.75
+2026-09-20,Mission,Latte,cloudy,58,304.5
+2026-09-20,Mission,Cappuccino,cloudy,37,183.15
+2026-09-20,Mission,Americano,cloudy,42,165.9
+2026-09-20,Mission,Cold Brew,cloudy,39,214.5
+2026-09-20,Mission,Matcha Latte,cloudy,26,149.5
+2026-09-20,Mission,Mocha,cloudy,18,101.7
+2026-09-20,Mission,Chai,cloudy,21,107.1
+2026-09-20,Mission,Espresso,cloudy,22,71.5
+2026-09-20,SoMa,Latte,sunny,41,215.25
+2026-09-20,SoMa,Cappuccino,sunny,24,118.8
+2026-09-20,SoMa,Americano,sunny,25,98.75
+2026-09-20,SoMa,Cold Brew,sunny,36,198.0
+2026-09-20,SoMa,Matcha Latte,sunny,14,80.5
+2026-09-20,SoMa,Mocha,sunny,12,67.8
+2026-09-20,SoMa,Chai,sunny,18,91.8
+2026-09-20,SoMa,Espresso,sunny,18,58.5
+2026-09-20,Castro,Latte,cloudy,46,241.5
+2026-09-20,Castro,Cappuccino,cloudy,27,133.65
+2026-09-20,Castro,Americano,cloudy,32,126.4
+2026-09-20,Castro,Cold Brew,cloudy,41,225.5
+2026-09-20,Castro,Matcha Latte,cloudy,35,201.25
+2026-09-20,Castro,Mocha,cloudy,16,90.4
+2026-09-20,Castro,Chai,cloudy,18,91.8
+2026-09-20,Castro,Espresso,cloudy,24,78.0
+2026-09-20,Sunset,Latte,rainy,33,173.25
+2026-09-20,Sunset,Cappuccino,rainy,26,128.7
+2026-09-20,Sunset,Americano,rainy,28,110.6
+2026-09-20,Sunset,Cold Brew,rainy,14,77.0
+2026-09-20,Sunset,Matcha Latte,rainy,12,69.0
+2026-09-20,Sunset,Mocha,rainy,19,107.35
+2026-09-20,Sunset,Chai,rainy,21,107.1
+2026-09-20,Sunset,Espresso,rainy,15,48.75
+2026-09-20,Marina,Latte,sunny,72,378.0
+2026-09-20,Marina,Cappuccino,sunny,55,272.25
+2026-09-20,Marina,Americano,sunny,53,209.35
+2026-09-20,Marina,Cold Brew,sunny,82,451.0
+2026-09-20,Marina,Matcha Latte,sunny,28,161.0
+2026-09-20,Marina,Mocha,sunny,47,212.44
+2026-09-20,Marina,Chai,sunny,28,142.8
+2026-09-20,Marina,Espresso,sunny,31,100.75
+2026-09-21,Mission,Latte,cloudy,44,231.0
+2026-09-21,Mission,Cappuccino,cloudy,42,207.9
+2026-09-21,Mission,Americano,cloudy,46,181.7
+2026-09-21,Mission,Cold Brew,cloudy,46,253.0
+2026-09-21,Mission,Matcha Latte,cloudy,19,109.25
+2026-09-21,Mission,Mocha,cloudy,19,107.35
+2026-09-21,Mission,Chai,cloudy,27,137.7
+2026-09-21,Mission,Espresso,cloudy,29,94.25
+2026-09-21,SoMa,Latte,sunny,79,414.75
+2026-09-21,SoMa,Cappuccino,sunny,41,202.95
+2026-09-21,SoMa,Americano,sunny,52,205.4
+2026-09-21,SoMa,Cold Brew,sunny,86,473.0
+2026-09-21,SoMa,Matcha Latte,sunny,24,138.0
+2026-09-21,SoMa,Mocha,sunny,21,118.65
+2026-09-21,SoMa,Chai,sunny,26,132.6
+2026-09-21,SoMa,Espresso,sunny,33,107.25
+2026-09-21,Castro,Latte,sunny,49,257.25
+2026-09-21,Castro,Cappuccino,sunny,27,133.65
+2026-09-21,Castro,Americano,sunny,37,146.15
+2026-09-21,Castro,Cold Brew,sunny,52,286.0
+2026-09-21,Castro,Matcha Latte,sunny,41,235.75
+2026-09-21,Castro,Mocha,sunny,15,84.75
+2026-09-21,Castro,Chai,sunny,18,91.8
+2026-09-21,Castro,Espresso,sunny,19,61.75
+2026-09-21,Sunset,Latte,sunny,42,220.5
+2026-09-21,Sunset,Cappuccino,sunny,27,133.65
+2026-09-21,Sunset,Americano,sunny,32,126.4
+2026-09-21,Sunset,Cold Brew,sunny,44,242.0
+2026-09-21,Sunset,Matcha Latte,sunny,16,92.0
+2026-09-21,Sunset,Mocha,sunny,11,62.15
+2026-09-21,Sunset,Chai,sunny,16,81.6
+2026-09-21,Sunset,Espresso,sunny,19,61.75
+2026-09-21,Marina,Latte,sunny,56,294.0
+2026-09-21,Marina,Cappuccino,sunny,29,143.55
+2026-09-21,Marina,Americano,sunny,35,138.25
+2026-09-21,Marina,Cold Brew,sunny,56,308.0
+2026-09-21,Marina,Matcha Latte,sunny,16,92.0
+2026-09-21,Marina,Mocha,sunny,16,90.4
+2026-09-21,Marina,Chai,sunny,19,96.9
+2026-09-21,Marina,Espresso,sunny,20,65.0
+2026-09-22,Mission,Latte,sunny,51,267.75
+2026-09-22,Mission,Cappuccino,sunny,39,193.05
+2026-09-22,Mission,Americano,sunny,48,189.6
+2026-09-22,Mission,Cold Brew,sunny,82,451.0
+2026-09-22,Mission,Matcha Latte,sunny,21,120.75
+2026-09-22,Mission,Mocha,sunny,16,90.4
+2026-09-22,Mission,Chai,sunny,21,107.1
+2026-09-22,Mission,Espresso,sunny,27,87.75
+2026-09-22,SoMa,Latte,sunny,78,409.5
+2026-09-22,SoMa,Cappuccino,sunny,41,202.95
+2026-09-22,SoMa,Americano,sunny,39,154.05
+2026-09-22,SoMa,Cold Brew,sunny,63,346.5
+2026-09-22,SoMa,Matcha Latte,sunny,22,126.5
+2026-09-22,SoMa,Mocha,sunny,23,129.95
+2026-09-22,SoMa,Chai,sunny,30,153.0
+2026-09-22,SoMa,Espresso,sunny,29,94.25
+2026-09-22,Castro,Latte,sunny,50,262.5
+2026-09-22,Castro,Cappuccino,sunny,36,178.2
+2026-09-22,Castro,Americano,sunny,35,138.25
+2026-09-22,Castro,Cold Brew,sunny,58,319.0
+2026-09-22,Castro,Matcha Latte,sunny,41,235.75
+2026-09-22,Castro,Mocha,sunny,15,84.75
+2026-09-22,Castro,Chai,sunny,22,112.2
+2026-09-22,Castro,Espresso,sunny,21,68.25
+2026-09-22,Sunset,Latte,rainy,38,199.5
+2026-09-22,Sunset,Cappuccino,rainy,22,108.9
+2026-09-22,Sunset,Americano,rainy,24,94.8
+2026-09-22,Sunset,Cold Brew,rainy,14,77.0
+2026-09-22,Sunset,Matcha Latte,rainy,15,86.25
+2026-09-22,Sunset,Mocha,rainy,18,101.7
+2026-09-22,Sunset,Chai,rainy,25,127.5
+2026-09-22,Sunset,Espresso,rainy,17,55.25
+2026-09-22,Marina,Latte,rainy,49,257.25
+2026-09-22,Marina,Cappuccino,rainy,37,183.15
+2026-09-22,Marina,Americano,rainy,34,134.3
+2026-09-22,Marina,Cold Brew,rainy,17,93.5
+2026-09-22,Marina,Matcha Latte,rainy,18,103.5
+2026-09-22,Marina,Mocha,rainy,19,107.35
+2026-09-22,Marina,Chai,rainy,28,142.8
+2026-09-22,Marina,Espresso,rainy,20,65.0
+2026-09-23,Mission,Latte,sunny,67,351.75
+2026-09-23,Mission,Cappuccino,sunny,36,178.2
+2026-09-23,Mission,Americano,sunny,34,134.3
+2026-09-23,Mission,Cold Brew,sunny,85,467.5
+2026-09-23,Mission,Matcha Latte,sunny,19,109.25
+2026-09-23,Mission,Mocha,sunny,19,107.35
+2026-09-23,Mission,Chai,sunny,19,96.9
+2026-09-23,Mission,Espresso,sunny,27,87.75
+2026-09-23,SoMa,Latte,cloudy,75,393.75
+2026-09-23,SoMa,Cappuccino,cloudy,45,222.75
+2026-09-23,SoMa,Americano,cloudy,50,197.5
+2026-09-23,SoMa,Cold Brew,cloudy,53,291.5
+2026-09-23,SoMa,Matcha Latte,cloudy,24,138.0
+2026-09-23,SoMa,Mocha,cloudy,25,141.25
+2026-09-23,SoMa,Chai,cloudy,29,147.9
+2026-09-23,SoMa,Espresso,cloudy,31,100.75
+2026-09-23,Castro,Latte,cloudy,55,288.75
+2026-09-23,Castro,Cappuccino,cloudy,26,128.7
+2026-09-23,Castro,Americano,cloudy,42,165.9
+2026-09-23,Castro,Cold Brew,cloudy,31,170.5
+2026-09-23,Castro,Matcha Latte,cloudy,39,224.25
+2026-09-23,Castro,Mocha,cloudy,16,90.4
+2026-09-23,Castro,Chai,cloudy,21,107.1
+2026-09-23,Castro,Espresso,cloudy,22,71.5
+2026-09-23,Sunset,Latte,rainy,38,199.5
+2026-09-23,Sunset,Cappuccino,rainy,27,133.65
+2026-09-23,Sunset,Americano,rainy,27,106.65
+2026-09-23,Sunset,Cold Brew,rainy,13,71.5
+2026-09-23,Sunset,Matcha Latte,rainy,16,92.0
+2026-09-23,Sunset,Mocha,rainy,16,90.4
+2026-09-23,Sunset,Chai,rainy,18,91.8
+2026-09-23,Sunset,Espresso,rainy,15,48.75
+2026-09-23,Marina,Latte,sunny,46,241.5
+2026-09-23,Marina,Cappuccino,sunny,30,148.5
+2026-09-23,Marina,Americano,sunny,40,158.0
+2026-09-23,Marina,Cold Brew,sunny,54,297.0
+2026-09-23,Marina,Matcha Latte,sunny,15,86.25
+2026-09-23,Marina,Mocha,sunny,17,96.05
+2026-09-23,Marina,Chai,sunny,20,102.0
+2026-09-23,Marina,Espresso,sunny,18,58.5
+2026-09-24,Mission,Latte,sunny,55,288.75
+2026-09-24,Mission,Cappuccino,sunny,32,158.4
+2026-09-24,Mission,Americano,sunny,39,154.05
+2026-09-24,Mission,Cold Brew,sunny,62,341.0
+2026-09-24,Mission,Matcha Latte,sunny,19,109.25
+2026-09-24,Mission,Mocha,sunny,18,101.7
+2026-09-24,Mission,Chai,sunny,21,107.1
+2026-09-24,Mission,Espresso,sunny,28,91.0
+2026-09-24,SoMa,Latte,sunny,70,367.5
+2026-09-24,SoMa,Cappuccino,sunny,48,237.6
+2026-09-24,SoMa,Americano,sunny,48,189.6
+2026-09-24,SoMa,Cold Brew,sunny,88,484.0
+2026-09-24,SoMa,Matcha Latte,sunny,23,132.25
+2026-09-24,SoMa,Mocha,sunny,22,124.3
+2026-09-24,SoMa,Chai,sunny,31,158.1
+2026-09-24,SoMa,Espresso,sunny,29,94.25
+2026-09-24,Castro,Latte,sunny,40,210.0
+2026-09-24,Castro,Cappuccino,sunny,29,143.55
+2026-09-24,Castro,Americano,sunny,38,150.1
+2026-09-24,Castro,Cold Brew,sunny,69,379.5
+2026-09-24,Castro,Matcha Latte,sunny,49,281.75
+2026-09-24,Castro,Mocha,sunny,17,96.05
+2026-09-24,Castro,Chai,sunny,22,112.2
+2026-09-24,Castro,Espresso,sunny,25,81.25
+2026-09-24,Sunset,Latte,cloudy,42,220.5
+2026-09-24,Sunset,Cappuccino,cloudy,24,118.8
+2026-09-24,Sunset,Americano,cloudy,27,106.65
+2026-09-24,Sunset,Cold Brew,cloudy,38,209.0
+2026-09-24,Sunset,Matcha Latte,cloudy,13,74.75
+2026-09-24,Sunset,Mocha,cloudy,13,73.45
+2026-09-24,Sunset,Chai,cloudy,11,56.1
+2026-09-24,Sunset,Espresso,cloudy,17,55.25
+2026-09-24,Marina,Latte,sunny,53,278.25
+2026-09-24,Marina,Cappuccino,sunny,32,158.4
+2026-09-24,Marina,Americano,sunny,28,110.6
+2026-09-24,Marina,Cold Brew,sunny,57,313.5
+2026-09-24,Marina,Matcha Latte,sunny,12,69.0
+2026-09-24,Marina,Mocha,sunny,18,101.7
+2026-09-24,Marina,Chai,sunny,20,102.0
+2026-09-24,Marina,Espresso,sunny,23,74.75
+2026-09-25,Mission,Latte,sunny,54,283.5
+2026-09-25,Mission,Cappuccino,sunny,34,168.3
+2026-09-25,Mission,Americano,sunny,40,158.0
+2026-09-25,Mission,Cold Brew,sunny,67,368.5
+2026-09-25,Mission,Matcha Latte,sunny,22,126.5
+2026-09-25,Mission,Mocha,sunny,20,113.0
+2026-09-25,Mission,Chai,sunny,18,91.8
+2026-09-25,Mission,Espresso,sunny,32,104.0
+2026-09-25,SoMa,Latte,cloudy,81,425.25
+2026-09-25,SoMa,Cappuccino,cloudy,46,227.7
+2026-09-25,SoMa,Americano,cloudy,56,221.2
+2026-09-25,SoMa,Cold Brew,cloudy,62,341.0
+2026-09-25,SoMa,Matcha Latte,cloudy,26,149.5
+2026-09-25,SoMa,Mocha,cloudy,25,141.25
+2026-09-25,SoMa,Chai,cloudy,28,142.8
+2026-09-25,SoMa,Espresso,cloudy,34,110.5
+2026-09-25,Castro,Latte,sunny,44,231.0
+2026-09-25,Castro,Cappuccino,sunny,35,173.25
+2026-09-25,Castro,Americano,sunny,39,154.05
+2026-09-25,Castro,Cold Brew,sunny,69,379.5
+2026-09-25,Castro,Matcha Latte,sunny,52,299.0
+2026-09-25,Castro,Mocha,sunny,18,101.7
+2026-09-25,Castro,Chai,sunny,19,96.9
+2026-09-25,Castro,Espresso,sunny,25,81.25
+2026-09-25,Sunset,Latte,cloudy,40,210.0
+2026-09-25,Sunset,Cappuccino,cloudy,28,138.6
+2026-09-25,Sunset,Americano,cloudy,30,118.5
+2026-09-25,Sunset,Cold Brew,cloudy,36,198.0
+2026-09-25,Sunset,Matcha Latte,cloudy,17,97.75
+2026-09-25,Sunset,Mocha,cloudy,13,73.45
+2026-09-25,Sunset,Chai,cloudy,18,91.8
+2026-09-25,Sunset,Espresso,cloudy,16,52.0
+2026-09-25,Marina,Latte,sunny,57,299.25
+2026-09-25,Marina,Cappuccino,sunny,29,143.55
+2026-09-25,Marina,Americano,sunny,39,154.05
+2026-09-25,Marina,Cold Brew,sunny,47,258.5
+2026-09-25,Marina,Matcha Latte,sunny,17,97.75
+2026-09-25,Marina,Mocha,sunny,16,90.4
+2026-09-25,Marina,Chai,sunny,17,86.7
+2026-09-25,Marina,Espresso,sunny,22,71.5
+2026-09-26,Mission,Latte,rainy,47,246.75
+2026-09-26,Mission,Cappuccino,rainy,39,193.05
+2026-09-26,Mission,Americano,rainy,47,185.65
+2026-09-26,Mission,Cold Brew,rainy,23,126.5
+2026-09-26,Mission,Matcha Latte,rainy,21,120.75
+2026-09-26,Mission,Mocha,rainy,29,163.85
+2026-09-26,Mission,Chai,rainy,30,153.0
+2026-09-26,Mission,Espresso,rainy,29,94.25
+2026-09-26,SoMa,Latte,cloudy,36,189.0
+2026-09-26,SoMa,Cappuccino,cloudy,22,108.9
+2026-09-26,SoMa,Americano,cloudy,25,98.75
+2026-09-26,SoMa,Cold Brew,cloudy,27,148.5
+2026-09-26,SoMa,Matcha Latte,cloudy,12,69.0
+2026-09-26,SoMa,Mocha,cloudy,11,62.15
+2026-09-26,SoMa,Chai,cloudy,12,61.2
+2026-09-26,SoMa,Espresso,cloudy,14,45.5
+2026-09-26,Castro,Latte,sunny,45,236.25
+2026-09-26,Castro,Cappuccino,sunny,32,158.4
+2026-09-26,Castro,Americano,sunny,34,134.3
+2026-09-26,Castro,Cold Brew,sunny,59,324.5
+2026-09-26,Castro,Matcha Latte,sunny,50,287.5
+2026-09-26,Castro,Mocha,sunny,13,73.45
+2026-09-26,Castro,Chai,sunny,18,91.8
+2026-09-26,Castro,Espresso,sunny,18,58.5
+2026-09-26,Sunset,Latte,rainy,43,225.75
+2026-09-26,Sunset,Cappuccino,rainy,25,123.75
+2026-09-26,Sunset,Americano,rainy,28,110.6
+2026-09-26,Sunset,Cold Brew,rainy,19,104.5
+2026-09-26,Sunset,Matcha Latte,rainy,16,92.0
+2026-09-26,Sunset,Mocha,rainy,16,90.4
+2026-09-26,Sunset,Chai,rainy,20,102.0
+2026-09-26,Sunset,Espresso,rainy,16,52.0
+2026-09-26,Marina,Latte,rainy,82,430.5
+2026-09-26,Marina,Cappuccino,rainy,42,207.9
+2026-09-26,Marina,Americano,rainy,42,165.9
+2026-09-26,Marina,Cold Brew,rainy,30,165.0
+2026-09-26,Marina,Matcha Latte,rainy,25,143.75
+2026-09-26,Marina,Mocha,rainy,49,221.48
+2026-09-26,Marina,Chai,rainy,38,193.8
+2026-09-26,Marina,Espresso,rainy,30,97.5
+2026-09-27,Mission,Latte,sunny,59,309.75
+2026-09-27,Mission,Cappuccino,sunny,35,173.25
+2026-09-27,Mission,Americano,sunny,35,138.25
+2026-09-27,Mission,Cold Brew,sunny,71,390.5
+2026-09-27,Mission,Matcha Latte,sunny,22,126.5
+2026-09-27,Mission,Mocha,sunny,22,124.3
+2026-09-27,Mission,Chai,sunny,26,132.6
+2026-09-27,Mission,Espresso,sunny,22,71.5
+2026-09-27,SoMa,Latte,cloudy,36,189.0
+2026-09-27,SoMa,Cappuccino,cloudy,23,113.85
+2026-09-27,SoMa,Americano,cloudy,23,90.85
+2026-09-27,SoMa,Cold Brew,cloudy,29,159.5
+2026-09-27,SoMa,Matcha Latte,cloudy,14,80.5
+2026-09-27,SoMa,Mocha,cloudy,10,56.5
+2026-09-27,SoMa,Chai,cloudy,16,81.6
+2026-09-27,SoMa,Espresso,cloudy,15,48.75
+2026-09-27,Castro,Latte,sunny,39,204.75
+2026-09-27,Castro,Cappuccino,sunny,30,148.5
+2026-09-27,Castro,Americano,sunny,39,154.05
+2026-09-27,Castro,Cold Brew,sunny,50,275.0
+2026-09-27,Castro,Matcha Latte,sunny,52,299.0
+2026-09-27,Castro,Mocha,sunny,13,73.45
+2026-09-27,Castro,Chai,sunny,20,102.0
+2026-09-27,Castro,Espresso,sunny,23,74.75
+2026-09-27,Sunset,Latte,sunny,38,199.5
+2026-09-27,Sunset,Cappuccino,sunny,24,118.8
+2026-09-27,Sunset,Americano,sunny,33,130.35
+2026-09-27,Sunset,Cold Brew,sunny,44,242.0
+2026-09-27,Sunset,Matcha Latte,sunny,16,92.0
+2026-09-27,Sunset,Mocha,sunny,13,73.45
+2026-09-27,Sunset,Chai,sunny,15,76.5
+2026-09-27,Sunset,Espresso,sunny,17,55.25
+2026-09-27,Marina,Latte,sunny,71,372.75
+2026-09-27,Marina,Cappuccino,sunny,44,217.8
+2026-09-27,Marina,Americano,sunny,49,193.55
+2026-09-27,Marina,Cold Brew,sunny,71,390.5
+2026-09-27,Marina,Matcha Latte,sunny,29,166.75
+2026-09-27,Marina,Mocha,sunny,45,203.4
+2026-09-27,Marina,Chai,sunny,28,142.8
+2026-09-27,Marina,Espresso,sunny,33,107.25
+2026-09-28,Mission,Latte,sunny,53,278.25
+2026-09-28,Mission,Cappuccino,sunny,31,153.45
+2026-09-28,Mission,Americano,sunny,36,142.2
+2026-09-28,Mission,Cold Brew,sunny,61,335.5
+2026-09-28,Mission,Matcha Latte,sunny,22,126.5
+2026-09-28,Mission,Mocha,sunny,21,118.65
+2026-09-28,Mission,Chai,sunny,22,112.2
+2026-09-28,Mission,Espresso,sunny,21,68.25
+2026-09-28,SoMa,Latte,cloudy,88,462.0
+2026-09-28,SoMa,Cappuccino,cloudy,46,227.7
+2026-09-28,SoMa,Americano,cloudy,47,185.65
+2026-09-28,SoMa,Cold Brew,cloudy,59,324.5
+2026-09-28,SoMa,Matcha Latte,cloudy,26,149.5
+2026-09-28,SoMa,Mocha,cloudy,22,124.3
+2026-09-28,SoMa,Chai,cloudy,24,122.4
+2026-09-28,SoMa,Espresso,cloudy,33,107.25
+2026-09-28,Castro,Latte,sunny,48,252.0
+2026-09-28,Castro,Cappuccino,sunny,23,113.85
+2026-09-28,Castro,Americano,sunny,35,138.25
+2026-09-28,Castro,Cold Brew,sunny,56,308.0
+2026-09-28,Castro,Matcha Latte,sunny,49,281.75
+2026-09-28,Castro,Mocha,sunny,13,73.45
+2026-09-28,Castro,Chai,sunny,18,91.8
+2026-09-28,Castro,Espresso,sunny,24,78.0
+2026-09-28,Sunset,Latte,cloudy,37,194.25
+2026-09-28,Sunset,Cappuccino,cloudy,26,128.7
+2026-09-28,Sunset,Americano,cloudy,25,98.75
+2026-09-28,Sunset,Cold Brew,cloudy,26,143.0
+2026-09-28,Sunset,Matcha Latte,cloudy,14,80.5
+2026-09-28,Sunset,Mocha,cloudy,12,67.8
+2026-09-28,Sunset,Chai,cloudy,16,81.6
+2026-09-28,Sunset,Espresso,cloudy,14,45.5
+2026-09-28,Marina,Latte,sunny,53,278.25
+2026-09-28,Marina,Cappuccino,sunny,33,163.35
+2026-09-28,Marina,Americano,sunny,37,146.15
+2026-09-28,Marina,Cold Brew,sunny,48,264.0
+2026-09-28,Marina,Matcha Latte,sunny,19,109.25
+2026-09-28,Marina,Mocha,sunny,13,73.45
+2026-09-28,Marina,Chai,sunny,19,96.9
+2026-09-28,Marina,Espresso,sunny,20,65.0
+2026-09-29,Mission,Latte,cloudy,47,246.75
+2026-09-29,Mission,Cappuccino,cloudy,40,198.0
+2026-09-29,Mission,Americano,cloudy,40,158.0
+2026-09-29,Mission,Cold Brew,cloudy,48,264.0
+2026-09-29,Mission,Matcha Latte,cloudy,19,109.25
+2026-09-29,Mission,Mocha,cloudy,17,96.05
+2026-09-29,Mission,Chai,cloudy,21,107.1
+2026-09-29,Mission,Espresso,cloudy,25,81.25
+2026-09-29,SoMa,Latte,sunny,63,330.75
+2026-09-29,SoMa,Cappuccino,sunny,42,207.9
+2026-09-29,SoMa,Americano,sunny,56,221.2
+2026-09-29,SoMa,Cold Brew,sunny,87,478.5
+2026-09-29,SoMa,Matcha Latte,sunny,24,138.0
+2026-09-29,SoMa,Mocha,sunny,21,118.65
+2026-09-29,SoMa,Chai,sunny,18,91.8
+2026-09-29,SoMa,Espresso,sunny,32,104.0
+2026-09-29,Castro,Latte,cloudy,45,236.25
+2026-09-29,Castro,Cappuccino,cloudy,33,163.35
+2026-09-29,Castro,Americano,cloudy,33,130.35
+2026-09-29,Castro,Cold Brew,cloudy,38,209.0
+2026-09-29,Castro,Matcha Latte,cloudy,50,287.5
+2026-09-29,Castro,Mocha,cloudy,13,73.45
+2026-09-29,Castro,Chai,cloudy,18,91.8
+2026-09-29,Castro,Espresso,cloudy,13,42.25
+2026-09-29,Sunset,Latte,rainy,47,246.75
+2026-09-29,Sunset,Cappuccino,rainy,29,143.55
+2026-09-29,Sunset,Americano,rainy,24,94.8
+2026-09-29,Sunset,Cold Brew,rainy,15,82.5
+2026-09-29,Sunset,Matcha Latte,rainy,14,80.5
+2026-09-29,Sunset,Mocha,rainy,17,96.05
+2026-09-29,Sunset,Chai,rainy,16,81.6
+2026-09-29,Sunset,Espresso,rainy,20,65.0
+2026-09-29,Marina,Latte,sunny,44,231.0
+2026-09-29,Marina,Cappuccino,sunny,29,143.55
+2026-09-29,Marina,Americano,sunny,33,130.35
+2026-09-29,Marina,Cold Brew,sunny,50,275.0
+2026-09-29,Marina,Matcha Latte,sunny,17,97.75
+2026-09-29,Marina,Mocha,sunny,14,79.1
+2026-09-29,Marina,Chai,sunny,21,107.1
+2026-09-29,Marina,Espresso,sunny,24,78.0

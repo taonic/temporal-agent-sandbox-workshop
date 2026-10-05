@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}#analytics · Max{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>#analytics</h1>
+  <p class="muted small">A pretend team channel. Max posts here only after a human approves.</p>
+</div>
+{% for p in posts %}
+<div class="card">
+  <div class="muted small">{{ p.posted_at }} · approved by {{ p.approved_by }} · <a href="/runs/{{ p.workflow_id }}">{{ p.workflow_id }}</a></div>
+  <h2 style="margin-top:6px">{{ p.question }}</h2>
+  <p>{{ p.summary }}</p>
+  {% if p.chart_path %}<img class="chart" src="/files?path={{ p.chart_path | urlencode }}" alt="chart" style="max-width:520px">{% endif %}
+</div>
+{% else %}
+<div class="card muted">No posts yet.</div>
+{% endfor %}
+{% endblock %}

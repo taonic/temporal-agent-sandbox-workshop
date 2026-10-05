@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="grid">
+  <div>
+    <div class="card">
+      <h1>What should Max look into?</h1>
+      <p class="muted small">Max gets its own sandbox, writes and runs Python against {{ days }} days of a coffee chain's sales, promotions, shifts and inventory,
+        and comes back with a report. One question per line; up to three questions run as a team, side by side.</p>
+      <form method="post" action="/ask">
+        <textarea name="questions" placeholder="Which store had the highest revenue in the last 7 days?" required></textarea>
+        <div class="row" style="margin-top:10px">
+          <button class="primary" type="submit">Ask Max</button>
+          <span class="muted small">Try: “Did Mission's Cold Brew promotion pay off?” · “Is SoMa overstaffed at weekends?” · “Is there anything wrong with the sales data?”</span>
+        </div>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Your recent runs</h2>
+      {% if runs %}
+      <table class="runs">
+        {% for r in runs %}
+        <tr>
+          <td><a href="/runs/{{ r.id }}">{{ r.id }}</a></td>
+          <td class="muted">{{ "team" if r.type == "TeamWorkflow" else "single" }}</td>
+          <td><span class="pill {{ r.status }}">{{ r.status }}</span></td>
+          <td class="muted small">{{ r.started.strftime("%H:%M:%S") }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}<p class="muted small">Nothing yet.</p>{% endif %}
+    </div>
+  </div>
+  <div>
+    <div class="card">
+      <h2>#analytics</h2>
+      {% for p in posts %}
+      <div class="post small"><strong>Max</strong> <span class="muted">· approved by {{ p.approved_by }}</span><br>{{ p.summary }}</div>
+      {% else %}<p class="muted small">No posts yet. Max only posts after you approve.</p>{% endfor %}
+      <a class="small" href="/channel">Open channel →</a>
+    </div>
+    <div class="card small muted">Signed in as <strong>{{ learner }}</strong>. Every sandbox you create is labeled with this name.</div>
+  </div>
+</div>
+{% endblock %}

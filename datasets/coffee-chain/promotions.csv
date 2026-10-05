@@ -1,0 +1,4 @@
+promo_id,store,drink,start,end,discount_pct,days
+P1,SoMa,Latte,2026-08-11,2026-08-17,15,every day
+P2,Mission,Cold Brew,2026-08-25,2026-09-07,30,every day
+P3,Marina,Mocha,2026-09-08,2026-09-29,20,weekends

@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Max on Temporal: workflows, activities and messages",
+    "output": "docs/architecture/max-architecture.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    {
+      "id": "app",
+      "type": "frontend",
+      "label": "App",
+      "sublabel": "Temporal client",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "temporal",
+      "type": "messagebus",
+      "label": "Temporal Server",
+      "sublabel": "history · task queue max",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        160,
+        60
+      ]
+    },
+    {
+      "id": "maxwf",
+      "type": "backend",
+      "label": "MaxWorkflow",
+      "sublabel": "agent loop · durable waits",
+      "pos": [
+        740,
+        300
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "tag": "workflow"
+    },
+    {
+      "id": "callsandbox",
+      "type": "backend",
+      "label": "call_sandbox",
+      "sublabel": "activity → Update",
+      "pos": [
+        1090,
+        300
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "activity"
+    },
+    {
+      "id": "sandboxwf",
+      "type": "backend",
+      "label": "SandboxWorkflow",
+      "sublabel": "Updates · idle timer · cleanup",
+      "pos": [
+        1385,
+        300
+      ],
+      "size": [
+        190,
+        60
+      ],
+      "tag": "workflow"
+    },
+    {
+      "id": "team",
+      "type": "backend",
+      "label": "TeamWorkflow",
+      "sublabel": "fan-out · cancel cascades",
+      "pos": [
+        740,
+        120
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "tag": "workflow"
+    },
+    {
+      "id": "agentacts",
+      "type": "backend",
+      "label": "Agent activities",
+      "sublabel": "call_llm · publish_report",
+      "pos": [
+        740,
+        480
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "tag": "activity"
+    },
+    {
+      "id": "provideracts",
+      "type": "backend",
+      "label": "Provider activities",
+      "sublabel": "create · exec · suspend · destroy",
+      "pos": [
+        1385,
+        480
+      ],
+      "size": [
+        190,
+        60
+      ],
+      "tag": "activity"
+    },
+    {
+      "id": "daytona",
+      "type": "external",
+      "label": "Daytona sandbox",
+      "sublabel": "network blocked",
+      "pos": [
+        1405,
+        680
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "llm",
+      "type": "external",
+      "label": "LLM",
+      "sublabel": "OpenAI-compatible API",
+      "pos": [
+        740,
+        680
+      ],
+      "size": [
+        170,
+        60
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "max-worker: polls task queue max",
+      "wraps": [
+        "team",
+        "maxwf",
+        "callsandbox",
+        "sandboxwf",
+        "agentacts",
+        "provideracts"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "client-calls",
+      "from": "app",
+      "to": "temporal",
+      "label": "start · signal · Update · query",
+      "variant": "emphasis"
+    },
+    {
+      "id": "tasks",
+      "from": "temporal",
+      "to": "maxwf",
+      "label": "workflow tasks"
+    },
+    {
+      "id": "sandbox-ops",
+      "from": "maxwf",
+      "to": "callsandbox",
+      "label": "exec · upload · download"
+    },
+    {
+      "id": "update",
+      "from": "callsandbox",
+      "to": "sandboxwf",
+      "label": "Update · stable id",
+      "variant": "emphasis"
+    },
+    {
+      "id": "team-children",
+      "from": "team",
+      "to": "maxwf",
+      "label": "child per question",
+      "variant": "dashed"
+    },
+    {
+      "id": "sandbox-child",
+      "from": "maxwf",
+      "to": "sandboxwf",
+      "label": "child · REQUEST_CANCEL",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "top"
+    },
+    {
+      "id": "agent-activities",
+      "from": "maxwf",
+      "to": "agentacts",
+      "label": "model call · post"
+    },
+    {
+      "id": "provider-activities",
+      "from": "sandboxwf",
+      "to": "provideracts",
+      "label": "one activity per op"
+    },
+    {
+      "id": "daytona-sdk",
+      "from": "provideracts",
+      "to": "daytona",
+      "label": "Daytona SDK"
+    },
+    {
+      "id": "model-calls",
+      "from": "agentacts",
+      "to": "llm",
+      "label": "chat + tool calls"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Talking to workflows",
+      "items": [
+        "Signals: new_data, dismiss (fire-and-forget)",
+        "Update: approve_publish, guarded by a validator",
+        "Queries: status, state (read-only, for the app)"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Durability",
+      "items": [
+        "Every model and sandbox call is a recorded activity",
+        "Kill the worker: runs resume, nothing repeats",
+        "Approval wait and idle timer are durable timers"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Cleanup",
+      "items": [
+        "Cancel a team: each Max stops its sandbox",
+        "SandboxWorkflow deletes the sandbox before it ends",
+        "Bugs pause a run; only real endings clean up"
+      ]
+    }
+  ]
+}

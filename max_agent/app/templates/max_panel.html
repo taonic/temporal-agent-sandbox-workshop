@@ -1,0 +1,89 @@
+{% if running %}<div hx-get="/runs/{{ wf_id }}/panel?v={{ version }}" hx-trigger="every 2s" hx-target="#panel" hx-swap="innerHTML"></div>{% endif %}
+{% if flash %}<div class="flash">{{ flash }}</div>{% endif %}
+
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <div>
+      <div class="muted small">{{ wf_id }}</div>
+      <h1>{{ st.question if st else "…" }}</h1>
+    </div>
+    <div class="row">
+      {% if st %}<span class="pill {{ st.phase.value }}">{{ st.phase.value.replace("_", " ") }}</span>{% endif %}
+      <span class="pill {{ wf_status }}">workflow {{ wf_status }}</span>
+      <a class="btn small" target="_blank" href="{{ ui }}/namespaces/{{ ns }}/workflows/{{ wf_id }}">History ↗</a>
+    </div>
+  </div>
+  {% if not st %}
+  <p class="muted small">No answer from a worker yet. Is <code>max_agent.worker</code> running?</p>
+  {% endif %}
+</div>
+
+<div class="grid">
+  <div>
+    {% if st and st.phase.value == "awaiting_approval" %}
+    <div class="card ask">
+      <h2>Max wants to post this to #analytics</h2>
+      <p>{{ st.result.summary }}</p>
+      <div class="row">
+        <button class="primary" hx-post="/runs/{{ wf_id }}/approve" hx-vals='{"approve":"yes"}' hx-target="#panel">Approve</button>
+        <button hx-post="/runs/{{ wf_id }}/approve" hx-vals='{"approve":"no"}' hx-target="#panel">Not now</button>
+        {% if st.approval_deadline %}<span class="muted small" data-deadline="{{ st.approval_deadline }}"></span>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if st and st.phase.value == "waiting_for_data" %}
+    <div class="card">
+      <h2>Max is waiting for new data</h2>
+      <p class="muted small">Nothing to do, so Max's workflow is just waiting: no polling, no cost. Watch the sandbox fall asleep →</p>
+      <div class="row">
+        <button class="primary" hx-post="/runs/{{ wf_id }}/new-data" hx-target="#panel">Drop in tomorrow's sales</button>
+        <button hx-post="/runs/{{ wf_id }}/dismiss" hx-target="#panel">Retire Max</button>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if st and st.result %}
+    <div class="card">
+      <h2>Answer {% if st.reruns %}<span class="muted small">(rerun #{{ st.reruns }})</span>{% endif %}
+        {% if st.published %}<span class="pill done">posted</span>{% endif %}</h2>
+      <p><strong>{{ st.result.summary }}</strong></p>
+      {% if st.result.chart_path %}<img class="chart" src="/files?path={{ st.result.chart_path | urlencode }}&v={{ version }}" alt="chart">{% endif %}
+      {% if report %}<details style="margin-top:10px"><summary>Full report</summary><div class="report">{{ report | md | safe }}</div></details>{% endif %}
+    </div>
+    {% endif %}
+
+    <div class="card">
+      <h2>What Max did</h2>
+      <ul class="steps">
+        {% for s in (st.steps if st else []) | reverse %}
+        <li>
+          <span class="kind">{{ s.kind }}</span>
+          <span class="body">{% if s.detail %}<details><summary>{{ s.summary }}</summary><pre>{{ s.detail }}</pre></details>
+          {% else %}{{ s.summary }}{% endif %}</span>
+          <span class="muted small time">{{ s.at[11:19] }}</span>
+        </li>
+        {% else %}<li class="muted small">Starting up…</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class="card">
+      <h2>Max's computer</h2>
+      {% if sandbox %}
+      <div class="stat"><span>State</span><span class="pill {{ sandbox.lifecycle.value }}">{{ "asleep 💤" if sandbox.lifecycle.value == "suspended" else sandbox.lifecycle.value }}</span></div>
+      <div class="stat"><span>Provider</span><span>{{ sandbox.provider }}</span></div>
+      <div class="stat"><span>Operations</span><span>{{ sandbox.commands_run }}</span></div>
+      <div class="stat"><span>Suspends / resumes</span><span>{{ sandbox.suspend_count }} / {{ sandbox.resume_count }}</span></div>
+      <div class="stat"><span>Sleeps after idle</span><span>{{ sandbox.idle_timeout_s }}s</span></div>
+      <p class="small"><a target="_blank" href="{{ ui }}/namespaces/{{ ns }}/workflows/{{ st.sandbox_workflow_id }}">Sandbox workflow ↗</a></p>
+      {% else %}<p class="muted small">No sandbox yet.</p>{% endif %}
+    </div>
+    {% if running %}
+    <div class="card small">
+      <button class="danger" hx-post="/runs/{{ wf_id }}/cancel" hx-target="#panel" hx-confirm="Cancel Max? Its sandbox will be deleted.">Cancel run</button>
+    </div>
+    {% endif %}
+  </div>
+</div>

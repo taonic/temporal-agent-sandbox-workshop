@@ -1,0 +1,134 @@
+#!/usr/bin/env bash
+# Sandbox setup for the "workstation" VM. Idempotent: safe to re-run.
+#
+# Runs on the sandbox once, while it starts, so all of it is time a learner
+# spends on the loading screen. The trade is always the same: move a wait out of
+# a challenge (where it looks like a hung agent) into the loading screen.
+#
+# What this does NOT do, on purpose: start the worker. Challenge 1 opens with the
+# learner starting it, and later challenges have them kill and restart it.
+set -euo pipefail
+
+log() { printf '\n=== %s\n' "$*"; }
+
+until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]; do sleep 1; done
+
+# The `environment:` block in instruqt/sandbox/config.yml is not in scope here
+# (see instruqt/README.md). These three are needed before there is a checkout to
+# read it from, so they are defaulted here and checked against it after the clone.
+WORKSHOP_REPO="${WORKSHOP_REPO:-https://github.com/temporal-community/temporal-agent-sandbox-workshop.git}"
+WORKSHOP_REF="${WORKSHOP_REF:-main}"
+WORKDIR="${WORKDIR:-/root/workshop}"
+
+# Pinned: a tool that changes under a cohort breaks a lab on a learner who can't
+# know the instruction worked yesterday.
+TEMPORAL_CLI_VERSION=1.8.2
+UV_VERSION=0.12.7
+
+log "system packages"
+export DEBIAN_FRONTEND=noninteractive
+apt-get update -qq
+apt-get install -y -qq git curl zstd nano vim ca-certificates >/dev/null
+
+log "uv"
+command -v uv >/dev/null || curl -fsSL "https://astral.sh/uv/${UV_VERSION}/install.sh" | sh
+export PATH="/root/.local/bin:$PATH"
+
+log "temporal cli"
+command -v temporal >/dev/null \
+  || curl -fsSL https://temporal.download/cli.sh | sh -s -- --version "$TEMPORAL_CLI_VERSION" --dir /usr/local
+
+log "clone the workshop"
+# The whole repo, not an allow-list: challenge setup catches a learner up by
+# copying solutions/chNN/, and the Solve button does the same, so solutions/ has
+# to be in the checkout.
+[ -d "$WORKDIR/.git" ] || git clone --depth 1 --branch "$WORKSHOP_REF" "$WORKSHOP_REPO" "$WORKDIR"
+cd "$WORKDIR"
+
+cfg_env() { awk -v k="$1:" '$1==k {gsub(/"/,"",$2); print $2; exit}' instruqt/sandbox/config.yml; }
+for v in WORKSHOP_REPO WORKSHOP_REF WORKDIR; do
+  want="$(cfg_env "$v")"; have="${!v}"
+  [ -z "$want" ] || [ "$want" = "$have" ] || {
+    echo "FAIL $v is \"$have\" in this script but \"$want\" in instruqt/sandbox/config.yml." >&2
+    echo "     Both copies have to move together." >&2
+    exit 1
+  }
+done
+LLM_MODEL="${LLM_MODEL:-$(cfg_env LLM_MODEL)}"
+: "${LLM_MODEL:?not set here and not in instruqt/sandbox/config.yml}"
+
+log "python dependencies"
+uv sync
+
+log "workshop environment"
+# For terminals, and for the challenge lifecycle scripts, which source it to find
+# uv and the checkout.
+install -d /etc/workshop
+cat > /etc/workshop/env <<ENV
+export WORKDIR=$WORKDIR
+export PATH=/root/.local/bin:/usr/local/bin:\$PATH
+ENV
+cat > /etc/profile.d/workshop.sh <<'PROFILE'
+# shellcheck disable=SC1091
+source /etc/workshop/env
+case $- in *i*) cd "$WORKDIR" 2>/dev/null || true ;; esac
+PROFILE
+grep -q workshop.sh /root/.bashrc || echo 'source /etc/profile.d/workshop.sh' >> /root/.bashrc
+
+instruqt/bin/write-env
+uv run python -m max_agent.datasets reset
+
+log "ollama, and $LLM_MODEL"
+command -v ollama >/dev/null || curl -fsSL https://ollama.com/install.sh | sh
+systemctl enable --now ollama
+ollama pull "$LLM_MODEL"
+
+log "temporal dev server and the max app"
+# Persisted, so a VM hiccup keeps history. workflowTaskRetryMaxInterval=5s: after
+# a learner fixes a workflow bug (challenge 1), the paused run retries within
+# seconds instead of after Temporal's default backoff (up to minutes).
+cat > /etc/systemd/system/temporal.service <<UNIT
+[Unit]
+Description=Temporal dev server
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/temporal server start-dev --ip 0.0.0.0 --ui-port 8233 --db-filename /root/temporal.db --log-level warn --dynamic-config-value 'history.workflowTaskRetryMaxInterval="5s"'
+Restart=always
+[Install]
+WantedBy=multi-user.target
+UNIT
+cat > /etc/systemd/system/max-app.service <<UNIT
+[Unit]
+Description=Max web app
+After=temporal.service
+[Service]
+WorkingDirectory=$WORKDIR
+ExecStart=/root/.local/bin/uv run max-app
+Restart=always
+[Install]
+WantedBy=multi-user.target
+UNIT
+systemctl daemon-reload
+systemctl enable --now temporal max-app
+
+# Proven here, where there is a log to read, rather than as a blank tab later.
+wait_for() { # wait_for NAME URL
+  for _ in $(seq 1 60); do curl -fsS --max-time 2 -o /dev/null "$2" && { echo "  ok   $1"; return 0; }; sleep 2; done
+  echo "FAIL $1 is not answering on $2" >&2; return 1
+}
+wait_for "temporal ui" http://127.0.0.1:8233
+wait_for "max app" http://127.0.0.1:8000
+
+log "warm the model"
+# So the first question isn't a cold start.
+curl -fsS http://localhost:11434/api/generate \
+  -d "{\"model\":\"$LLM_MODEL\",\"prompt\":\"hi\",\"stream\":false}" >/dev/null
+
+log "egress probes"
+tcp_probe() { # host:port
+  timeout 10 bash -c "cat < /dev/null > /dev/tcp/${1%:*}/${1##*:}" 2>/dev/null \
+    && echo "  ok   $1" || { echo "FAIL $1 is unreachable" >&2; return 1; }
+}
+tcp_probe app.daytona.io:443
+
+log "ready"
