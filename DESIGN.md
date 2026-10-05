@@ -11,9 +11,9 @@ The decisions behind this workshop, as agreed during planning (2026-10-03). Read
 
 ## Scenario: Max
 
-Max is a personal analyst agent with its own computer. It borrows the headline ideas of Meta Muse and OpenAI Dots (both launched September 2026):
+Max is a personal analyst agent with its own computer. It borrows the headline ideas of the personal agents that launched in 2026:
 
-| Muse / Dots idea | Where it shows up |
+| Personal-agent idea | Where it shows up |
 |---|---|
 | Each agent gets its own cloud computer | One Daytona sandbox per Max, owned by a `SandboxWorkflow` |
 | Keeps working after you close the app | Kill the worker or the app; Max resumes (challenge 2) |
@@ -29,7 +29,7 @@ Max analyzes a synthetic, seeded coffee chain (`datasets/coffee-chain/`): four t
 - **Committed CSVs:** `generate.py` is the source of truth, and a test keeps the CSVs in sync with it. Runs use a working copy in `data/`, and "new data" appends a day to every daily table there.
 - **Room for more:** the loader takes a dataset name, so another domain could be added later. The prompt is still coffee-specific.
 
-Errand-style agents (a browser doing shopping or bookings, as in Muse) are deferred. The tool list and the provider interface leave room for them; nothing more is built yet.
+Errand-style agents (a browser doing shopping or bookings) are deferred. The tool list and the provider interface leave room for them; nothing more is built yet.
 
 ## Architecture
 
@@ -93,5 +93,6 @@ Errand-style agents (a browser doing shopping or bookings, as in Muse) are defer
 ## Code layout and authoring
 
 - `authoring/` holds the master copies of the three files that contain learner TODOs, with `# @@solution chNN / # @@starter / # @@end` markers.
-- `scripts/render.py` writes the starter versions into `max_agent/` and the solved versions into `solutions/chNN/`. Never edit those generated copies by hand.
+- `scripts/render.py` writes the finished versions into `max_agent/`, the starter versions into `starter/` and each stage into `solutions/chNN/`. Never edit those generated copies by hand.
+- The repo runs the finished Max. The Instruqt sandbox lays `starter/` over `max_agent/` so learners begin with every TODO open.
 - `scripts/verify_stages.py` checks that each challenge's check fails before its solution is applied and passes after.

@@ -30,7 +30,7 @@ timelimit: 1200
 
 # Ask before acting
 
-Muse checks with you before it sends an email or buys something. Dots let you decide per app whether an action is auto-approved, blocked or needs your permission. **Agents that act in the world need a human in the loop.**
+A good personal agent checks with you before it sends an email or buys something, and lets you decide per app whether an action is auto-approved, blocked or needs your permission. **Agents that act in the world need a human in the loop.**
 
 That sounds simple until you build it. The human might answer in 5 seconds or in 5 hours. Your server might be redeployed in between. The approve button might be clicked twice, or after the agent has already moved on.
 

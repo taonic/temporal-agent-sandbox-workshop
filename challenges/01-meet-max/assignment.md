@@ -30,7 +30,7 @@ timelimit: 1200
 
 # Meet Max
 
-In September 2026, Meta shipped **Muse** and OpenAI shipped **Dots**. Both are personal agents that get **their own cloud computer**. You hand them a task, close the app, and they keep working: running code, waiting on people, coming back when they need an approval.
+Personal agents now get **their own cloud computer**. You hand one a task, close the app, and it keeps working: running code, waiting on people, coming back when it needs an approval.
 
 The model is the easy part. The hard part is everything around it:
 

@@ -1,6 +1,6 @@
 # Give Your Agent a Computer: Durable Sandboxes with Temporal
 
-A 90-minute hands-on workshop for AI engineers who are new to Temporal. You build **Max**, a personal data-analyst agent with its own cloud computer (a [Daytona](https://daytona.io) sandbox). Max takes the headline ideas of Meta Muse and OpenAI Dots: it keeps working after you close the app, asks before acting, sleeps when idle, and works in teams. It's all plain Python on the vanilla Temporal SDK; there's no agent framework.
+A 90-minute hands-on workshop for AI engineers who are new to Temporal. You build **Max**, a personal data-analyst agent with its own cloud computer (a [Daytona](https://daytona.io) sandbox). Max takes the headline ideas of today's personal agents: it keeps working after you close the app, asks before acting, sleeps when idle, and works in teams. It's all plain Python on the vanilla Temporal SDK; there's no agent framework.
 
 | # | Challenge | What learners see | What they write |
 |---|---|---|---|
@@ -61,15 +61,15 @@ LLM_API_KEY=ollama                          # Ollama ignores it; hosted endpoint
 
 ### Choose the code: finished Max or the challenges
 
-`max_agent/` ships as the **workshop starter**, with one TODO per challenge. On the starter, a run pauses at the first TODO (`NotImplementedError: TODO(ch01): handle the 'run_python' tool call`), which is what challenge 1 teaches. To run the complete Max without doing the challenges, switch first:
+`max_agent/` ships as the **finished Max**, with every challenge solved. The lab starts learners from `starter/` instead, with one TODO per challenge. On the starter, a run pauses at the first TODO (`NotImplementedError: TODO(ch01): handle the 'run_python' tool call`), which is what challenge 1 teaches. To do the challenges locally, switch first:
 
 ```bash
-uv run python scripts/switch.py solution   # the finished Max: all challenges solved
-uv run python scripts/switch.py starter    # back to the workshop starting point
+uv run python scripts/switch.py starter    # the workshop starting point: all TODOs open
+uv run python scripts/switch.py solution   # back to the finished Max
 uv run python scripts/switch.py status     # which one is in place
 ```
 
-Only the three challenge files change. If you've edited them, your version is backed up to `.learner-backup/` first. Restart the worker after switching. A run that paused on a TODO resumes on its own once the solved worker picks it up. If you don't want to wait for Temporal's retry backoff, cancel it with `temporal workflow cancel -w <id>`.
+Only the three challenge files change. If you've edited them, your version is backed up to `.learner-backup/` first. Switch back to the solution before committing (`scripts/render.py --check` fails otherwise). Restart the worker after switching. A run that paused on a TODO resumes on its own once the solved worker picks it up. If you don't want to wait for Temporal's retry backoff, cancel it with `temporal workflow cancel -w <id>`.
 
 ### Start Temporal, the worker and the app
 
@@ -103,6 +103,7 @@ max_agent/
   cli.py, worker.py, client.py, config.py, datasets.py (working copy + "new data")
 datasets/      coffee-chain/: generate.py (source of truth), committed CSVs, README (stories + defects)
 authoring/     MASTER copies of files with learner TODOs (edit these, not max_agent/)
+starter/       generated: the three TODO files as learners get them in the lab
 solutions/     generated: chNN/ = code with challenges 1..N solved
 challenges/    assignment.md + setup/check/solve/cleanup.sh per challenge (Instruqt lifecycle)
 instruqt/      track/ (generated from challenges/), sandbox/ preset (VM config, setup script); see instruqt/README.md
@@ -126,7 +127,7 @@ Three files contain learner TODOs: `agent/workflow.py`, `agent/team.py` and `san
 After editing a master:
 
 ```bash
-uv run python scripts/render.py               # writes max_agent/ (starter) and solutions/chNN/
+uv run python scripts/render.py               # writes max_agent/ (finished), starter/ and solutions/chNN/
 uv run python scripts/verify_stages.py        # each check fails before its solution, passes after
 ```
 
@@ -140,7 +141,7 @@ stage  base  ch01  ch02  ch03  ch04
   4    pass  pass  pass  pass  pass
 ```
 
-To develop against the fully solved code, run `uv run python scripts/render.py --stage 4 --out max_agent`, then run `scripts/render.py` again before committing (`--check` fails if `max_agent/` isn't the starter).
+`max_agent/` is the fully solved code, so you develop against it directly. `--check` fails if `max_agent/` isn't the finished Max, or if `starter/` or `solutions/` are stale.
 
 After editing a `challenges/*/assignment.md`, run `uv run python scripts/build_track.py` to refresh the Instruqt copy. [instruqt/README.md](instruqt/README.md) covers what to push when.
 

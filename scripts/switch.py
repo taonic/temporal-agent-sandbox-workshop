@@ -1,7 +1,7 @@
-"""Switch max_agent/ between the starter code (challenge TODOs open) and the finished Max.
+"""Switch max_agent/ between the finished Max (what the repo ships) and the starter code.
 
-    uv run python scripts/switch.py solution   # run the complete Max, no challenges
-    uv run python scripts/switch.py starter    # back to the workshop starting point
+    uv run python scripts/switch.py starter    # challenge TODOs open, to do the workshop locally
+    uv run python scripts/switch.py solution   # back to the finished Max
     uv run python scripts/switch.py status     # which one is in place?
 
 Only the three files with challenge TODOs change. If you've edited them,

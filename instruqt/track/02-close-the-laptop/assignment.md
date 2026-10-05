@@ -2,9 +2,8 @@
 slug: close-the-laptop
 id: a22rvfwbsg1o
 type: challenge
-title: 2 · Close the laptop
-teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer
-  nobody is using.
+title: "2 · Close the laptop"
+teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer nobody is using.
 tabs:
 - id: akxloyjeqtxz
   title: Worker
@@ -33,12 +32,11 @@ tabs:
   port: 8233
 difficulty: basic
 timelimit: 1200
-enhanced_loading: null
 ---
 
 # Close the laptop
 
-The pitch for Muse and Dots is that **they keep working after you close the app**. Behind that promise there are two hard problems:
+The pitch for personal agents is that **they keep working after you close the app**. Behind that promise there are two hard problems:
 
 1. **Crashes.** The machine running your agent dies halfway through a task. Does the agent start over? Does it leak its sandbox, or create a second one?
 2. **Cost.** An agent with its own computer is waiting most of the time: for data, for people, for tomorrow. A sandbox that runs while nobody uses it is money on fire.

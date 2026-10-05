@@ -34,7 +34,7 @@ Pick any of these. They're independent of each other, and none are graded.
 
 ## A. Every morning, without being asked (Schedules)
 
-A Dot reruns your analysis when new data lands. Give Max a schedule:
+A personal agent reruns your analysis when new data lands. Give Max a schedule:
 
 ```bash
 uv run python scripts/schedule.py create "How did yesterday compare with the day before?" --every 5m

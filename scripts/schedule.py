@@ -1,4 +1,4 @@
-"""Bonus: put Max on a schedule, like a Dot that reruns your analysis every morning.
+"""Bonus: put Max on a schedule, like a personal agent that reruns your analysis every morning.
 
     uv run python scripts/schedule.py create "How did yesterday compare with the day before?" --every 5m
     uv run python scripts/schedule.py trigger     # run it now

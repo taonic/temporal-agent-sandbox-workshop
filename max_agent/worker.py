@@ -44,8 +44,9 @@ async def main() -> None:
     print(f"Max's worker is up: task queue {settings.task_queue!r}, sandboxes on {settings.sandbox_provider}, "
           f"LLM {settings.llm_mode}:{settings.llm_model}")
     if todos := open_todos():
-        print(f"Running workshop starter code: {', '.join(todos)} not done yet. Runs will pause at those TODOs.\n"
-              "  To run the finished Max instead: uv run python scripts/switch.py solution")
+        print(f"Running workshop starter code: {', '.join(todos)} not done yet. Runs will pause at those TODOs.")
+        if (Path(__file__).parent.parent / "scripts" / "switch.py").exists():  # not in the lab sandbox
+            print("  To run the finished Max instead: uv run python scripts/switch.py solution")
     await build_worker(client).run()
 
 

@@ -2,9 +2,8 @@
 slug: bonus
 id: 0lsvmvbixxtd
 type: challenge
-title: Bonus · Make Max your own
-teaser: Schedules, safe upgrades of running agents, a second sandbox provider, or
-  try-three-fixes-and-keep-the-best.
+title: "Bonus · Make Max your own"
+teaser: Schedules, safe upgrades of running agents, a second sandbox provider, or try-three-fixes-and-keep-the-best.
 tabs:
 - id: xjjsqedfmbwv
   title: Worker
@@ -33,7 +32,6 @@ tabs:
   port: 8233
 difficulty: advanced
 timelimit: 1800
-enhanced_loading: null
 ---
 
 # Make Max your own
@@ -42,7 +40,7 @@ Pick any of these. They're independent of each other, and none are graded.
 
 ## A. Every morning, without being asked (Schedules)
 
-A Dot reruns your analysis when new data lands. Give Max a schedule:
+A personal agent reruns your analysis when new data lands. Give Max a schedule:
 
 ```bash
 uv run python scripts/schedule.py create "How did yesterday compare with the day before?" --every 5m

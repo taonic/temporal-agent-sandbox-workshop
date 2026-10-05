@@ -2,9 +2,8 @@
 slug: many-maxes
 id: b1jcj8y0n2yq
 type: challenge
-title: 4 · Many Maxes
-teaser: Fan out a team of agents, each with its own computer, then cancel the lot
-  and watch every sandbox get cleaned up.
+title: "4 · Many Maxes"
+teaser: Fan out a team of agents, each with its own computer, then cancel the lot and watch every sandbox get cleaned up.
 tabs:
 - id: nlw8xalhfcx9
   title: Worker
@@ -33,12 +32,11 @@ tabs:
   port: 8233
 difficulty: intermediate
 timelimit: 1200
-enhanced_loading: null
 ---
 
 # Many Maxes
 
-Muse Spark runs several sub-agents on one task in parallel, and a Dot juggles several projects at once. Parallel agents are faster, but each one has its own computer. When something goes wrong, every one of those computers has to be cleaned up, not just most of them.
+Personal agents run several sub-agents on one task in parallel, or juggle several projects at once. Parallel agents are faster, but each one has its own computer. When something goes wrong, every one of those computers has to be cleaned up, not just most of them.
 
 When you ask Max more than one question (one per line, up to three), the app starts a **TeamWorkflow** (`max_agent/agent/team.py`). Each question goes to its own **child** `MaxWorkflow`, with its own sandbox:
 

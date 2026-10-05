@@ -38,14 +38,52 @@ log "temporal cli"
 command -v temporal >/dev/null \
   || curl -fsSL https://temporal.download/cli.sh | sh -s -- --version "$TEMPORAL_CLI_VERSION" --dir /usr/local
 
-log "clone the workshop"
-# The whole repo, not an allow-list: challenge setup catches a learner up by
-# copying solutions/chNN/, and the Solve button does the same, so solutions/ has
-# to be in the checkout.
-# GIT_TERMINAL_PROMPT=0: a private or mistyped repo fails with a clear error
-# instead of "could not read Username", since there is no terminal to prompt on.
-[ -d "$WORKDIR/.git" ] || GIT_TERMINAL_PROMPT=0 git clone --depth 1 --branch "$WORKSHOP_REF" "$WORKSHOP_REPO" "$WORKDIR"
+log "the workshop files"
+# Not the repo: an ALLOW-LIST out of it, with the starter code laid over
+# max_agent/. The repo's max_agent/ is the finished Max; learners start from
+# starter/ (every TODO open). authoring/ and starter/ never arrive, and neither
+# does the writing about the workshop (README, DESIGN, docs), since the
+# instructions are in the Instruqt assignments.
+#
+# solutions/ does arrive, and has to: challenge setup catches a learner up by
+# copying solutions/chNN/, and the Solve button does the same.
+#
+# Allow-list rather than clone-then-delete, so a new top-level directory has to
+# be named here before a learner sees it. Adding something a lab needs means
+# adding it to KEEP.
+KEEP=(
+  pyproject.toml uv.lock
+  max_agent datasets tests solutions
+  challenges/lib.sh 'challenges/*/*.sh'    # the lifecycle scripts; the prose is in Instruqt
+  scripts/cleanup.py scripts/schedule.py   # track cleanup; the bonus's Schedules
+  instruqt/bin instruqt/sandbox/config.yml
+)
+if [ ! -f "$WORKDIR/pyproject.toml" ]; then   # a re-run keeps the learner's edits
+  SRC=/tmp/workshop-src
+  rm -rf "$SRC"
+  # GIT_TERMINAL_PROMPT=0: a private or mistyped repo fails with a clear error
+  # instead of "could not read Username", since there is no terminal to prompt on.
+  GIT_TERMINAL_PROMPT=0 git clone --depth 1 --branch "$WORKSHOP_REF" "$WORKSHOP_REPO" "$SRC"
+  mkdir -p "$WORKDIR"
+  # Quoted in KEEP and unquoted here, so the glob expands inside the clone.
+  # shellcheck disable=SC2068
+  (cd "$SRC" && tar -cf - ${KEEP[@]}) | (cd "$WORKDIR" && tar -xf -)
+  (cd "$SRC/starter" && tar -cf - .) | (cd "$WORKDIR" && tar -xf -)
+  rm -rf "$SRC"
+fi
 cd "$WORKDIR"
+
+# Checked rather than assumed: a tree that quietly brought everything looks
+# identical until a learner opens it.
+for leaked in .git authoring starter docs README.md DESIGN.md scripts/render.py instruqt/track; do
+  [ ! -e "$leaked" ] || { echo "FAIL $leaked reached the sandbox; the allow-list did not hold" >&2; exit 1; }
+done
+for want in uv.lock challenges/lib.sh challenges/04-many-maxes/check.sh solutions/ch03 \
+            tests/test_ch04_team.py datasets/coffee-chain scripts/cleanup.py instruqt/bin/write-env; do
+  [ -e "$want" ] || { echo "FAIL $want is missing; KEEP is out of date with the repo" >&2; exit 1; }
+done
+grep -q 'TODO(ch01)' max_agent/agent/workflow.py \
+  || { echo "FAIL max_agent/ is not the starter code; learners would start with the challenges solved" >&2; exit 1; }
 
 cfg_env() { awk -v k="$1:" '$1==k {gsub(/"/,"",$2); print $2; exit}' instruqt/sandbox/config.yml; }
 for v in WORKSHOP_REPO WORKSHOP_REF WORKDIR; do

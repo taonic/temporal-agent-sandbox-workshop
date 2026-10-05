@@ -5,8 +5,7 @@ teaser: Build Max, a personal data-analyst agent with its own cloud computer. It
   working after you close the app, asks before acting, sleeps when idle, and works
   in teams.
 description: |-
-  In September 2026, Meta shipped **Muse** and OpenAI shipped **Dots**: personal agents
-  that get their own cloud computer. The model is the easy part. The hard part is
+  Personal agents now get their own cloud computer. The model is the easy part. The hard part is
   everything around it: crashes halfway through, sandboxes nobody deletes, and waiting
   hours for a human without burning money.
 

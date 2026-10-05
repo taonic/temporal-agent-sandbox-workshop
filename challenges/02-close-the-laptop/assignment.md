@@ -30,7 +30,7 @@ timelimit: 1200
 
 # Close the laptop
 
-The pitch for Muse and Dots is that **they keep working after you close the app**. Behind that promise there are two hard problems:
+The pitch for personal agents is that **they keep working after you close the app**. Behind that promise there are two hard problems:
 
 1. **Crashes.** The machine running your agent dies halfway through a task. Does the agent start over? Does it leak its sandbox, or create a second one?
 2. **Cost.** An agent with its own computer is waiting most of the time: for data, for people, for tomorrow. A sandbox that runs while nobody uses it is money on fire.

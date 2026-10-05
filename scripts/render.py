@@ -10,13 +10,14 @@ challenge, between markers:
     # @@end
 
 `render.py` writes:
-    max_agent/...           stage 0: every TODO open (what learners start with)
-    solutions/chNN/...      stage N: challenges 1..N solved
+    max_agent/...           the finished Max: every challenge solved (what the repo runs)
+    starter/max_agent/...   stage 0: every TODO open (what learners start with in the lab)
+    solutions/chNN/...      stage N: challenges 1..N solved (catch-up and Solve in the lab)
 
 Usage:
     uv run python scripts/render.py            # write everything
     uv run python scripts/render.py --check    # fail if outputs are stale (CI)
-    uv run python scripts/render.py --stage 4 --out max_agent   # dev: fully solved in place
+    uv run python scripts/render.py --stage 0 --out max_agent   # try the challenges in place
 """
 
 import argparse
@@ -70,10 +71,11 @@ def main() -> None:
         if targets[args.stage].name == "max_agent":
             targets[args.stage] = targets[args.stage].parent
     else:
-        targets = {0: ROOT, **{n: ROOT / "solutions" / f"ch{n:02d}" for n in range(1, CHAPTERS + 1)}}
+        targets = {0: ROOT / "starter", **{n: ROOT / "solutions" / f"ch{n:02d}" for n in range(1, CHAPTERS + 1)}}
 
+    files = outputs(targets) if args.stage is not None else outputs(targets) | outputs({CHAPTERS: ROOT})
     stale = []
-    for path, content in outputs(targets).items():
+    for path, content in files.items():
         if args.check:
             if not path.exists() or path.read_text() != content:
                 stale.append(path.relative_to(ROOT))
