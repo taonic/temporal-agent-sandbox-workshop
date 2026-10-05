@@ -30,7 +30,7 @@ virtualmachines:
     # NOT in scope for scripts/setup-workstation. It reads these back out of the
     # cloned copy of this file; see instruqt/README.md.
     environment:
-      WORKSHOP_REPO: https://github.com/temporal-community/temporal-agent-sandbox-workshop.git  # TODO: final URL
+      WORKSHOP_REPO: https://github.com/taonic/temporal-agent-sandbox-workshop.git  # public: cloned anonymously
       WORKSHOP_REF: main
       WORKDIR: /root/workshop
 

@@ -16,7 +16,7 @@ until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]; do sleep 1; done
 # The `environment:` block in instruqt/sandbox/config.yml is not in scope here
 # (see instruqt/README.md). These three are needed before there is a checkout to
 # read it from, so they are defaulted here and checked against it after the clone.
-WORKSHOP_REPO="${WORKSHOP_REPO:-https://github.com/temporal-community/temporal-agent-sandbox-workshop.git}"
+WORKSHOP_REPO="${WORKSHOP_REPO:-https://github.com/taonic/temporal-agent-sandbox-workshop.git}"
 WORKSHOP_REF="${WORKSHOP_REF:-main}"
 WORKDIR="${WORKDIR:-/root/workshop}"
 
@@ -42,7 +42,9 @@ log "clone the workshop"
 # The whole repo, not an allow-list: challenge setup catches a learner up by
 # copying solutions/chNN/, and the Solve button does the same, so solutions/ has
 # to be in the checkout.
-[ -d "$WORKDIR/.git" ] || git clone --depth 1 --branch "$WORKSHOP_REF" "$WORKSHOP_REPO" "$WORKDIR"
+# GIT_TERMINAL_PROMPT=0: a private or mistyped repo fails with a clear error
+# instead of "could not read Username", since there is no terminal to prompt on.
+[ -d "$WORKDIR/.git" ] || GIT_TERMINAL_PROMPT=0 git clone --depth 1 --branch "$WORKSHOP_REF" "$WORKSHOP_REPO" "$WORKDIR"
 cd "$WORKDIR"
 
 cfg_env() { awk -v k="$1:" '$1==k {gsub(/"/,"",$2); print $2; exit}' instruqt/sandbox/config.yml; }
