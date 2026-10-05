@@ -68,6 +68,8 @@ Temporal has three ways to talk to a running workflow:
 
 An approval should tell the clicker whether it counted, so it's an Update. The **validator** runs before anything is written to history. A late or duplicate click gets a clear "no" and leaves no trace.
 
+<!-- @@solution ch03 MaxWorkflow -->
+
 ## 3. Wait for the human (but not forever)
 
 Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publish" line:
@@ -79,6 +81,8 @@ Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publi
 > Why a `post_id`? Activities can be retried. `publish_report` uses the ID to make sure a retry never posts the same report twice.
 
 (The full solution also sets `self._approval_deadline` so the app can show a countdown, and handles a dismiss arriving during the wait.)
+
+<!-- @@solution ch03 _ask_to_publish -->
 
 ## 4. Try it
 

@@ -88,6 +88,8 @@ Open `max_agent/agent/workflow.py` in the **Code** tab and find `TODO(ch01)` in 
 - `finish`: save `call.arguments["summary"]` in `self._finish_summary` (the loop stops once it's set), record it with `self._add_step("finish", summary)`, and return `"ok"`.
 - Anything else: return a short message saying that tool doesn't exist.
 
+<!-- @@solution ch01 -->
+
 ## 5. Restart the worker and watch the stuck run continue
 
 In the **Worker** tab press `Ctrl-C`, then run `uv run max-worker` again.

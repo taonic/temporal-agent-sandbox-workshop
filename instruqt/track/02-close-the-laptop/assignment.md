@@ -2,8 +2,9 @@
 slug: close-the-laptop
 id: a22rvfwbsg1o
 type: challenge
-title: "2 · Close the laptop"
-teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer nobody is using.
+title: 2 · Close the laptop
+teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer
+  nobody is using.
 tabs:
 - id: akxloyjeqtxz
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: basic
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Close the laptop
@@ -97,6 +99,24 @@ except asyncio.TimeoutError:
 ```
 
 `wait_condition` with a timeout is a **durable timer**. It's stored by the Temporal server, not in your process, so it survives worker restarts and costs nothing while it waits. It could just as well be 6 hours.
+
+<details>
+<summary>Show the complete code</summary>
+
+In `max_agent/sandbox/workflow.py`, replace the `TODO(ch02)` comments and the placeholder code under them in `_watch_for_idle` with this, indented to match:
+
+```python
+try:
+    # A durable timer: survives worker restarts, costs nothing while waiting.
+    await workflow.wait_condition(used_again, timeout=timedelta(seconds=self._s.init.idle_timeout_s))
+except asyncio.TimeoutError:
+    workflow.logger.info("sandbox idle for %ss, suspending", self._s.init.idle_timeout_s)
+    async with self._lock:
+        if self._s.lifecycle == Lifecycle.RUNNING:
+            await self._suspend()
+```
+
+</details>
 
 ### 3. Watch Max's computer fall asleep
 

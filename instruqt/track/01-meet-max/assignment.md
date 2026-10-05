@@ -2,8 +2,9 @@
 slug: meet-max
 id: dcgzf1ratsk9
 type: challenge
-title: "1 · Meet Max"
-teaser: Give an AI agent its own computer, and watch every thought and action land in a durable history.
+title: 1 · Meet Max
+teaser: Give an AI agent its own computer, and watch every thought and action land
+  in a durable history.
 tabs:
 - id: azgvyzy7e7bd
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: basic
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Meet Max
@@ -93,6 +95,24 @@ Open `max_agent/agent/workflow.py` in the **Code** tab and find `TODO(ch01)` in 
 - `run_python`: run `call.arguments["code"]` with `await self._run_python(code)` and return the result. That string is what the model sees next.
 - `finish`: save `call.arguments["summary"]` in `self._finish_summary` (the loop stops once it's set), record it with `self._add_step("finish", summary)`, and return `"ok"`.
 - Anything else: return a short message saying that tool doesn't exist.
+
+<details>
+<summary>Show the complete code</summary>
+
+In `max_agent/agent/workflow.py`, replace the `TODO(ch01)` comments and the placeholder code under them in `_handle_tool_call` with this, indented to match:
+
+```python
+if call.name == "run_python":
+    return await self._run_python(call.arguments.get("code", ""))
+if call.name == "finish":
+    self._finish_summary = call.arguments.get("summary", "")
+    self._add_step("finish", self._finish_summary)
+    return "ok"
+self._note(f"Model asked for an unknown tool: {call.name}")
+return f"Unknown tool {call.name!r}. Use run_python or finish."
+```
+
+</details>
 
 ## 5. Restart the worker and watch the stuck run continue
 

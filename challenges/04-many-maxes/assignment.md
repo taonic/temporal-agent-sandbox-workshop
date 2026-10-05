@@ -67,6 +67,8 @@ outcomes = await asyncio.gather(*handles, return_exceptions=True)
 
 `return_exceptions=True` means one analyst failing doesn't sink the whole team. The code after your TODO already turns failures into a "didn't finish" section of the team report.
 
+<!-- @@solution ch04 -->
+
 Restart the worker (team runs are short, so there's nothing to retire) and ask the three questions again. All three now work at once, each on its own computer. In the **Temporal UI**, open the team workflow and follow the tree of child workflows.
 
 ## 3. Pull the plug

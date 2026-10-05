@@ -7,6 +7,12 @@ challenge as a directory beside instruqt/track/track.yml, with scripts named
 repo's own script from the sandbox's clone, so a fix to a check ships by
 merging, with no track push.
 
+Each `<!-- @@solution chNN [scope] -->` line in an assignment expands into a
+collapsed "Show the complete code" block: the matching `# @@solution chNN`
+blocks from authoring/, optionally only the one inside `scope` (the enclosing
+def or class). The build fails unless every solution block in authoring/ is
+shown somewhere, so the instructions always carry the complete code.
+
 `instruqt track push` adds `id:` lines to the challenge and its tabs; they are
 carried over here so the platform keeps matching them across rebuilds.
 
@@ -15,10 +21,14 @@ carried over here so the platform keeps matching them across rebuilds.
 
 import re
 import shutil
+import sys
+import textwrap
+from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CHALLENGES = ROOT / "challenges"
+AUTHORING = ROOT / "authoring"
 TRACK = ROOT / "instruqt" / "track"
 HOST = "workstation"
 VERBS = ("setup", "check", "solve", "cleanup")
@@ -33,6 +43,61 @@ source /etc/workshop/env
 """
 # Challenge setup sees Instruqt's participant variables even if the sandbox setup didn't.
 SETUP_PRE = '"$WORKDIR/instruqt/bin/write-env"\n'
+
+
+@dataclass(frozen=True)
+class Solution:
+    chapter: str  # "ch03"
+    path: str  # "max_agent/agent/workflow.py"
+    scope: str  # enclosing def or class name
+    is_class: bool
+    code: str  # dedented
+    replaces_code: bool  # the starter has placeholder code under its TODO comments, not just comments
+
+
+SOLUTION_START = re.compile(r"^\s*# @@solution (ch\d\d)\s*$")
+SOLUTION_STOP = re.compile(r"^\s*# @@(starter|end)\s*$")
+SCOPE = re.compile(r"^(\s*)(?:async def|def|class) (\w+)")
+MARKER = re.compile(r"^<!-- @@solution (ch\d\d)(?: (\w+))? -->\n", re.MULTILINE)
+
+
+def solutions() -> list[Solution]:
+    found = []
+    for master in sorted(AUTHORING.rglob("*.py")):
+        lines = master.read_text().splitlines(keepends=True)
+        for i, line in enumerate(lines):
+            if not (m := SOLUTION_START.match(line)):
+                continue
+            indent = len(line) - len(line.lstrip())
+            scope = next(s for s in (SCOPE.match(lines[j]) for j in range(i - 1, -1, -1)) if s and len(s[1]) < indent)
+            end = next(j for j in range(i + 1, len(lines)) if SOLUTION_STOP.match(lines[j]))
+            code = textwrap.dedent("".join(lines[i + 1 : end])).strip("\n") + "\n"
+            is_class = scope[0].lstrip().startswith("class")
+            stop = next(j for j in range(end, len(lines)) if lines[j].strip() == "# @@end")
+            starter = [ln.strip() for ln in lines[end + 1 : stop]]
+            replaces_code = any(ln and not ln.startswith("#") for ln in starter)
+            path = str(master.relative_to(AUTHORING))
+            found.append(Solution(m[1], path, scope[2], is_class, code, replaces_code))
+    return found
+
+
+def expand_solutions(body: str, all_solutions: list[Solution], shown: set[Solution]) -> str:
+    def block(m: re.Match) -> str:
+        chosen = [s for s in all_solutions if s.chapter == m[1] and m[2] in (None, s.scope)]
+        if not chosen:
+            sys.exit(f"no solution block for {m[0].strip()}")
+        shown.update(chosen)
+        parts = []
+        for s in chosen:
+            where = f"the `{s.scope}` class" if s.is_class else f"`{s.scope}`"
+            what = f"`TODO({s.chapter})` comments" + (" and the placeholder code under them" if s.replaces_code else "")
+            parts.append(
+                f"In `{s.path}`, replace the {what} in {where} with this, indented to match:"
+                f"\n\n```python\n{s.code}```\n"
+            )
+        return "<details>\n<summary>Show the complete code</summary>\n\n" + "\n".join(parts) + "\n</details>\n"
+
+    return MARKER.sub(block, body)
 
 
 def split_frontmatter(text: str) -> tuple[str, str]:
@@ -52,7 +117,7 @@ def carry_ids(new_front: str, old_front: str) -> str:
     return new_front
 
 
-def build(challenge: Path) -> None:
+def build(challenge: Path, all_solutions: list[Solution], shown: set[Solution]) -> None:
     out = TRACK / challenge.name
     old = out / "assignment.md"
     old_front = split_frontmatter(old.read_text())[0] if old.exists() else ""
@@ -61,6 +126,7 @@ def build(challenge: Path) -> None:
     out.mkdir(parents=True)
 
     front, body = split_frontmatter((challenge / "assignment.md").read_text())
+    body = expand_solutions(body, all_solutions, shown)
     (out / "assignment.md").write_text(f"---\n{carry_ids(front, old_front)}---\n{body}")
 
     for verb in VERBS:
@@ -74,8 +140,14 @@ def build(challenge: Path) -> None:
 
 
 def main() -> None:
+    all_solutions, shown = solutions(), set()
     for challenge in sorted(p for p in CHALLENGES.iterdir() if (p / "assignment.md").exists()):
-        build(challenge)
+        build(challenge, all_solutions, shown)
+    if missing := [s for s in all_solutions if s not in shown]:
+        sys.exit(
+            "solution blocks no assignment shows (add a <!-- @@solution chNN scope --> marker):\n  "
+            + "\n  ".join(f"{s.chapter} {s.path} {s.scope}" for s in missing)
+        )
 
 
 if __name__ == "__main__":

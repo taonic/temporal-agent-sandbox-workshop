@@ -2,8 +2,9 @@
 slug: many-maxes
 id: b1jcj8y0n2yq
 type: challenge
-title: "4 · Many Maxes"
-teaser: Fan out a team of agents, each with its own computer, then cancel the lot and watch every sandbox get cleaned up.
+title: 4 · Many Maxes
+teaser: Fan out a team of agents, each with its own computer, then cancel the lot
+  and watch every sandbox get cleaned up.
 tabs:
 - id: nlw8xalhfcx9
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: intermediate
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Many Maxes
@@ -72,6 +74,23 @@ outcomes = await asyncio.gather(*handles, return_exceptions=True)
 ```
 
 `return_exceptions=True` means one analyst failing doesn't sink the whole team. The code after your TODO already turns failures into a "didn't finish" section of the team report.
+
+<details>
+<summary>Show the complete code</summary>
+
+In `max_agent/agent/team.py`, replace the `TODO(ch04)` comments and the placeholder code under them in `run` with this, indented to match:
+
+```python
+# Start every member first, then wait for all of them: they run side by side.
+handles = [
+    await workflow.start_child_workflow(MaxWorkflow.run, member, id=member_id, static_summary=member.question)
+    for member, member_id in zip(members, self._member_ids)
+]
+# return_exceptions: one analyst failing shouldn't sink the whole team.
+outcomes = await asyncio.gather(*handles, return_exceptions=True)
+```
+
+</details>
 
 Restart the worker (team runs are short, so there's nothing to retire) and ask the three questions again. All three now work at once, each on its own computer. In the **Temporal UI**, open the team workflow and follow the tree of child workflows.
 

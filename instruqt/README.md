@@ -31,8 +31,17 @@ Both CLIs read their config from `$PWD`, so run them from `track/` or `sandbox/`
 not from `instruqt/`.
 
 `track/NN-slug/` is **generated** by `scripts/build_track.py` from
-`challenges/NN-slug/`: `assignment.md` is copied verbatim and `<verb>.sh` becomes
+`challenges/NN-slug/`: `assignment.md` is copied and `<verb>.sh` becomes
 `<verb>-workstation`. Don't edit those files; edit `challenges/` and rebuild.
+
+The copy expands one thing. Each `<!-- @@solution chNN [scope] -->` line becomes a
+collapsed **Show the complete code** block holding that challenge's
+`# @@solution chNN` code from `authoring/`. `scope` (the enclosing def or class)
+picks one block when a challenge has several, as challenge 3 does. The build
+fails if any solution block in `authoring/` isn't shown, so the instructions
+always have the complete code. They also always match what the Solve button
+copies in, because `solutions/` is rendered from the same masters. On GitHub the
+markers are invisible HTML comments, so `challenges/` reads as plain prose.
 
 The `-workstation` suffix (on `sandbox/scripts/setup-workstation` and on every
 challenge script) is the VM's `name` in `sandbox/config.yml`, and every tab says

@@ -2,8 +2,9 @@
 slug: ask-before-acting
 id: g37kizsfby0b
 type: challenge
-title: "3 · Ask before acting"
-teaser: Max never posts on its own. Make it wait for a human for seconds or for days, at no cost and safe from restarts.
+title: 3 · Ask before acting
+teaser: Max never posts on its own. Make it wait for a human for seconds or for days,
+  at no cost and safe from restarts.
 tabs:
 - id: c7dwlkkb01qi
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: intermediate
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Ask before acting
@@ -74,6 +76,27 @@ Temporal has three ways to talk to a running workflow:
 
 An approval should tell the clicker whether it counted, so it's an Update. The **validator** runs before anything is written to history. A late or duplicate click gets a clear "no" and leaves no trace.
 
+<details>
+<summary>Show the complete code</summary>
+
+In `max_agent/agent/workflow.py`, replace the `TODO(ch03)` comments in the `MaxWorkflow` class with this, indented to match:
+
+```python
+@workflow.update
+def approve_publish(self, decision: Decision) -> str:
+    self._decision = decision
+    return "posting" if decision.approve else "not posting"
+
+@approve_publish.validator
+def validate_approve_publish(self, decision: Decision) -> None:
+    # Validators run before anything is written to history: a late or
+    # duplicate click is rejected without leaving a trace.
+    if self._phase != Phase.AWAITING_APPROVAL or self._decision is not None:
+        raise ApplicationError("Max isn't waiting for approval right now", type="NotAwaitingApproval")
+```
+
+</details>
+
 ## 3. Wait for the human (but not forever)
 
 Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publish" line:
@@ -85,6 +108,48 @@ Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publi
 > Why a `post_id`? Activities can be retried. `publish_report` uses the ID to make sure a retry never posts the same report twice.
 
 (The full solution also sets `self._approval_deadline` so the app can show a countdown, and handles a dismiss arriving during the wait.)
+
+<details>
+<summary>Show the complete code</summary>
+
+In `max_agent/agent/workflow.py`, replace the `TODO(ch03)` comments and the placeholder code under them in `_ask_to_publish` with this, indented to match:
+
+```python
+self._decision = None
+self._phase = Phase.AWAITING_APPROVAL
+timeout = timedelta(seconds=self._inp.approval_timeout_s)
+self._approval_deadline = (workflow.now() + timeout).isoformat(timespec="seconds")
+try:
+    # Wait for a person. Could be seconds, could be days: either way it
+    # costs nothing and survives restarts.
+    await workflow.wait_condition(lambda: self._decision is not None or self._dismissed, timeout=timeout)
+except asyncio.TimeoutError:
+    self._note("Nobody approved in time; keeping the report, not posting it")
+    return
+finally:
+    self._approval_deadline = None
+
+if self._decision is None:  # dismissed while waiting
+    return
+if not self._decision.approve:
+    self._note(f"{self._decision.by} said no; not posting")
+    return
+self._phase = Phase.PUBLISHING
+await workflow.execute_activity(
+    publish_report,
+    PublishRequest(
+        post_id=f"{workflow.info().workflow_id}/run{self._reruns}",
+        workflow_id=workflow.info().workflow_id,
+        result=self._result,
+        approved_by=self._decision.by,
+    ),
+    start_to_close_timeout=timedelta(seconds=30),
+)
+self._published = True
+self._note(f"Posted to #analytics (approved by {self._decision.by})")
+```
+
+</details>
 
 ## 4. Try it
 

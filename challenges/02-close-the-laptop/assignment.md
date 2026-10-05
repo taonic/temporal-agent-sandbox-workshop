@@ -92,6 +92,8 @@ except asyncio.TimeoutError:
 
 `wait_condition` with a timeout is a **durable timer**. It's stored by the Temporal server, not in your process, so it survives worker restarts and costs nothing while it waits. It could just as well be 6 hours.
 
+<!-- @@solution ch02 -->
+
 ### 3. Watch Max's computer fall asleep
 
 Restart the worker and ask Max a new question. When Max is *waiting for new data*, watch the card: after `IDLE_TIMEOUT_S` (60s) the state changes to **asleep 💤**. In Daytona, the sandbox is now stopped.
