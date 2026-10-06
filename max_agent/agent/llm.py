@@ -61,6 +61,9 @@ async def call_llm(req: LLMRequest) -> LLMResponse:
                 model=req.settings.model,
                 messages=req.messages,
                 tools=req.tools,
+                # One tool offered (finish, on Max's last step) means it must be called: left to
+                # "auto", small models even call tools they weren't given.
+                tool_choice="required" if len(req.tools) == 1 else "auto",
                 temperature=0.2,
                 max_tokens=2048,  # a runaway reply would block single-slot servers like Ollama
                 reasoning_effort="none",  # Qwen's thinking mode: slow on CPU, not needed here
