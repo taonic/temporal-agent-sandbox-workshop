@@ -41,9 +41,19 @@ The pitch for personal agents is that **they keep working after you close the ap
 1. **Crashes.** The machine running your agent dies halfway through a task. Does the agent start over? Does it leak its sandbox, or create a second one?
 2. **Cost.** An agent with its own computer is waiting most of the time: for data, for people, for tomorrow. A sandbox that runs while nobody uses it is money on fire.
 
+## Start the worker
+
+Every challenge starts fresh: setup stopped the previous worker, deleted your sandboxes, emptied the Temporal UI and reset the data. Your code is as you left it. The **Worker** tab is empty, so start the worker there and leave it running:
+
+```bash
+uv run max-worker
+```
+
+Stuck later? Run `lab-reset` in the **Shell** tab to start this challenge over the same way. It never touches your code.
+
 ## Part A: Crash Max (no code changes)
 
-Make sure your worker is running (`uv run max-worker` in the **Worker** tab). In the **Max** tab, ask:
+In the **Max** tab, ask:
 
 > Is SoMa busier on weekdays or weekends?
 

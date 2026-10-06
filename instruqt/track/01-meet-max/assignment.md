@@ -132,5 +132,3 @@ Click into the `sandbox-max-…` workflow in the Temporal UI:
 ## Check
 
 Click **Check**. It runs Max against a local stand-in sandbox and a scripted model, so it grades your Temporal code, not the model's luck.
-
-Leave Max waiting for new data: you'll need it in challenge 2.

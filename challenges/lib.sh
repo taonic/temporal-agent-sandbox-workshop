@@ -35,6 +35,17 @@ retire_runs() {
   uv run python scripts/cleanup.py >/dev/null 2>&1 || true
 }
 
+# Every challenge starts from the same world: no worker, no sandboxes, an empty
+# Temporal and fresh data (instruqt/bin/lab-reset). The learner's code is kept.
+# Locally, where the services aren't ours to restart, only the data is reset.
+fresh_start() {
+  if systemctl cat temporal >/dev/null 2>&1; then
+    "$REPO/instruqt/bin/lab-reset"
+  else
+    uv run python -m max_agent.datasets reset
+  fi
+}
+
 restart_worker_hint() {
   echo "Restart your worker (Ctrl-C, then: uv run max-worker) to load the new code."
 }

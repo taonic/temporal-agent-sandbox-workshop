@@ -36,15 +36,17 @@ That sounds simple until you build it. The human might answer in 5 seconds or in
 
 Max is supposed to post its findings to the team's **#analytics** channel, but only after you approve. Right now it never posts at all (see the "Skipping publish" step).
 
-## 1. Retire the running Maxes
+## Start the worker
 
-You're changing `MaxWorkflow`, so retire the runs that use the old code:
+Every challenge starts fresh: setup stopped the previous worker, deleted your sandboxes, emptied the Temporal UI and reset the data. Your code is as you left it. The **Worker** tab is empty, so start the worker there and leave it running:
 
 ```bash
-uv run python scripts/cleanup.py
+uv run max-worker
 ```
 
-## 2. Let people answer: an Update handler
+Stuck later? Run `lab-reset` in the **Shell** tab to start this challenge over the same way. It never touches your code.
+
+## 1. Let people answer: an Update handler
 
 Open `max_agent/agent/workflow.py` and find the second `TODO(ch03)`, near the bottom of the class. Add an **Update handler**:
 
@@ -70,7 +72,7 @@ An approval should tell the clicker whether it counted, so it's an Update. The *
 
 <!-- @@solution ch03 MaxWorkflow -->
 
-## 3. Wait for the human (but not forever)
+## 2. Wait for the human (but not forever)
 
 Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publish" line:
 
@@ -84,7 +86,7 @@ Find the first `TODO(ch03)` in `_ask_to_publish` and replace the "Skipping publi
 
 <!-- @@solution ch03 _ask_to_publish -->
 
-## 4. Try it
+## 3. Try it
 
 Restart the worker and ask Max a question. When it's done you'll see **Max wants to post this to #analytics**:
 

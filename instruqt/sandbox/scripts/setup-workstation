@@ -122,6 +122,8 @@ source /etc/workshop/env
 case $- in *i*) cd "$WORKDIR" 2>/dev/null || true ;; esac
 PROFILE
 grep -q workshop.sh /root/.bashrc || echo 'source /etc/profile.d/workshop.sh' >> /root/.bashrc
+# Learners' "start this challenge over" command; every challenge's setup runs it too.
+ln -sf "$WORKDIR/instruqt/bin/lab-reset" /usr/local/bin/lab-reset
 
 instruqt/bin/write-env
 uv run python -m max_agent.datasets reset

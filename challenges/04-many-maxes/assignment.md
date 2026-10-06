@@ -41,6 +41,16 @@ TeamWorkflow
  └─ MaxWorkflow  (question 3) ── SandboxWorkflow ── Daytona sandbox
 ```
 
+## Start the worker
+
+Every challenge starts fresh: setup stopped the previous worker, deleted your sandboxes, emptied the Temporal UI and reset the data. Your code is as you left it. The **Worker** tab is empty, so start the worker there and leave it running:
+
+```bash
+uv run max-worker
+```
+
+Stuck later? Run `lab-reset` in the **Shell** tab to start this challenge over the same way. It never touches your code.
+
 ## 1. Watch the slow version
 
 Ask three questions at once in the **Max** tab:

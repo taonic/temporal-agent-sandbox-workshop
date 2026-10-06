@@ -74,8 +74,10 @@ async def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--all-learners", action="store_true")
     p.add_argument("--dry-run", action="store_true")
+    # Only delete sandboxes, without first cancelling workflows (which needs a worker).
+    p.add_argument("--sandboxes-only", action="store_true")
     args = p.parse_args()
-    if not args.all_learners:
+    if not args.all_learners and not args.sandboxes_only:
         await cancel_workflows(args.dry_run)
     if settings.sandbox_provider == "daytona":
         await sweep_daytona(args.all_learners, args.dry_run)

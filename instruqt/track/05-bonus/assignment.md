@@ -38,6 +38,16 @@ timelimit: 1800
 
 Pick any of these. They're independent of each other, and none are graded.
 
+## Start the worker
+
+Every challenge starts fresh: setup stopped the previous worker, deleted your sandboxes, emptied the Temporal UI and reset the data. Your code is as you left it. The **Worker** tab is empty, so start the worker there and leave it running:
+
+```bash
+uv run max-worker
+```
+
+Stuck later? Run `lab-reset` in the **Shell** tab to start this challenge over the same way. It never touches your code.
+
 ## A. Every morning, without being asked (Schedules)
 
 A personal agent reruns your analysis when new data lands. Give Max a schedule:
@@ -55,7 +65,7 @@ uv run python scripts/schedule.py delete
 
 ## B. Upgrade Max without retiring it (versioning)
 
-In challenges 2 and 3 you retired running Maxes before changing workflow code. In production you can't: some Max is always waiting on someone.
+In challenge 2 you retired running Maxes before changing workflow code. In production you can't: some Max is always waiting on someone.
 
 Keep a Max waiting for new data, then change what it does on a rerun. For example, post a note before rerunning. Guard the change with a patch:
 

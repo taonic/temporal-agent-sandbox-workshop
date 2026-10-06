@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# Start the current challenge over: no worker, no sandboxes, an empty Temporal,
+# fresh data. Your code is never touched.
+#
+# Every challenge's setup runs this, and learners can run it themselves when
+# they're stuck. Instruqt only: it restarts this VM's services.
+set -euo pipefail
+
+WORKDIR="${WORKDIR:-/root/workshop}"
+export PATH="/root/.local/bin:/usr/local/bin:$PATH"
+cd "$WORKDIR"
+
+systemctl cat temporal >/dev/null 2>&1 || {
+  echo "lab-reset only works on the workshop's Instruqt VM." >&2
+  exit 1
+}
+
+wait_for() { # wait_for NAME URL
+  for _ in $(seq 1 60); do curl -fsS --max-time 2 -o /dev/null "$2" && return 0; sleep 1; done
+  echo "$1 didn't come back on $2; try lab-reset again." >&2
+  return 1
+}
+
+echo "Stopping the worker..."
+pkill -f max-worker 2>/dev/null || true
+
+# Before Temporal is wiped: once its workflows are gone, nothing else would ever
+# delete these sandboxes.
+echo "Deleting your sandboxes..."
+uv run python scripts/cleanup.py --sandboxes-only 2>&1 | tail -1 \
+  || echo "  couldn't reach Daytona; any sandboxes left over will be deleted when the track ends"
+
+echo "Emptying Temporal..."
+systemctl stop temporal
+rm -f /root/temporal.db /root/temporal.db-*
+systemctl start temporal
+wait_for "Temporal" http://127.0.0.1:8233
+
+echo "Resetting the data..."
+uv run python -m max_agent.datasets reset
+rm -rf "$WORKDIR/artifacts"
+
+echo "Restarting the Max app..."
+systemctl restart max-app
+wait_for "The Max app" http://127.0.0.1:8000
+
+echo
+echo "Fresh start. Your code is as you left it. Start the worker: uv run max-worker"
