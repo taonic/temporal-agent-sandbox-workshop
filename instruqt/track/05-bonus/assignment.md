@@ -2,9 +2,8 @@
 slug: bonus
 id: 0lsvmvbixxtd
 type: challenge
-title: Bonus · Make Max your own
-teaser: Schedules, safe upgrades of running agents, a second sandbox provider, or
-  try-three-fixes-and-keep-the-best.
+title: "Bonus · Make Max your own"
+teaser: Schedules, safe upgrades of running agents, a second sandbox provider, or try-three-fixes-and-keep-the-best.
 tabs:
 - id: xjjsqedfmbwv
   title: Worker
@@ -33,7 +32,6 @@ tabs:
   port: 8233
 difficulty: advanced
 timelimit: 1800
-enhanced_loading: null
 ---
 
 # Make Max your own

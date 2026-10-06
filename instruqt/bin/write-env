@@ -45,6 +45,9 @@ fi
 before="$(cksum < "$ENV_FILE")"
 
 set_kv LLM_MODEL "${LLM_MODEL:-$(cfg_env LLM_MODEL)}"
+# A shared endpoint (scripts/gpu_endpoint.py) instead of Ollama on this VM, when set.
+set_kv LLM_BASE_URL "${LLM_BASE_URL:-$(cfg_env LLM_BASE_URL)}"
+set_kv LLM_API_KEY "${LLM_API_KEY:-$(cfg_env LLM_API_KEY)}"
 set_kv DAYTONA_API_KEY "${DAYTONA_API_KEY:-$(cfg_env DAYTONA_API_KEY)}"
 # A short, label-safe ID: it prefixes workflow IDs and labels every sandbox.
 if [ -n "${INSTRUQT_PARTICIPANT_ID:-}" ]; then

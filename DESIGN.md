@@ -64,13 +64,13 @@ Errand-style agents (a browser doing shopping or bookings) are deferred. The too
 - **Helping a small model:** every script gets a preamble (`prompts.PREAMBLE`) that loads `df` with parsed dates and sets up `today`, `plt` and `out/`. The prompt is short and there are only two tools.
 - **Scripted mode:** `LLM_MODE=scripted` replays a fixed plan through the same activity. Checks use it, and it's the fallback for a live session.
 - **Measured on 2026-10-03** (Apple-silicon Mac, Ollama, not Instruqt): about 8–10 s per call. 3 of 4 benchmark questions produced a correct report and chart in 4 steps each; the "growth over two weeks" question ran out of steps.
-- **Still open:** run `scripts/bench_llm.py` on an n2-standard-4 Instruqt VM with CPU only, and switch to `qwen3.5:9b` if 4B is too unreliable there.
+- **Still open:** run `scripts/bench_llm.py` on an n2-standard-8 Instruqt VM with CPU only, and switch to `qwen3.5:9b` if 4B is too unreliable there.
 
 ## Infrastructure (Instruqt)
 
 - A Temporal dev server in the VM, started with `--dynamic-config-value 'history.workflowTaskRetryMaxInterval="5s"'`. Its UI is a tab.
   Without that setting, a paused run waited 2 minutes to resume after a fix that took the learner 4 minutes, because the default backoff keeps growing up to a cap of minutes. With it, the run resumed in 16 s.
-- Ollama runs natively in the VM with the model pre-pulled into the image. Instruqt has no GPUs, so it runs on CPU, on an n2-standard-4 (4 vCPU / 16 GB). If the model is too slow there, go to n2-standard-8 rather than to a bigger model.
+- Ollama runs natively in the VM with the model pre-pulled into the image. Instruqt has no GPUs, so it runs on CPU, on an n2-standard-8 (8 vCPU / 32 GB). On n2-standard-4, warming the model alone took about 2.5 minutes of setup.
 - **Daytona:** one org key, supplied as a VM environment variable in `instruqt/sandbox/config.yml`, shared by all learners.
   - Every sandbox is labeled `app=max`, `learner=$LEARNER_ID` and `workflow=<id>`. The cleanup script deletes by label.
   - **The org needs Tier 2 or higher.** Tier 1's 10 vCPU fits about 10 sandboxes in total, and a room of 30 learners with a team of 3 each needs up to about 120.

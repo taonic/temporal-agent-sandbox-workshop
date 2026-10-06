@@ -13,13 +13,13 @@ virtualmachines:
     # pre-pulled, to skip a 3+ GB download on every start.
     image: instruqt/docker-28-3
     shell: /bin/bash
-    # Instruqt has no GPUs, so the model runs on CPU. 4 vCPU / 16 GB holds
-    # qwen3.5:4b with room to spare, but CPU inference scales with cores: bench
-    # it here (scripts/bench_llm.py) before a cohort, and see DESIGN.md.
-    machine_type: n2-standard-4
+    # Instruqt has no GPUs, so the model runs on CPU, and CPU inference scales
+    # with cores. 8 vCPU / 32 GB fits qwen3.5:4b (or 9b) comfortably; bench it
+    # here (scripts/bench_llm.py) before a cohort, and see DESIGN.md.
+    machine_type: n2-standard-8
     # Stated so `sandbox diff` is clean: Instruqt fills these in from machine_type.
-    memory: 16384
-    cpus: 4
+    memory: 32768
+    cpus: 8
     # high-ports: the Max app (8000) links to the Temporal UI (8233) by its
     # public URL, workstation-8233-<sandbox>.env.play.instruqt.com.
     allow_external_ingress:
@@ -37,6 +37,18 @@ virtualmachines:
       # Switch to qwen3.5:9b here if 4b is too unreliable on this machine type
       # (run scripts/bench_llm.py on it first).
       LLM_MODEL: qwen3.5:4b
+
+      # Empty: Ollama serves LLM_MODEL on this VM's CPU (slow; see DESIGN.md).
+      # Set: a shared OpenAI-compatible endpoint, and setup skips Ollama. For the
+      # GPU endpoint, `scripts/gpu_endpoint.py up` prints the three values to use
+      # (the URL carries its own token: push it, never commit it).
+      LLM_BASE_URL: ""
+      LLM_API_KEY: ""
+
+      # "1" makes setup benchmark the model end to end and log every LLM call's
+      # latency (grep LLMCALL in `instruqt track logs`). Adds minutes and uses
+      # Daytona: for instructors only, never for a live cohort.
+      WORKSHOP_BENCH_LLM: "0"
 
       # One org key shared by all learners (Tier 2+; see DESIGN.md). A plain
       # variable, not an Instruqt secret: if the real key is committed here it

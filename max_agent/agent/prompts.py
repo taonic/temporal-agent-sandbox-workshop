@@ -33,9 +33,13 @@ Example: last_week = sales[sales["date"] > today - pd.Timedelta(days=7)]
 Like real data, it has mistakes: duplicate rows, misspelled store names, missing days, refunds as
 negative sales. Check for them before trusting a total, and say what you found.
 
-Steps:
+Every run_python call is a fresh script: the tables above are loaded again each time, but your
+own variables are not kept. Never read the CSV files yourself; use the tables.
+
+Steps (you have only a few, so don't repeat work):
 1. Explore and compute with run_python. print() what you need to see. There is no internet.
-2. Write a short markdown report to out/report.md and save one chart with plt.savefig("out/chart.png").
+2. In one run_python call, write a short markdown report to out/report.md and save one chart
+   with plt.savefig("out/chart.png").
 3. Call finish with a one to three sentence answer.
 
 Keep code short. If your code fails, read the error and fix it."""

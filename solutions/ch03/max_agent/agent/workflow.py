@@ -49,6 +49,7 @@ class MaxWorkflow:
         self._sandbox: Sandbox | None = None
         self._result: AnalysisResult | None = None
         self._finish_summary: str | None = None
+        self._ran: dict[str, str] = {}  # code already run this analysis -> its script path
         self._published = False
         self._reruns = 0
         self._new_data = False
@@ -109,6 +110,7 @@ class MaxWorkflow:
     async def _analyze(self) -> AnalysisResult:
         self._phase = Phase.ANALYZING
         self._finish_summary = None
+        self._ran = {}
         messages: list[dict] = [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": self._inp.question},
@@ -116,9 +118,12 @@ class MaxWorkflow:
         nudged = False
         steps_used = 0
         for steps_used in range(1, self._inp.max_steps + 1):
+            # On the last step the model can only answer, so a run always ends with one.
+            last = steps_used == self._inp.max_steps
+            tools = [t for t in TOOLS if t["function"]["name"] == "finish"] if last else TOOLS
             response: LLMResponse = await workflow.execute_activity(
                 call_llm,
-                LLMRequest(settings=self._inp.llm, messages=messages, tools=TOOLS),
+                LLMRequest(settings=self._inp.llm, messages=messages, tools=tools),
                 start_to_close_timeout=timedelta(minutes=10),  # small models on CPUs are slow
                 heartbeat_timeout=timedelta(seconds=30),  # ...but a dead worker is noticed fast
                 # No attempt limit: if the model server is down, Max waits for it
@@ -142,8 +147,14 @@ class MaxWorkflow:
                 continue
 
             for call in response.tool_calls:
-                output = await self._handle_tool_call(call)
-                messages.append({"role": "tool", "tool_call_id": call.id, "content": output})
+                if call.name == "finish" and not last and not await self._outputs_saved():
+                    # Answering without the report and chart leaves the app nothing to show or post.
+                    output = "Not yet: out/report.md and out/chart.png don't exist. Save both in one run_python call."
+                else:
+                    output = await self._handle_tool_call(call)
+                messages.append(
+                    {"role": "tool", "tool_call_id": call.id, "content": output + _steps_left(self._inp.max_steps - steps_used)}
+                )
             if self._finish_summary is not None:
                 break
         else:
@@ -163,12 +174,20 @@ class MaxWorkflow:
         return f"Unknown tool {call.name!r}. Use run_python or finish."
 
     async def _run_python(self, code: str) -> str:
+        # Small models sometimes resend the same script over and over; don't spend a sandbox run on it.
+        if code in self._ran:
+            return f"You already ran exactly this code ({self._ran[code]}); its output is above. Change it or move on."
         n = len(self._steps) + 1
         path = f"steps/step_{n}.py"
+        self._ran[code] = path
         result = await self._sandbox.exec(f"python3 {path}", files={path: PREAMBLE + code}, timeout_s=90)
         output = _truncate(result.output)
         self._add_step("run_python", f"ran {path} → exit {result.exit_code}", f"{code}\n\n--- output ---\n{output}")
         return f"exit code: {result.exit_code}\n{output}"
+
+    async def _outputs_saved(self) -> bool:
+        result = await self._sandbox.exec("test -f out/report.md && test -f out/chart.png", timeout_s=30)
+        return result.exit_code == 0
 
     async def _collect_result(self, summary: str, steps_used: int) -> AnalysisResult:
         local = f"{self._inp.artifacts_dir}/{workflow.info().workflow_id}/run{self._reruns}"
@@ -278,6 +297,15 @@ def _assistant_message(r: LLMResponse) -> dict:
             for c in r.tool_calls
         ]
     return msg
+
+
+def _steps_left(left: int) -> str:
+    """A countdown after every tool result: small models don't track their own budget."""
+    if left == 1:
+        return "\n\n[Last step next: call finish with your answer.]"
+    if left == 2:
+        return "\n\n[2 steps left: save out/report.md and out/chart.png in one run_python call now, then finish.]"
+    return f"\n\n[{left} steps left]"
 
 
 def _truncate(text: str) -> str:

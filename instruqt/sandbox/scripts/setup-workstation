@@ -12,10 +12,15 @@ set -euo pipefail
 log() { printf '\n=== %s\n' "$*"; }
 
 until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]; do sleep 1; done
+# Challenge scripts wait for this file, which the last line of this script writes.
+rm -f /etc/workshop/ready
 
 # The `environment:` block in instruqt/sandbox/config.yml is not in scope here
 # (see instruqt/README.md). These three are needed before there is a checkout to
 # read it from, so they are defaulted here and checked against it after the clone.
+# Supplied by the environment (e.g. WORKSHOP_REF set to a branch in the pushed config
+# to test it): taken as given, not checked against the cloned copy below.
+FROM_ENV=" ${WORKSHOP_REPO:+WORKSHOP_REPO} ${WORKSHOP_REF:+WORKSHOP_REF} ${WORKDIR:+WORKDIR} "
 WORKSHOP_REPO="${WORKSHOP_REPO:-https://github.com/taonic/temporal-agent-sandbox-workshop.git}"
 WORKSHOP_REF="${WORKSHOP_REF:-main}"
 WORKDIR="${WORKDIR:-/root/workshop}"
@@ -39,6 +44,7 @@ command -v temporal >/dev/null \
   || curl -fsSL https://temporal.download/cli.sh | sh -s -- --version "$TEMPORAL_CLI_VERSION" --dir /usr/local
 
 log "the workshop files"
+SRC=/tmp/workshop-src   # the clone; kept until the end for the optional LLM benchmark
 # Not the repo: an ALLOW-LIST out of it, with the starter code laid over
 # max_agent/. The repo's max_agent/ is the finished Max; learners start from
 # starter/ (every TODO open). authoring/ and starter/ never arrive, and neither
@@ -59,7 +65,6 @@ KEEP=(
   instruqt/bin instruqt/sandbox/config.yml
 )
 if [ ! -f "$WORKDIR/pyproject.toml" ]; then   # a re-run keeps the learner's edits
-  SRC=/tmp/workshop-src
   rm -rf "$SRC"
   # GIT_TERMINAL_PROMPT=0: a private or mistyped repo fails with a clear error
   # instead of "could not read Username", since there is no terminal to prompt on.
@@ -69,7 +74,6 @@ if [ ! -f "$WORKDIR/pyproject.toml" ]; then   # a re-run keeps the learner's edi
   # shellcheck disable=SC2068
   (cd "$SRC" && tar -cf - ${KEEP[@]}) | (cd "$WORKDIR" && tar -xf -)
   (cd "$SRC/starter" && tar -cf - .) | (cd "$WORKDIR" && tar -xf -)
-  rm -rf "$SRC"
 fi
 cd "$WORKDIR"
 
@@ -87,6 +91,7 @@ grep -q 'TODO(ch01)' max_agent/agent/workflow.py \
 
 cfg_env() { awk -v k="$1:" '$1==k {gsub(/"/,"",$2); print $2; exit}' instruqt/sandbox/config.yml; }
 for v in WORKSHOP_REPO WORKSHOP_REF WORKDIR; do
+  [[ "$FROM_ENV" == *" $v "* ]] && continue
   want="$(cfg_env "$v")"; have="${!v}"
   [ -z "$want" ] || [ "$want" = "$have" ] || {
     echo "FAIL $v is \"$have\" in this script but \"$want\" in instruqt/sandbox/config.yml." >&2
@@ -96,6 +101,9 @@ for v in WORKSHOP_REPO WORKSHOP_REF WORKDIR; do
 done
 LLM_MODEL="${LLM_MODEL:-$(cfg_env LLM_MODEL)}"
 : "${LLM_MODEL:?not set here and not in instruqt/sandbox/config.yml}"
+# Empty: Ollama on this VM. Set: a shared OpenAI-compatible endpoint (scripts/gpu_endpoint.py),
+# and this VM runs no model at all.
+LLM_BASE_URL="${LLM_BASE_URL:-$(cfg_env LLM_BASE_URL)}"
 
 log "python dependencies"
 uv sync
@@ -118,10 +126,12 @@ grep -q workshop.sh /root/.bashrc || echo 'source /etc/profile.d/workshop.sh' >>
 instruqt/bin/write-env
 uv run python -m max_agent.datasets reset
 
-log "ollama, and $LLM_MODEL"
-command -v ollama >/dev/null || curl -fsSL https://ollama.com/install.sh | sh
-systemctl enable --now ollama
-ollama pull "$LLM_MODEL"
+if [ -z "$LLM_BASE_URL" ]; then
+  log "ollama, and $LLM_MODEL"
+  command -v ollama >/dev/null || curl -fsSL https://ollama.com/install.sh | sh
+  systemctl enable --now ollama
+  ollama pull "$LLM_MODEL"
+fi
 
 log "temporal dev server and the max app"
 # Persisted, so a VM hiccup keeps history. workflowTaskRetryMaxInterval=5s: after
@@ -159,10 +169,19 @@ wait_for() { # wait_for NAME URL
 wait_for "temporal ui" http://127.0.0.1:8233
 wait_for "max app" http://127.0.0.1:8000
 
-log "warm the model"
-# So the first question isn't a cold start.
-curl -fsS http://localhost:11434/api/generate \
-  -d "{\"model\":\"$LLM_MODEL\",\"prompt\":\"hi\",\"stream\":false}" >/dev/null
+if [ -z "$LLM_BASE_URL" ]; then
+  log "warm the model"
+  # So the first question isn't a cold start.
+  curl -fsS http://localhost:11434/api/generate \
+    -d "{\"model\":\"$LLM_MODEL\",\"prompt\":\"hi\",\"stream\":false}" >/dev/null
+else
+  log "shared model endpoint"
+  # A warning, not a failure: the endpoint may be started after this sandbox.
+  # The URL carries its own token, so print only the host.
+  curl -fsS --max-time 20 -o /dev/null "${LLM_BASE_URL%/}/models" \
+    && echo "  ok   $LLM_MODEL at $(echo "$LLM_BASE_URL" | cut -d/ -f3 | sed -E 's/^([0-9]+)-[^.]+/\1-<token>/')" \
+    || echo "warn: the shared model endpoint isn't answering yet; Max's model calls will retry until it does" >&2
+fi
 
 log "egress probes"
 tcp_probe() { # host:port
@@ -171,4 +190,82 @@ tcp_probe() { # host:port
 }
 tcp_probe app.daytona.io:443
 
+# Opt-in, for instructors: WORKSHOP_BENCH_LLM: "1" in config.yml. Runs
+# scripts/bench_llm.py against the FINISHED Max in the clone (the repo's
+# max_agent/), with the real model and real Daytona sandboxes, on its own task
+# queue so it can't touch a learner's runs. Then prints every call_llm
+# activity's latency from Temporal history as "LLMCALL" lines, so
+# `instruqt track logs | grep LLMCALL` is the report. Never fails the setup.
+bench_llm() {
+  cp "$WORKDIR/.env" "$SRC/.env"
+  cd "$SRC"
+  uv sync -q
+  export TASK_QUEUE=bench
+  uv run python -m max_agent.datasets reset >/dev/null
+  uv run max-worker > /tmp/bench-worker.log 2>&1 &
+  local worker=$!
+  # One question at a time, since Ollama serves one request at a time. Capped, because
+  # a run that can't get a sandbox retries forever, and setup has to finish.
+  timeout 900 uv run python scripts/bench_llm.py --concurrency 1 \
+    || echo "warn: the benchmark runs didn't all finish within 15 minutes; reporting the calls that did" >&2
+  uv run python - <<'PY'
+import asyncio
+import json
+import statistics
+
+from max_agent.client import connect
+
+
+async def main() -> None:
+    client = await connect()
+    rows = []  # (workflow id, call number, seconds, prompt tokens, completion tokens)
+    async for wf in client.list_workflows("WorkflowId STARTS_WITH 'bench-'"):
+        history = await client.get_workflow_handle(wf.id).fetch_history()
+        scheduled, started, n = set(), {}, 0
+        for e in history.events:
+            if e.HasField("activity_task_scheduled_event_attributes"):
+                if e.activity_task_scheduled_event_attributes.activity_type.name == "call_llm":
+                    scheduled.add(e.event_id)
+            elif e.HasField("activity_task_started_event_attributes"):
+                a = e.activity_task_started_event_attributes
+                if a.scheduled_event_id in scheduled:
+                    started[a.scheduled_event_id] = e.event_time.ToDatetime()
+            elif e.HasField("activity_task_completed_event_attributes"):
+                a = e.activity_task_completed_event_attributes
+                if a.scheduled_event_id in started:
+                    n += 1
+                    secs = (e.event_time.ToDatetime() - started[a.scheduled_event_id]).total_seconds()
+                    try:
+                        usage = json.loads(a.result.payloads[0].data).get("usage") or {}
+                    except (ValueError, IndexError, AttributeError):
+                        usage = {}
+                    rows.append((wf.id, n, secs, usage.get("prompt_tokens"), usage.get("completion_tokens")))
+    for wid, n, secs, p, c in sorted(rows):
+        rate = f"  {c / secs:5.1f} tok/s" if c and secs else ""
+        print(f"LLMCALL {wid} call={n} secs={secs:.2f} prompt_tokens={p} completion_tokens={c}{rate}")
+    if rows:
+        secs = sorted(r[2] for r in rows)
+        p90 = secs[min(len(secs) - 1, int(len(secs) * 0.9))]
+        print(
+            f"LLMCALL summary: {len(secs)} calls, median {statistics.median(secs):.1f}s, "
+            f"mean {statistics.mean(secs):.1f}s, p90 {p90:.1f}s, min {secs[0]:.1f}s, max {secs[-1]:.1f}s"
+        )
+    else:
+        print("LLMCALL summary: no call_llm activities found")
+
+
+asyncio.run(main())
+PY
+  kill "$worker" 2>/dev/null; pkill -f "max-worker" || true   # $! is uv; the worker is its child
+}
+WORKSHOP_BENCH_LLM="${WORKSHOP_BENCH_LLM:-$(cfg_env WORKSHOP_BENCH_LLM)}"
+if [ "$WORKSHOP_BENCH_LLM" = "1" ] && [ -d "$SRC" ]; then
+  log "llm benchmark ($LLM_MODEL, $(nproc) vCPU)"
+  (bench_llm) || echo "warn: the LLM benchmark failed; the sandbox itself is fine" >&2
+  # The bench's sandboxes are deleted when its runs finish; this is the backstop.
+  (cd "$WORKDIR" && uv run python scripts/cleanup.py >/dev/null 2>&1) || true
+fi
+rm -rf "$SRC"
+
 log "ready"
+touch /etc/workshop/ready

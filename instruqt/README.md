@@ -139,6 +139,35 @@ with the placeholder in the clone and printed no `no DAYTONA_API_KEY` warning, s
 the key came from `$DAYTONA_API_KEY`. That contradicts what the platform workshop
 saw for `LAB_REPO_URL`, so keep checking new runs for that warning.
 
+## A shared GPU model endpoint
+
+On the VM's CPU, `qwen3.5:4b` takes about a minute per call (measured
+2026-10-05), so a question takes 7–8 minutes. Instead, one Daytona RTX 4090 can
+serve the whole cohort: `Qwen3.5-9B` in FP8 with speculative decoding, at a
+median of 4.8 s per call for one learner and 12.4 s with 30 asking at once
+(measured 2026-10-06).
+
+```bash
+uv run python scripts/gpu_endpoint.py up --hours 3   # ~5 min; prints LLM_MODEL, LLM_BASE_URL, LLM_API_KEY
+# put those three in sandbox/config.yml, with the Daytona key, then:
+cd instruqt/sandbox && instruqt sandbox push && instruqt sandbox publish --message "shared GPU endpoint"
+git checkout config.yml                               # never commit the URL: it is the credential
+uv run python scripts/gpu_endpoint.py down            # after the session (or let --hours end it)
+```
+
+- **Setup.** With `LLM_BASE_URL` set, setup skips Ollama entirely (no model
+  download, no warm-up) and checks that the endpoint answers. If it doesn't, setup
+  only warns, because the endpoint may be started later.
+- **Lifetime.** GPU sandboxes are deleted when they stop, and `--hours` is a hard
+  lifetime, so start the endpoint before each session. The signed URL lasts as
+  long as the sandbox, and 24 hours at most.
+- **Cost.** About $1.37/hour (GPU plus its CPU and RAM). Daytona's free credits
+  don't cover GPUs.
+- **The first `up` on an org** builds the vLLM snapshot, which takes about
+  45 minutes and no GPU time.
+- **If it dies mid-session,** every learner's model calls retry until it's back.
+  Run `up` again and push the new URL, or switch everyone to `LLM_MODE=scripted`.
+
 ## First time on a machine
 
 ```bash

@@ -2,9 +2,8 @@
 slug: many-maxes
 id: b1jcj8y0n2yq
 type: challenge
-title: 4 · Many Maxes
-teaser: Fan out a team of agents, each with its own computer, then cancel the lot
-  and watch every sandbox get cleaned up.
+title: "4 · Many Maxes"
+teaser: Fan out a team of agents, each with its own computer, then cancel the lot and watch every sandbox get cleaned up.
 tabs:
 - id: nlw8xalhfcx9
   title: Worker
@@ -33,7 +32,6 @@ tabs:
   port: 8233
 difficulty: intermediate
 timelimit: 1200
-enhanced_loading: null
 ---
 
 # Many Maxes

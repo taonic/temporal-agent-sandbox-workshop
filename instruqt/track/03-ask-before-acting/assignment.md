@@ -2,9 +2,8 @@
 slug: ask-before-acting
 id: g37kizsfby0b
 type: challenge
-title: 3 · Ask before acting
-teaser: Max never posts on its own. Make it wait for a human for seconds or for days,
-  at no cost and safe from restarts.
+title: "3 · Ask before acting"
+teaser: Max never posts on its own. Make it wait for a human for seconds or for days, at no cost and safe from restarts.
 tabs:
 - id: c7dwlkkb01qi
   title: Worker
@@ -33,7 +32,6 @@ tabs:
   port: 8233
 difficulty: intermediate
 timelimit: 1200
-enhanced_loading: null
 ---
 
 # Ask before acting
