@@ -2,8 +2,9 @@
 slug: meet-max
 id: dcgzf1ratsk9
 type: challenge
-title: "1 · Meet Max"
-teaser: Give an AI agent its own computer, and watch every thought and action land in a durable history.
+title: 1 · Meet Max
+teaser: Give an AI agent its own computer, and watch every thought and action land
+  in a durable history.
 tabs:
 - id: azgvyzy7e7bd
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: basic
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Meet Max

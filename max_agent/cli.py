@@ -45,7 +45,8 @@ async def main() -> None:
         for s in status.steps:
             print(f"  {s.n:>2}. [{s.kind}] {s.summary}")
     elif args.cmd in ("approve", "reject"):
-        print(await handle.execute_update(MaxWorkflow.approve_publish, Decision(approve=args.cmd == "approve", by="cli")))
+        decision = Decision(approve=args.cmd == "approve", by="cli")
+        print(await handle.execute_update("approve_publish", decision, result_type=str))
     elif args.cmd == "new-data":
         day = append_day()
         await handle.signal(MaxWorkflow.new_data)

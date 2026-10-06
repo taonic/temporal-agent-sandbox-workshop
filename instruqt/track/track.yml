@@ -48,5 +48,5 @@ lab_config:
   - Starting the Max app. Its worker is yours to start.
   - Not creating a sandbox yet. Max asks for its own computer when it needs one.
   hideStopButton: false
-checksum: "13696161053155774630"
+checksum: "17358420858142179144"
 enhanced_loading: false

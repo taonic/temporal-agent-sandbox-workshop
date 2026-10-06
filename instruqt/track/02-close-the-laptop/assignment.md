@@ -2,8 +2,9 @@
 slug: close-the-laptop
 id: a22rvfwbsg1o
 type: challenge
-title: "2 · Close the laptop"
-teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer nobody is using.
+title: 2 · Close the laptop
+teaser: Crash Max mid-thought and watch it carry on. Then stop paying for a computer
+  nobody is using.
 tabs:
 - id: akxloyjeqtxz
   title: Worker
@@ -32,6 +33,7 @@ tabs:
   port: 8233
 difficulty: basic
 timelimit: 1200
+enhanced_loading: null
 ---
 
 # Close the laptop

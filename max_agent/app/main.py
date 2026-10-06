@@ -161,12 +161,17 @@ async def _safe_query(handle, query):
 async def approve(request: Request, wf_id: str, approve: str = Form(...)):
     handle = (await client()).get_workflow_handle(wf_id)
     try:
-        msg = await handle.execute_update(MaxWorkflow.approve_publish, Decision(approve=approve == "yes", by=settings.learner_id))
+        # By name, not MaxWorkflow.approve_publish: the learner writes that handler in
+        # challenge 3, after this app process imported the class without it.
+        decision = Decision(approve=approve == "yes", by=settings.learner_id)
+        msg = await handle.execute_update("approve_publish", decision, result_type=str)
         flash = f"Max: {msg}"
     except WorkflowUpdateFailedError as e:
         flash = f"Rejected: {e.cause}"  # the workflow's validator said no
     except RPCError as e:
         flash = f"Couldn't deliver: {e.message}"
+    except Exception as e:  # noqa: BLE001 -- say so, rather than leave a button that does nothing
+        flash = f"Couldn't deliver: {type(e).__name__}: {e}"
     return await run_panel(request, wf_id, flash=flash)
 
 
