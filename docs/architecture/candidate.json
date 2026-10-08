@@ -4,7 +4,26 @@
   "meta": {
     "title": "Max on Temporal: workflows, activities and messages",
     "output": "docs/architecture/max-architecture.html",
-    "quality_profile": "showcase"
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "Client"
+        },
+        "cloud": {
+          "label": "Platform"
+        },
+        "database": {
+          "label": "Workflow"
+        },
+        "backend": {
+          "label": "Activity"
+        },
+        "external": {
+          "label": "External service"
+        }
+      }
+    }
   },
   "components": [
     {
@@ -23,7 +42,7 @@
     },
     {
       "id": "temporal",
-      "type": "messagebus",
+      "type": "cloud",
       "label": "Temporal Server",
       "sublabel": "history · task queue max",
       "pos": [
@@ -33,11 +52,12 @@
       "size": [
         160,
         60
-      ]
+      ],
+      "icon": "neutral"
     },
     {
       "id": "maxwf",
-      "type": "backend",
+      "type": "database",
       "label": "MaxWorkflow",
       "sublabel": "agent loop · durable waits",
       "pos": [
@@ -48,7 +68,8 @@
         170,
         60
       ],
-      "tag": "workflow"
+      "tag": "workflow",
+      "icon": "backend"
     },
     {
       "id": "callsandbox",
@@ -67,7 +88,7 @@
     },
     {
       "id": "sandboxwf",
-      "type": "backend",
+      "type": "database",
       "label": "SandboxWorkflow",
       "sublabel": "Updates · idle timer · cleanup",
       "pos": [
@@ -78,11 +99,12 @@
         190,
         60
       ],
-      "tag": "workflow"
+      "tag": "workflow",
+      "icon": "backend"
     },
     {
       "id": "team",
-      "type": "backend",
+      "type": "database",
       "label": "TeamWorkflow",
       "sublabel": "fan-out · cancel cascades",
       "pos": [
@@ -93,7 +115,8 @@
         170,
         60
       ],
-      "tag": "workflow"
+      "tag": "workflow",
+      "icon": "backend"
     },
     {
       "id": "agentacts",
